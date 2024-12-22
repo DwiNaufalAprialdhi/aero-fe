@@ -1,0 +1,196 @@
+/* Plus Jakarta Sans */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* AOS */
+@import "aos/dist/aos.css";
+
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-inter text-theme-donker;
+  }
+}
+
+@layer components {
+  .container_section {
+    @apply w-full lg:max-w-[1200px] md:max-w-[696px] max-w-none mx-auto lg:px-0 px-[30px] relative;
+  }
+}
+
+@layer utilities {
+  .label {
+    @apply font-medium text-base text-input-label;
+  }
+  .form_input {
+    @apply w-full p-[10px] rounded-[8px] font-normal text-sm text-input-label placeholder:text-input-form border border-input-form outline-none;
+  }
+}
+
+@keyframes toRight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.toRight {
+  animation: toRight 1s ease-in-out infinite;
+}
+
+.scrolling-container {
+  animation: scroll-left 30s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .scrolling-container {
+    animation: scroll-left 20s linear infinite;
+  }
+}
+
+.box_vendor {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scaleInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9) translateY(50px);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scaleInOut {
+  animation: scaleInOut 10s ease-in-out infinite;
+}
+
+@keyframes scaleInOut1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9) translateY(50px) translateX(50px);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scaleInOut1 {
+  animation: scaleInOut1 10s ease-in-out infinite;
+}
+
+@keyframes scaleInOut2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9) translateY(50px) translateX(-50px);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scaleInOut2 {
+  animation: scaleInOut2 10s ease-in-out infinite;
+}
+
+@keyframes scaleInOut3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9) translateY(50px) translateX(-50px);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.scaleInOut3 {
+  animation: scaleInOut3 10s ease-in-out infinite;
+}
+
+/* Running Client */
+@keyframes scrollClients {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.container_clients {
+  display: flex;
+  overflow: hidden; /* Sembunyikan elemen di luar container */
+  position: relative;
+  width: 100%;
+}
+
+.wrapper_clients {
+  display: flex;
+  animation: scrollClients 10s linear infinite;
+}
+
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #352b5a; /* Blue scrollbar */
+  border-radius: 10px; /* Rounded edges */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #e4e4e7; /* Light background for the scrollbar track */
+  border-radius: 10px;
+}
+
+/* Firefox Scrollbar Styling */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: #352b5a #e4e4e7; /* Thumb color and track color */
+}
