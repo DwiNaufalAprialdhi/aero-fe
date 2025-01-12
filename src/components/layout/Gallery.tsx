@@ -16,7 +16,7 @@ export default function Gallery() {
                               <div className="flex flex-col gap-y-[14px] mb-[24px]">
                                     <BadgeCategory>Gallery</BadgeCategory>
                                     <div className="flex items-end justify-between">
-                                          <h2 className="w-full max-w-[419px] font-jakarta font-normal lg:text-[48px] text-[32px] text-theme-brand">
+                                          <h2 className="w-full max-w-[419px] font-normal lg:text-[48px] text-[32px] text-theme-brand">
                                                 Visual Tour of Our <span className='font-bold'>Aviation Solutions</span>
                                           </h2>
                                           <Link href={'#'} className="hidden lg:flex items-center gap-x-2">

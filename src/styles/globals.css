@@ -4,6 +4,9 @@
 /* Inter */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+/* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* AOS */
 @import "aos/dist/aos.css";
 
@@ -17,7 +20,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply font-inter text-theme-donker;
+    @apply font-montserrat text-theme-donker;
   }
 }
 

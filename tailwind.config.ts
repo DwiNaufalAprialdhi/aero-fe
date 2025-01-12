@@ -17,6 +17,7 @@ export default {
     fontFamily: {
       jakarta: ["Plus Jakarta Sans", "sans-serif"],
       inter: ["Inter", "sans-serif"],
+      montserrat: ["Montserrat", "sans-serif"],
     },
     extend: {
       colors: {

@@ -20,7 +20,7 @@ export default function Wide(props: Props) {
       return (
             <div ref={ref} className="flex flex-col gap-y-6">
                   <div className="flex flex-col gap-y-[14px] border-l-[4px] border-theme-donker pl-[14px]">
-                        <h2 className="font-jakarta font-bold lg:text-[48px] text-[24px]">
+                        <h2 className="font-bold lg:text-[48px] text-[24px]">
                               {inView ? (
                                     <CountUp start={0} end={number} duration={2.5} />
                               ) : (

@@ -9,7 +9,7 @@ export default function Subscribe() {
                         <section className='container_section'>
                               <div data-aos='fade-up' className='w-full bg-[#F8FAFC] p-[30px] rounded-[16px] flex flex-col relative'>
                                     <div className='py-[20px] flex flex-col gap-y-[14px] mb-[14px]'>
-                                          <h2 className='font-jakarta font-semibold text-[24px] text-center lg:text-start'>Join our weekly newsletter</h2>
+                                          <h2 className='font-semibold text-[24px] text-center lg:text-start'>Join our weekly newsletter</h2>
                                           <p className='font-normal text-base text-theme-secondary text-center lg:text-start'>Stay up to date with the lastest news, announcements, and articles.</p>
                                     </div>
                                     <div className='w-full max-w-[367px] relative'>

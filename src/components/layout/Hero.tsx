@@ -33,7 +33,7 @@ export default function Hero() {
                                           transition={{ duration: 0.8 }}
                                           className='w-full col-span-1 flex flex-col'>
 
-                                          <h2 className='pl-[72px] font-jakarta font-bold text-[64px] text-theme-brand'>General <span className='text-theme-red'>Aviation Solution</span> and Airport Services</h2>
+                                          <h2 className='font-bold text-[64px] text-theme-brand'>General <span className='text-theme-red'>Aviation Solution</span> and Airport Services</h2>
                                           <div className='w-full col-span-2 grid grid-cols-12 items-center gap-[50px]'>
                                                 <div className='w-full h-[191px] col-span-3 rounded-[16px] overflow-hidden group'>
                                                       <Image src='/assets/images/hero-1.svg' alt='Hero-1' width={139} height={191} className='w-full h-full object-cover group-hover:scale-105 duration-500' />
@@ -103,7 +103,7 @@ export default function Hero() {
                                           </div>
                                     </div>
                                     <div className='flex flex-col items-center justify-center'>
-                                          <h2 className='font-jakarta font-bold text-[40px] text-theme-brand text-center leading-normal mb-6'>General <span className='text-theme-red'>Aviation Solution</span> and Airport Services</h2>
+                                          <h2 className='font-bold text-[34px] text-theme-brand text-center leading-normal mb-6'>General <span className='text-theme-red'>Aviation Solution</span> and Airport Services</h2>
                                           <h2 className='font-normal text-base text-theme-secondary text-center mb-[50px]'>&quot;We are commited to develop general aviation airport of Indonesia&quot;</h2>
                                           <div className='flex items-center gap-x-6'>
                                                 <ButtonTextIcon link={'#'} className='w-max flex items-center gap-x-[14px]'>

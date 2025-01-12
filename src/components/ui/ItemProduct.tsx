@@ -19,7 +19,7 @@ export default function ItemProduct(props: ItemProductProps) {
                               className='w-full h-full object-cover group-hover:scale-110 duration-500'
                         />
                         <div className='absolute bottom-0 left-0 pb-[50px] px-[30px] z-[2]'>
-                              <h2 className='font-jakarta font-bold text-white lg:text-[24px] text-[20px]'>
+                              <h2 className='font-bold text-white lg:text-[24px] text-[20px]'>
                                     {props.title}
                               </h2>
                         </div>

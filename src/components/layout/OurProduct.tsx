@@ -29,7 +29,7 @@ export default function OurProduct() {
                   <main className="w-full lg:mb-[150px] mb-[100px] overflow-hidden">
                         <section data-aos="fade-right" className="container_section flex flex-col mb-[50px]">
                               <BadgeCategory>Our Product and Service</BadgeCategory>
-                              <h2 className="w-full max-w-[651px] font-jakarta font-bold lg:text-[48px] text-[32px] mt-[14px]">
+                              <h2 className="w-full max-w-[651px] font-bold lg:text-[48px] text-[32px] mt-[14px]">
                                     Advanced Aviation Services, Management, and Hangar Leasing
                               </h2>
                         </section>
