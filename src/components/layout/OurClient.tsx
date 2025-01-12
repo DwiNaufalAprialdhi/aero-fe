@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import BadgeCategory from '../ui/BadgeCategory';
 import Image from 'next/image';
 import AOS from "aos";
+import Link from 'next/link';
 
 
 export default function OurClient() {
@@ -14,10 +15,10 @@ export default function OurClient() {
       }, []);
 
       const clients = [
-            { id: 1, image: '/assets/images/client-1.svg' },
-            { id: 2, image: '/assets/images/client-2.svg' },
-            { id: 3, image: '/assets/images/client-3.svg' },
-            { id: 4, image: '/assets/images/client-4.svg' },
+            { id: 1, image: '/assets/images/client-1.svg', link: 'http://puspenerbad-tniad.mil.id/' },
+            { id: 2, image: '/assets/images/client-2.svg', link: 'https://www.lionair.co.id/' },
+            { id: 3, image: '/assets/images/client-3.svg', link: 'https://dephub.go.id/' },
+            { id: 4, image: '/assets/images/client-4.svg', link: 'https://www.airbus.com/en' },
       ];
 
       return (
@@ -35,7 +36,7 @@ export default function OurClient() {
                                           <div className='wrapper_clients'>
                                                 {/* Duplikasikan elemen */}
                                                 {clients.concat(clients).map((client, index) => (
-                                                      <div key={index} className='lg:w-[150px] w-[85px] lg:h-[85px] h-[48px] mr-6'>
+                                                      <Link href={client.link} key={index} className='lg:w-[150px] w-[85px] lg:h-[85px] h-[48px] mr-6' target='_blank'>
                                                             {/* Placeholder untuk logo */}
                                                             <Image
                                                                   src={client.image}
@@ -44,7 +45,7 @@ export default function OurClient() {
                                                                   height={85}
                                                                   className='w-full h-full object-cover'
                                                             />
-                                                      </div>
+                                                      </Link>
                                                 ))}
                                           </div>
                                     </div>

@@ -51,7 +51,7 @@ export default function Footer() {
                                     </div>
                               </div>
                               <div className='flex items-center justify-center py-[30px]'>
-                                    <h2 className='font-normal lg:text-base text-xs text-slate-400 text-center'>Copyright © Partnerkerja.id 2024, all rights reserved </h2>
+                                    <h2 className='font-normal lg:text-base text-xs text-slate-400 text-center'>Copyright ©2024 All rights reserved | Asia Aero Technology</h2>
                               </div>
                         </footer>
                   </main>

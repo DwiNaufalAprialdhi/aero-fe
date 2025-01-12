@@ -1,11 +1,14 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import BadgeCategory from '../ui/BadgeCategory';
 import Link from 'next/link';
 import IconRight from '../icon/IconRight';
 import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 
 export default function Gallery() {
-      const scrollContainerRef = useRef<HTMLDivElement>(null);
       return (
             <>
                   <main className="w-full overflow-hidden lg:mb-[150px] mb-[100px]">
@@ -18,34 +21,67 @@ export default function Gallery() {
                                           </h2>
                                           <Link href={'#'} className="hidden lg:flex items-center gap-x-2">
                                                 <h2 className="font-normal text-base">See More</h2>
-                                                <IconRight className="w-6 h-6 text-theme-donker" />
+                                                <IconRight className="w-6 h-6 text-theme-donker toRight" />
                                           </Link>
                                     </div>
                               </div>
                         </section>
                         <section className="w-full flex items-center justify-end">
-                              <div data-aos='fade-left'
-                                    ref={scrollContainerRef}
-                                    className="w-full max-w-[1440px] pl-[30px] lg:pl-0 flex items-center gap-x-6 overflow-x-auto scroll-smooth custom-scrollbar pb-3"
-                              >
-                                    <div className="item__gallery min-w-[676px] min-h-[438px] rounded-[16px] overflow-hidden">
-                                          <Image src="/assets/images/gallery-1.png" width={676} height={438} alt="Gallery" className='w-full h-full object-cover' />
-                                    </div>
-                                    <div className="item__gallery min-w-[356px] min-h-[438px] rounded-[16px] overflow-hidden">
-                                          <Image src="/assets/images/gallery-2.png" width={356} height={438} alt="Gallery" className='w-full h-full object-cover' />
-                                    </div>
-                                    <div className="item__gallery min-w-[356px] min-h-[438px] rounded-[16px] overflow-hidden">
-                                          <Image src="/assets/images/gallery-3.png" width={356} height={438} alt="Gallery" className='w-full h-full object-cover' />
-                                    </div>
-                                    <div className="item__gallery min-w-[356px] min-h-[438px] rounded-[16px] overflow-hidden">
-                                          <Image src="/assets/images/gallery-4.png" width={356} height={438} alt="Gallery" className='w-full h-full object-cover' />
-                                    </div>
+                              <div className='w-full lg:max-w-[1440px] max-w-none ml-5 lg:ml-0 h-auto grid grid-cols-1 container_product'>
+                                    <Swiper
+                                          slidesPerView={1.2}
+                                          spaceBetween={10}
+                                          pagination={{
+                                                clickable: true,
+                                          }}
+                                          breakpoints={{
+                                                320: {
+                                                      slidesPerView: 1.1,
+                                                      spaceBetween: 10,
+                                                },
+                                                640: {
+                                                      slidesPerView: 2.1,
+                                                      spaceBetween: 10,
+                                                },
+                                                768: {
+                                                      slidesPerView: 2.2,
+                                                      spaceBetween: 10,
+                                                },
+                                                1024: {
+                                                      slidesPerView: 2.2,
+                                                      spaceBetween: 24,
+                                                },
+                                          }}
+                                          modules={[Pagination]}
+                                          className="product-swiper w-full col-span-1 cursor-grab"
+                                    >
+                                          <SwiperSlide className='pb-10'>
+                                                <div className="item__gallery h-[450px] rounded-[16px] overflow-hidden group">
+                                                      <Image src="/assets/images/gallery-1.png" width={676} height={438} alt="Gallery" className='w-full h-full object-cover group-hover:scale-105 duration-500' />
+                                                </div>
+                                          </SwiperSlide>
+                                          <SwiperSlide className='pb-10'>
+                                                <div className="item__gallery h-[450px] rounded-[16px] overflow-hidden group">
+                                                      <Image src="/assets/images/gallery-2.png" width={356} height={438} alt="Gallery" className='w-full h-full object-cover group-hover:scale-105 duration-500' />
+                                                </div>
+                                          </SwiperSlide>
+                                          <SwiperSlide className='pb-10'>
+                                                <div className="item__gallery h-[450px] rounded-[16px] overflow-hidden group">
+                                                      <Image src="/assets/images/gallery-3.png" width={356} height={438} alt="Gallery" className='w-full h-full object-cover group-hover:scale-105 duration-500' />
+                                                </div>
+                                          </SwiperSlide>
+                                          <SwiperSlide className='pb-10'>
+                                                <div className="item__gallery h-[450px] rounded-[16px] overflow-hidden group">
+                                                      <Image src="/assets/images/gallery-4.png" width={356} height={438} alt="Gallery" className='w-full h-full object-cover group-hover:scale-105 duration-500' />
+                                                </div>
+                                          </SwiperSlide>
+                                    </Swiper>
                               </div>
                         </section>
-                        <section className='container_section flex lg:hidden items-center justify-end mt-[6]'>
+                        <section className='container_section flex lg:hidden items-start justify-start mt-0'>
                               <Link href={'#'} className="flex items-center gap-x-2">
-                                    <h2 className="font-normal text-base">See More</h2>
-                                    <IconRight className="w-6 h-6 text-theme-donker" />
+                                    <h2 className="font-normal text-xs">See More</h2>
+                                    <IconRight className="w-4 h-4 text-theme-donker toRight" />
                               </Link>
                         </section>
                   </main>

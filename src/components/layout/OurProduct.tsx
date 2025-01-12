@@ -1,9 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import BadgeCategory from '../ui/BadgeCategory';
-import IconLeftCircle from '../icon/IconLeftCircle';
-import IconRightCircle from '../icon/IconRightCircle';
 import ItemProduct from '../ui/ItemProduct';
 import AOS from "aos";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+
+
 
 const productItems = [
       { id: 1, title: 'Aviation Asset Management', image: '/assets/images/product-1.png' },
@@ -13,26 +17,6 @@ const productItems = [
 ]
 
 export default function OurProduct() {
-      const productContainerRef = useRef<HTMLDivElement>(null);
-
-      const scrollLeft = () => {
-            if (productContainerRef.current) {
-                  productContainerRef.current.scrollBy({
-                        left: -400, // Adjust scroll amount as needed
-                        behavior: 'smooth',
-                  });
-            }
-      };
-
-      const scrollRight = () => {
-            if (productContainerRef.current) {
-                  productContainerRef.current.scrollBy({
-                        left: 400, // Adjust scroll amount as needed
-                        behavior: 'smooth',
-                  });
-            }
-      };
-
       useEffect(() => {
             AOS.init({
                   duration: 800,
@@ -50,24 +34,40 @@ export default function OurProduct() {
                               </h2>
                         </section>
                         <section data-aos="fade-left" className="w-full flex justify-end mb-[50px]">
-                              <div
-                                    ref={productContainerRef}
-                                    className="w-full max-w-[1440px] pl-[30px] md:pl-5 lg:pl-0 flex items-center gap-x-6 overflow-x-auto custom-scrollbar pb-3"
-                              >
-                                    {/* Product Items */}
-                                    {productItems.map((item) => (
-                                          <ItemProduct key={item.id} title={item.title} image={item.image} />
-                                    ))}
-                              </div>
-                        </section>
-                        <section data-aos="fade-left" className="container_section grid grid-cols-10">
-                              <div className="col-span-10 flex items-center lg:justify-start md:justify-center justify-start gap-x-[14px]">
-                                    <div className="cursor-pointer" onClick={scrollLeft}>
-                                          <IconLeftCircle className="w-[48px] h-[48px]" />
-                                    </div>
-                                    <div className="cursor-pointer" onClick={scrollRight}>
-                                          <IconRightCircle className="w-[48px] h-[48px]" />
-                                    </div>
+                              <div className='w-full lg:max-w-[1440px] max-w-none ml-5 lg:ml-0 h-auto grid grid-cols-1 container_product'>
+                                    <Swiper
+                                          slidesPerView={1}
+                                          spaceBetween={10}
+                                          pagination={{
+                                                clickable: true,
+                                          }}
+                                          breakpoints={{
+                                                320: {
+                                                      slidesPerView: 1.1,
+                                                      spaceBetween: 10,
+                                                },
+                                                640: {
+                                                      slidesPerView: 2.1,
+                                                      spaceBetween: 10,
+                                                },
+                                                768: {
+                                                      slidesPerView: 2.1,
+                                                      spaceBetween: 10,
+                                                },
+                                                1024: {
+                                                      slidesPerView: 3.2,
+                                                      spaceBetween: 24,
+                                                },
+                                          }}
+                                          modules={[Pagination]}
+                                          className="product-swiper w-full col-span-1 cursor-grab"
+                                    >
+                                          {productItems.map((item) => (
+                                                <SwiperSlide className='pb-10' key={item.id}>
+                                                      <ItemProduct title={item.title} image={item.image} />
+                                                </SwiperSlide>
+                                          ))}
+                                    </Swiper>
                               </div>
                         </section>
                   </main>

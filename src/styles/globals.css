@@ -56,6 +56,10 @@
   animation: scroll-left 30s linear infinite;
 }
 
+.scrolling-container:hover {
+  animation-play-state: paused;
+}
+
 @media (max-width: 768px) {
   .scrolling-container {
     animation: scroll-left 20s linear infinite;
@@ -174,6 +178,10 @@
   animation: scrollClients 10s linear infinite;
 }
 
+.wrapper_clients:hover {
+  animation-play-state: paused;
+}
+
 /* Custom Scrollbar Styles */
 .custom-scrollbar::-webkit-scrollbar {
   height: 8px; /* Horizontal scrollbar height */
@@ -193,4 +201,22 @@
 .custom-scrollbar {
   scrollbar-width: thin; /* Makes the scrollbar thinner */
   scrollbar-color: #352b5a #e4e4e7; /* Thumb color and track color */
+}
+
+/* Gaya untuk bullet pagination */
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 6px !important;
+  background-color: gray !important; /* Warna default */
+  border-radius: 20px !important; /* Membuat bullet berbentuk lingkaran */
+  transition: all 0.3s ease !important; /* Animasi perubahan */
+}
+
+/* Gaya untuk bullet yang aktif */
+.swiper-pagination-bullet-active {
+  width: 30px !important;
+  height: 6px !important;
+  background-color: #352b5a !important; /* Warna default */
+  border-radius: 20px !important; /* Membuat bullet berbentuk lingkaran */
+  transition: all 0.3s ease !important; /* Animasi perubahan */
 }

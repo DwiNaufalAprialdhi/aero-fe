@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import BadgeCategory from '../ui/BadgeCategory'
 import Image from 'next/image'
 import Services from '../ui/Services'
@@ -10,11 +10,8 @@ import Wide from '../ui/Wide'
 import AOS from "aos";
 import ButtonTextIcon from '../material/ButtonTextIcon'
 import IconRight from '../icon/IconRight'
-import IconMark from '../icon/IconMark'
 
 export default function ShortStory() {
-
-      const [isModalVisible, setIsModalVisible] = useState(false);
 
       useEffect(() => {
             AOS.init({
@@ -94,7 +91,7 @@ export default function ShortStory() {
                                           <h2 className='font-jakarta font-bold lg:text-[64px] text-[32px] text-theme-donker mt-[14px] mb-[50px]'>
                                                 Aviation Maintenance and Hangar Leasing
                                           </h2>
-                                          <ButtonTextIcon link={'#'} className='w-max flex items-center gap-x-[14px]'>
+                                          <ButtonTextIcon link={'https://www.google.com/maps?ll=-6.356956,106.897524&z=16&t=h&hl=id&gl=ID&mapclient=embed&cid=852543758339294028'} className='w-max flex items-center gap-x-[14px]'>
                                                 <h2 className='font-medium lg:text-sm text-xs'>
                                                       See location on map
                                                 </h2>
@@ -102,31 +99,7 @@ export default function ShortStory() {
                                           </ButtonTextIcon>
                                     </div>
                                     <div className='w-full lg:max-w-none md:max-w-[696px] max-w-[350px] lg:mx-0 md:mx-auto mx-auto lg:px-0 md:px-5 px-5 lg:h-[518px] md:h-[400px] h-[214px] lg:rounded-l-[16px] lg:rounded-r-none rounded-r-[16px] rounded-l-[16px] overflow-hidden lg:col-span-2 col-span-3 order-2 lg:order-1 relative'>
-                                          <Image src='/assets/images/location.svg' alt='Short Story' width={863} height={518} className='w-full h-full object-cover lg:rounded-l-[16px] lg:rounded-r-none rounded-r-[16px] rounded-l-[16px]' />
-                                          <div
-                                                onMouseEnter={() => setIsModalVisible(true)}
-                                                onMouseLeave={() => setIsModalVisible(false)}
-                                                className='mark_1 absolute md:left-[160px] left-[63px] md:bottom-[180px] bottom-[75px] w-max h-max'>
-                                                <IconMark className='lg:w-[60px] w-[30px] lg:h-[60px] h-[30px] object-contain text-white cursor-pointer' />
-                                          </div>
-
-                                          {/* Modal */}
-                                          <div className={`absolute md:bottom-[100px] bottom-[20px] md:left-[232px] left-[120px] transition-all transform duration-300 ease-in-out ${isModalVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-                                                <div className='lg:w-[240px] w-[150px] lg:h-[240px] h-[150px] p-3 bg-white rounded-[12px] relative'>
-                                                      <Image
-                                                            src='/assets/images/mark-location.png'
-                                                            alt='mark-location'
-                                                            width={219}
-                                                            height={219}
-                                                            className='w-full h-full object-cover'
-                                                      />
-                                                      <div className='w-4 h-4 absolute top-1/2 -translate-y-1/2 -left-[8px] rotate-45 bg-white'></div>
-                                                </div>
-                                          </div>
-
-                                          <div className='mark_2 absolute md:right-[130px] right-[40px] top-[43px] md:top-[121px] w-max h-max'>
-                                                <IconMark className='lg:w-[60px] w-[30px] lg:h-[60px] h-[30px] object-contain text-white cursor-pointer' />
-                                          </div>
+                                          <iframe className='w-full h-full lg:rounded-none rounded-[16px]' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4791.387785363366!2d106.89494887577587!3d-6.356956493633012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ecc77559bab1%3A0xbd4d807ff4a434c!2sPT.%20Asia%20Aero%20Technology!5e1!3m2!1sid!2sid!4v1735223435493!5m2!1sid!2sid" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                               </div>
                         </section>
