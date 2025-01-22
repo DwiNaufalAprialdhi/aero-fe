@@ -5,8 +5,19 @@ import React from 'react'
 export default function Footer() {
       return (
             <>
-                  <main className='w-full overflow-hidden'>
-                        <footer className='container_section'>
+                  <main className='w-full overflow-hidden relative'>
+                        {/* Ornament */}
+                        <div className="w-full h-auto absolute -bottom-[650px] left-0">
+                              <Image
+                                    src="/assets/ornaments/ornament-footer.svg"
+                                    alt="Ornament"
+                                    width={1000}
+                                    height={1000}
+                                    className='w-full h-auto object-cover'
+                              />
+                        </div>
+                        {/* Content */}
+                        <footer className='container_section relative z-[2]'>
                               <div className='flex lg:flex-row flex-col items-start lg:justify-between justify-start mb-[50px]'>
                                     <div className='flex flex-col gap-y-[14px]'>
                                           <Image src='/assets/logo/asia-aero.svg' width={151} height={69} alt='logo' className='w-[151px] h-auto' />

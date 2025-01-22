@@ -16,16 +16,40 @@ const testimonials = [
             category: 'Aircraft Maintenance Organization',
       },
       {
-            text: 'We provide full support for aviation systems to ensure safety and reliability.',
-            logo: '/assets/images/testimoni-2.svg',
-            company: 'PT. Aviation Systems',
-            category: 'Aviation Services Provider',
+            text: "One of Indonesian Air Charter Company (AOC135) with many General Aviation Fleets.",
+            logo: '/assets/images/alfa-trans.svg',
+            company: 'Alfa Trans Dirgantara',
+            category: 'Air Operator',
       },
       {
-            text: 'Our focus is on delivering high-quality aircraft maintenance services.',
-            logo: '/assets/images/testimoni-3.svg',
-            company: 'PT. Maintenance Solutions',
-            category: 'Aircraft Maintenance Provider',
+            text: "A convenient air transportation for intracity and intercity flights with dozens of helistop.",
+            logo: '/assets/images/white-sky.svg',
+            company: 'White Sky Aviation',
+            category: 'Air Operator',
+      },
+      {
+            text: "Carpediem expand its business into the technology information, aviation, marine, and meteorological sector.",
+            logo: '/assets/images/carpediem.svg',
+            company: 'PT. Carpediem Aviasi Mandiri',
+            category: 'Air Operator',
+      },
+      {
+            text: "Graduates from Genesa Flight Academy are already prepared to fly multi engine aircrafts commonly used by commercial airlines.",
+            logo: '/assets/images/ganesa.svg',
+            company: 'Genesa Flight Academy',
+            category: 'Flying School',
+      },
+      {
+            text: "GSM supports the provision of parts through a modern supply system, with a large inventory of spare parts in stock.",
+            logo: '/assets/images/gusti.svg',
+            company: 'PT. Gusti Sakti Mandiri',
+            category: 'Aircraft Maintenance Organization',
+      },
+      {
+            text: "Approved Bell Helicopter CSF-Customer Support Facility in Indonesia, and a DGCA Indonesia approved facility.",
+            logo: '/assets/images/kallimasda.svg',
+            company: 'PT. Kalimasada Pusaka',
+            category: 'Aircraft Maintenance Organization',
       },
 ];
 

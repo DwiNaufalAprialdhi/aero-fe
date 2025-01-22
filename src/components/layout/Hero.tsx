@@ -22,8 +22,20 @@ export default function Hero() {
       }, []);
       return (
             <>
-                  <main className='w-full lg:pt-[151px] pt-[137px] pb-[50px]'>
-                        <section className='container_section'>
+                  <main className='main_hero w-full lg:pt-[151px] pt-[137px] pb-[50px] relative overflow-hidden'>
+                        {/* Ornament */}
+                        <div className="w-full lg:h-auto h-full absolute lg:-top-[100px] md:-top-[350px] -top-[350px] left-0 z-[1] zoomIn">
+                              <Image
+                                    src="/assets/ornaments/ornament-hero.svg"
+                                    alt="Ornament"
+                                    width={1000}
+                                    height={1000}
+                                    className='w-full h-full object-cover'
+                              />
+                        </div>
+
+                        {/* Content */}
+                        <section className='container_section relative z-[2]'>
                               {/* Desktop */}
                               <div className='hidden lg:grid grid-cols-2 items-start gap-6'>
                                     {/* Left */}
@@ -63,8 +75,8 @@ export default function Hero() {
                                           <div className='w-full h-[450px] rounded-[16px] overflow-hidden group mb-[14px]'>
                                                 <Image src='/assets/images/hero-2.svg' alt='Hero-2' width={634} height={450} className='w-full h-full object-cover group-hover:scale-105 duration-500' />
                                           </div>
-                                          <div className='w-full h-auto flex items-center justify-end p-5'>
-                                                <div className='flex flex-col border-r border-slate-200 pr-[24px]'>
+                                          <div className='w-full h-auto flex items-center gap-x-6 justify-end p-5'>
+                                                <div className='flex flex-col bg-slate-50 bg-opacity-5 rounded-[16px] backdrop-blur-sm'>
                                                       <div className='flex items-center gap-x-[14px]'>
                                                             <IconStarsCircle className='w-[60px] h-[60px] text-theme-donker' />
                                                             <h2 className="font-bold text-[64px]">
@@ -73,7 +85,8 @@ export default function Hero() {
                                                       </div>
                                                       <h2 className='font-normal text-base '>Years of Experience</h2>
                                                 </div>
-                                                <div className='pl-[24px] flex flex-col items-start'>
+                                                <div className='w-[1px] h-[50px] border border-slate-400'></div>
+                                                <div className='flex flex-col items-start'>
                                                       <h2 className='font-normal text-base mb-4'>Years of Experience</h2>
                                                       <div className='flex items-center gap-x-4'>
                                                             <Image src='/assets/logo/dai.svg' alt='Logo' width={106} height={60} className='w-[106px] h-auto object-cover' />

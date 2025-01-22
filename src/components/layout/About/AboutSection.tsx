@@ -5,7 +5,7 @@ import React from 'react'
 export default function AboutSection() {
       return (
             <>
-                  <main className='w-full h-auto overflow-hidden relative mb-[130px]'>
+                  <main className='w-full h-auto overflow-hidden relative lg:mb-[130px] mb-[50px]'>
                         <section className='container_section grid lg:grid-cols-2 grid-cols-1 lg:gap-[60px] gap-[50px]'>
                               {/* Left */}
                               <Image

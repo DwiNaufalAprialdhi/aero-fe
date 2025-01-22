@@ -21,8 +21,20 @@ export default function ShortStory() {
       }, []);
       return (
             <>
-                  <main className='bg-theme-opacity lg:py-[90px] py-[40px] overflow-x-hidden'>
-                        <section data-aos='slide-right' className='container_section'>
+                  <main className='main_short w-full h-auto lg:py-[90px] py-[40px] overflow-hidden relative'>
+                        {/* Ornament */}
+                        <div className='w-full lg:h-auto h-full absolute top-0 left-0 z-[1]'>
+                              <Image
+                                    src="/assets/ornaments/ornament-short.svg"
+                                    alt="Ornament"
+                                    width={1000}
+                                    height={1000}
+                                    className='w-full lg:h-auto h-full object-cover'
+                              />
+                        </div>
+
+
+                        <section data-aos='slide-right' className='relative z-[2] container_section'>
                               <div className='flex flex-col mb-6'>
                                     <BadgeCategory>
                                           Short Story
@@ -45,7 +57,7 @@ export default function ShortStory() {
                                     </Services>
                               </div>
                         </section>
-                        <section data-aos='slide-right' className='w-full lg:max-w-[1440px] max-w-none grid grid-cols-3 items-center relative gap-[50px] overflow-hidden'>
+                        <section data-aos='slide-right' className='z-[2] w-full lg:max-w-[1440px] max-w-none grid grid-cols-3 items-center relative gap-[50px] overflow-hidden'>
                               <div className='w-full lg:h-[518px] md:h-[400px] h-[246px] lg:rounded-r-[16px] rounded-none scale-105 lg:scale-100 overflow-hidden lg:col-span-2 col-span-3 group order-2 lg:order-1'>
                                     <Image src='/assets/images/short-story.svg' alt='Short Story' width={949} height={518} className='w-full h-full object-cover group-hover:scale-105 duration-500' />
                               </div>
@@ -64,7 +76,7 @@ export default function ShortStory() {
                                     </Services>
                               </div>
                         </section>
-                        <section data-aos='fade-up' className='container_section grid grid-cols-2 gap-[50px] lg:mt-[150px] mt-[50px]'>
+                        <section data-aos='fade-up' className='relative z-[2] container_section grid grid-cols-2 gap-[50px] lg:mt-[150px] mt-[50px]'>
                               <div className='w-full lg:col-span-1 col-span-1 flex lg:flex-row flex-col gap-[50px]'>
                                     <div className='lg:pt-[143px] pt-0'>
                                           <Wide wide='760m' title='RUNAWAY LENGHT' images='/assets/images/runaway.png' />
@@ -82,7 +94,7 @@ export default function ShortStory() {
                                     </div>
                               </div>
                         </section>
-                        <section data-aos='slide-left' className='w-full overflow-hidden lg:mt-[150px] mt-[50px] flex lg:justify-end justify-normal'>
+                        <section data-aos='slide-left' className='relative z-[2] w-full overflow-hidden lg:mt-[150px] mt-[50px] flex lg:justify-end justify-normal'>
                               <div className='w-full max-w-[1440px] grid grid-cols-3 items-center relative lg:gap-[50px] gap-[24px]'>
                                     <div className='w-full lg:max-w-none md:max-w-[696px] max-w-none lg:mx-0 mx-auto lg:col-span-1 col-span-3 lg:items-start lg:justify-start items-center justify-center flex flex-col p-5 lg:text-start text-center'>
                                           <BadgeCategory>

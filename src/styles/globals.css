@@ -28,6 +28,9 @@
   .container_section {
     @apply w-full lg:max-w-[1200px] md:max-w-[696px] max-w-none mx-auto lg:px-0 px-[30px] relative;
   }
+  .container_section_slider {
+    @apply w-full lg:max-w-[1200px] md:max-w-[696px] max-w-none mx-auto lg:pl-0 lg:pr-0 pl-[30px] pr-0 relative;
+  }
 }
 
 @layer utilities {
@@ -222,4 +225,124 @@
   background-color: #352b5a !important; /* Warna default */
   border-radius: 20px !important; /* Membuat bullet berbentuk lingkaran */
   transition: all 0.3s ease !important; /* Animasi perubahan */
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoomIn {
+  animation: zoomIn 10s ease-in-out infinite;
+}
+
+.main_hero {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+  /* Menonaktifkan masking untuk tablet dan mobile */
+  .main_hero {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+.main_short {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+  /* Menonaktifkan masking untuk tablet dan mobile */
+  .main_short {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+/* Atur warna dan ukuran pagination fraction */
+.excellence-swiper .swiper-pagination-fraction {
+  transform: translateX(-30px) !important;
+  color: white !important; /* Ubah warna menjadi putih */
+  font-size: 16px !important; /* Sesuaikan ukuran teks */
+  font-weight: normal !important; /* (Opsional) Tambahkan ketebalan */
+}
+
+.excellence-swiper .swiper-pagination-fraction .swiper-pagination-current,
+.excellence-swiper .swiper-pagination-fraction .swiper-pagination-total {
+  color: white !important; /* Pastikan angka juga putih */
+}
+
+@media (max-width: 768px) {
+  /* Atur warna dan posisi pagination fraction */
+  .excellence-swiper .swiper-pagination-fraction {
+    position: absolute !important; /* Jadikan absolute */
+    top: auto !important; /* Atur posisi sesuai kebutuhan */
+    bottom: 0px !important; /* Geser sedikit dari bawah */
+    left: 0px !important; /* Rata kiri */
+    color: white !important; /* Ubah warna menjadi putih */
+    font-size: 12px !important; /* Sesuaikan ukuran teks */
+    font-weight: normal !important; /* (Opsional) Tambahkan ketebalan */
+  }
+
+  .excellence-swiper .swiper-pagination-fraction .swiper-pagination-current,
+  .excellence-swiper .swiper-pagination-fraction .swiper-pagination-total {
+    color: white !important; /* Pastikan angka juga putih */
+  }
+}
+
+/* Mask untuk transparansi di desktop */
+.container_section_slider.ourValuesSlider {
+  position: relative; /* Pastikan section memiliki posisi relatif */
+  mask-image: linear-gradient(to right, black 96%, transparent);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    black 96%,
+    transparent
+  ); /* Untuk kompatibilitas Webkit */
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+/* Hilangkan transparansi di mobile */
+@media (max-width: 768px) {
+  .container_section_slider.ourValuesSlider {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
 }
