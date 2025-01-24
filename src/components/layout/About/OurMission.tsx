@@ -49,7 +49,6 @@ export default function OurMission() {
                                                       <div className='w-full h-auto lg:col-span-7 col-span-12'>
                                                             <p className='font-normal lg:text-[20px] leading-normal text-sm text-slate-100 lg:line-clamp-[7] line-clamp-none'>
                                                                   Acted as an Aviation Industry growth catalysator by developing several Aviation infrastructures such as airport, aviation park, training facility, and other aviation related facility which is become the center of the aviation activities in the region.
-
                                                             </p>
                                                       </div>
                                                 </div>
@@ -59,7 +58,7 @@ export default function OurMission() {
                                                       {/* Image */}
                                                       <div className='w-full lg:h-[268px] h-[250px] lg:col-span-5 col-span-12 lg:rounded-[16px] rounded-[8px] overflow-hidden'>
                                                             <Image
-                                                                  src="/assets/images/excellence-1.svg"
+                                                                  src="/assets/images/excellence-2.svg"
                                                                   alt='excellence'
                                                                   width={268}
                                                                   height={268}
@@ -69,8 +68,7 @@ export default function OurMission() {
                                                       {/* Text */}
                                                       <div className='w-full h-auto lg:col-span-7 col-span-12'>
                                                             <p className='font-normal lg:text-[20px] leading-normal text-sm text-slate-100 lg:line-clamp-[7] line-clamp-none'>
-                                                                  Acted as an Aviation Industry growth catalysator by developing several Aviation infrastructures such as airport, aviation park, training facility, and other aviation related facility which is become the center of the aviation activities in the region.
-
+                                                                  Providing aviation product, spare parts, and maintenance service for the Indonesia Aviation Industry.
                                                             </p>
                                                       </div>
                                                 </div>
@@ -80,7 +78,7 @@ export default function OurMission() {
                                                       {/* Image */}
                                                       <div className='w-full lg:h-[268px] h-[250px] lg:col-span-5 col-span-12 lg:rounded-[16px] rounded-[8px] overflow-hidden'>
                                                             <Image
-                                                                  src="/assets/images/excellence-1.svg"
+                                                                  src="/assets/images/excellence-3.svg"
                                                                   alt='excellence'
                                                                   width={268}
                                                                   height={268}
@@ -90,8 +88,7 @@ export default function OurMission() {
                                                       {/* Text */}
                                                       <div className='w-full h-auto lg:col-span-7 col-span-12'>
                                                             <p className='font-normal lg:text-[20px] leading-normal text-sm text-slate-100 lg:line-clamp-[7] line-clamp-none'>
-                                                                  Acted as an Aviation Industry growth catalysator by developing several Aviation infrastructures such as airport, aviation park, training facility, and other aviation related facility which is become the center of the aviation activities in the region.
-
+                                                                  Ensuring flight and aviation safety as a core concern in every aspect of our company operation
                                                             </p>
                                                       </div>
                                                 </div>
@@ -102,7 +99,7 @@ export default function OurMission() {
                                                       {/* Image */}
                                                       <div className='w-full lg:h-[268px] h-[250px] lg:col-span-5 col-span-12 lg:rounded-[16px] rounded-[8px] overflow-hidden'>
                                                             <Image
-                                                                  src="/assets/images/excellence-1.svg"
+                                                                  src="/assets/images/excellence-4.svg"
                                                                   alt='excellence'
                                                                   width={268}
                                                                   height={268}
@@ -112,8 +109,28 @@ export default function OurMission() {
                                                       {/* Text */}
                                                       <div className='w-full h-auto lg:col-span-7 col-span-12'>
                                                             <p className='font-normal lg:text-[20px] leading-normal text-sm text-slate-100 lg:line-clamp-[7] line-clamp-none'>
-                                                                  Acted as an Aviation Industry growth catalysator by developing several Aviation infrastructures such as airport, aviation park, training facility, and other aviation related facility which is become the center of the aviation activities in the region.
+                                                                  Enhancing and maximizing Stakeholder Value by streamlining business process, mechanization and automation to achieve efficient operation, minimized cost, and deliver quality services and products above its customer expectation.
+                                                            </p>
+                                                      </div>
+                                                </div>
+                                          </SwiperSlide>
 
+                                          <SwiperSlide className='pb-10 md:pb-11 lg:pb-0'>
+                                                <div className="w-full h-auto grid grid-cols-12 lg:gap-x-[25px] gap-3">
+                                                      {/* Image */}
+                                                      <div className='w-full lg:h-[268px] h-[250px] lg:col-span-5 col-span-12 lg:rounded-[16px] rounded-[8px] overflow-hidden'>
+                                                            <Image
+                                                                  src="/assets/images/excellence-5.svg"
+                                                                  alt='excellence'
+                                                                  width={268}
+                                                                  height={268}
+                                                                  className='w-full h-full object-cover'
+                                                            />
+                                                      </div>
+                                                      {/* Text */}
+                                                      <div className='w-full h-auto lg:col-span-7 col-span-12'>
+                                                            <p className='font-normal lg:text-[20px] leading-normal text-sm text-slate-100 lg:line-clamp-[7] line-clamp-none'>
+                                                                  Continuous Improvement, innovation, and adaptation to the dynamic aviation industry market
                                                             </p>
                                                       </div>
                                                 </div>

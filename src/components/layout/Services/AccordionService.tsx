@@ -255,21 +255,12 @@ export default function AccordionService() {
                                     </div>
                               </Accordion>
                               <Accordion title="Services - Specialized Services">
-                                    <div className="w-full flex flex-col lg:gap-y-[50px] gap-y-5 lg:mb-[50px] mb-5">
-                                          <div className='w-full flex lg:flex-row flex-col items-center lg:gap-[80px] gap-5'>
-                                                <ul className='pl-5 w-full h-max lg:max-w-[500px] max-w-none list-disc'>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
-                                                            Oven/Heater Equipment designed to operate with max. temperature of 400 C
-                                                      </li>
-                                                </ul>
-                                          </div>
-                                    </div>
                                     <div className='w-full grid lg:grid-cols-4 grid-cols-1 lg:gap-6 gap-5'>
                                           {/* Image 1 */}
                                           <div className='w-full lg:h-[268px] h-[250px] col-span-1 rounded-[8px] overflow-hidden'>
                                                 <Image
-                                                      src='/assets/images/interior-1.svg'
-                                                      alt='Interior 1'
+                                                      src='/assets/images/special-1.svg'
+                                                      alt='Special 1'
                                                       width={400} height={268}
                                                       className='w-full h-full object-cover'
                                                 />
@@ -277,8 +268,8 @@ export default function AccordionService() {
                                           {/* Image 2 */}
                                           <div className='w-full lg:h-[268px] h-[250px] col-span-1 rounded-[8px] overflow-hidden'>
                                                 <Image
-                                                      src='/assets/images/interior-2.svg'
-                                                      alt='Interior 2'
+                                                      src='/assets/images/special-2.svg'
+                                                      alt='Special 2'
                                                       width={400} height={268}
                                                       className='w-full h-full object-cover'
                                                 />
@@ -286,8 +277,17 @@ export default function AccordionService() {
                                           {/* Image 3 */}
                                           <div className='w-full lg:h-[268px] h-[250px] col-span-1 rounded-[8px] overflow-hidden'>
                                                 <Image
-                                                      src='/assets/images/interior-3.svg'
-                                                      alt='Interior 3'
+                                                      src='/assets/images/special-3.svg'
+                                                      alt='Special 3'
+                                                      width={400} height={268}
+                                                      className='w-full h-full object-cover'
+                                                />
+                                          </div>
+                                          {/* Image 4 */}
+                                          <div className='w-full lg:h-[268px] h-[250px] col-span-1 rounded-[8px] overflow-hidden'>
+                                                <Image
+                                                      src='/assets/images/special-4.svg'
+                                                      alt='Special 4'
                                                       width={400} height={268}
                                                       className='w-full h-full object-cover'
                                                 />

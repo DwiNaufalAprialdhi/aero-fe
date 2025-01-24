@@ -6,14 +6,15 @@ import Link from 'next/link';
 
 
 const dataVendor = [
-      { id: 1, image: '/assets/logo/vendor-1.svg', link: 'https://laversab.com/' },
-      { id: 2, image: '/assets/logo/vendor-2.svg', link: 'http://www.aeroproc.com/?fbclid=PAZXh0bgNhZW0CMTEAAabgqi4PHkzw6_TfyMfcZ_kNUT-N6ggPjmSNq22KcanwJZCg3aR4gwJbbi8_aem_5lAIzlgw-Sr0CaEKj_7dyg' },
-      { id: 3, image: '/assets/logo/vendor-3.svg', link: 'https://txtav.com/' },
-      { id: 4, image: '/assets/logo/vendor-4.svg', link: 'https://www.satair.com/' },
-      { id: 5, image: '/assets/logo/vendor-5.svg', link: 'https://www.boeing.com/' },
-      { id: 6, image: '/assets/logo/vendor-6.svg', link: 'https://www.partsbase.com/' },
-      { id: 7, image: '/assets/logo/vendor-7.svg', link: 'https://www.wencor.com/' },
-      { id: 8, image: '/assets/logo/vendor-8.svg', link: 'https://www.flyrotax.com/' },
+      { id: 1, image: '/assets/logo/vendor-service-1.svg', link: 'https://miamiparagliding.com/' },
+      { id: 2, image: '/assets/logo/vendor-service-2.svg', link: 'https://www.psm.com/products/aviation' },
+      { id: 3, image: '/assets/logo/vendor-service-3.svg', link: 'https://www.haywardandgreen.com/' },
+      { id: 4, image: '/assets/logo/vendor-service-4.svg', link: 'https://www.rotorplace.com/en/' },
+      { id: 5, image: '/assets/logo/vendor-service-5.svg', link: 'https://aerocpp.com/' },
+      { id: 6, image: '/assets/logo/vendor-service-6.svg', link: 'https://www.aircraftspruce.com/' },
+      { id: 7, image: '/assets/logo/vendor-service-7.svg', link: 'https://www.aeropb.com/' },
+      { id: 8, image: '/assets/logo/vendor-service-8.svg', link: 'https://skygeek.com/?srsltid=AfmBOorTD2NZ1AloqNcUaUXq4IedoXaaz6JrDSEbfY9v-zC9zdLR7HmT' },
+      { id: 8, image: '/assets/logo/vendor-service-9.svg', link: 'https://ccas.asia/' },
 ]
 
 export default function VendorService() {
