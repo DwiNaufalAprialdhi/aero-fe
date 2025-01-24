@@ -4,6 +4,8 @@ import AccordionDesign from '@/components/layout/Services/AccordionDesign'
 import AccordionService from '@/components/layout/Services/AccordionService'
 import Footage from '@/components/layout/Services/Footage'
 import FullService from '@/components/layout/Services/FullService'
+import OurStrategic from '@/components/layout/Services/OurStrategic'
+import Rotax from '@/components/layout/Services/Rotax'
 import VendorService from '@/components/layout/Services/VendorService'
 import Subscribe from '@/components/layout/Subscribe'
 import Head from 'next/head'
@@ -20,6 +22,8 @@ export default function index() {
                   <AccordionService />
                   <VendorService />
                   <AccordionDesign />
+                  <OurStrategic />
+                  <Rotax />
                   <Navbar />
                   <Subscribe />
                   <Footer />

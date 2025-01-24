@@ -11,7 +11,7 @@ export default function Footage() {
                                     alt='footage'
                                     width={1440}
                                     height={518}
-                                    className='w-full h-full object-contain lg:object-cover'
+                                    className='w-full h-full object-contain lg:object-cover lg:rounded-[16px] rounded-[8px]'
                               />
                         </main>
                   </div>
