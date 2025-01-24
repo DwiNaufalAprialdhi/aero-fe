@@ -10,7 +10,7 @@ export default function NavMenuMobile() {
                   <Link href={'/about'} className='py-5 px-[30px] border-b border-slate-200 bg-white font-normal text-base text-input-label hover:bg-slate-50 hover:font-medium transition-all duration-200 ease-in-out'>
                         About
                   </Link>
-                  <Link href={'#'} className='py-5 px-[30px] border-b border-slate-200 bg-white font-normal text-base text-input-label hover:bg-slate-50 hover:font-medium transition-all duration-200 ease-in-out'>
+                  <Link href={'/services'} className='py-5 px-[30px] border-b border-slate-200 bg-white font-normal text-base text-input-label hover:bg-slate-50 hover:font-medium transition-all duration-200 ease-in-out'>
                         Services
                   </Link>
                   <Link href={'#'} className='py-5 px-[30px] border-b border-slate-200 bg-white font-normal text-base text-input-label hover:bg-slate-50 hover:font-medium transition-all duration-200 ease-in-out'>

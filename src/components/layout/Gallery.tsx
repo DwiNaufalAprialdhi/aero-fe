@@ -26,14 +26,15 @@ export default function Gallery() {
                                     </div>
                               </div>
                         </section>
-                        <section className="w-full flex items-center justify-end">
-                              <div className='w-full lg:max-w-[1440px] max-w-none ml-5 lg:ml-0 h-auto grid grid-cols-1 container_product'>
+                        <section data-aos="fade-left" className="">
+                              <div className='container_section_slider ourValuesSlider grid grid-cols-1'>
                                     <Swiper
                                           slidesPerView={1.2}
                                           spaceBetween={10}
                                           pagination={{
                                                 clickable: true,
                                           }}
+                                          loop={true}
                                           breakpoints={{
                                                 320: {
                                                       slidesPerView: 1.1,

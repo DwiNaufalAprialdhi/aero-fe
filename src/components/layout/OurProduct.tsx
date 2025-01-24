@@ -33,14 +33,15 @@ export default function OurProduct() {
                                     Advanced Aviation Services, Management, and Hangar Leasing
                               </h2>
                         </section>
-                        <section data-aos="fade-left" className="w-full flex justify-end mb-[50px]">
-                              <div className='w-full lg:max-w-[1440px] max-w-none ml-5 lg:ml-0 h-auto grid grid-cols-1 container_product'>
+                        <section data-aos="fade-left" className="mb-[50px]">
+                              <div className='container_section_slider ourValuesSlider grid grid-cols-1'>
                                     <Swiper
                                           slidesPerView={1}
                                           spaceBetween={10}
                                           pagination={{
                                                 clickable: true,
                                           }}
+                                          loop={true}
                                           breakpoints={{
                                                 320: {
                                                       slidesPerView: 1.1,

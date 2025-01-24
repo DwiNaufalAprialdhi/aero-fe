@@ -44,35 +44,35 @@ export default function ShortStory() {
                               </div>
                               <div className='w-full flex lg:hidden flex-col gap-y-6 mb-[50px]'>
                                     <Services title='Light Sport Aircraft'>
-                                          <IconPlane className='lg:w-[74px] w-[48px] lg:h-[74px] h-[48px] text-[#334155]' />
+                                          <IconPlane className=' lg:min-w-[60px] min-w-[48px] lg:h-[60px] h-[48px] text-[#334155]' />
                                     </Services>
                                     <Services title='Certified Engine Maintenance'>
-                                          <IconVerified className='lg:w-[74px] w-[48px] lg:h-[74px] h-[48px] text-[#334155]' />
+                                          <IconVerified className='lg:min-w-[60px] min-w-[48px] lg:h-[60px] h-[48px] text-[#334155]' />
                                     </Services>
                                     <Services title='Engine Spare Parts'>
-                                          <IconSetting className='lg:w-[74px] w-[48px] lg:h-[74px] h-[48px] text-[#334155]' />
+                                          <IconSetting className='lg:min-w-[60px] min-w-[48px] lg:h-[60px] h-[48px] text-[#334155]' />
                                     </Services>
                                     <Services title='Develop Wiladatika Private Airport'>
-                                          <IconBuillding className='lg:w-[74px] w-[48px] lg:h-[74px] h-[48px] text-[#334155]' />
+                                          <IconBuillding className='lg:min-w-[60px] min-w-[48px] lg:h-[60px] h-[48px] text-[#334155]' />
                                     </Services>
                               </div>
                         </section>
-                        <section data-aos='slide-right' className='z-[2] w-full lg:max-w-[1440px] max-w-none grid grid-cols-3 items-center relative gap-[50px] overflow-hidden'>
-                              <div className='w-full lg:h-[518px] md:h-[400px] h-[246px] lg:rounded-r-[16px] rounded-none scale-105 lg:scale-100 overflow-hidden lg:col-span-2 col-span-3 group order-2 lg:order-1'>
+                        <section data-aos='slide-right' className='z-[2] container_section grid grid-cols-10 items-center relative lg:gap-[20px] overflow-hidden'>
+                              <div className='w-full lg:h-[518px] md:h-[400px] h-[246px] lg:rounded-[16px] rounded-[10px] overflow-hidden lg:col-span-7 col-span-10 group order-2 lg:order-1'>
                                     <Image src='/assets/images/short-story.svg' alt='Short Story' width={949} height={518} className='w-full h-full object-cover group-hover:scale-105 duration-500' />
                               </div>
-                              <div className='w-full lg:col-span-1 col-span-3 hidden lg:flex flex-col gap-y-6 order-1 lg:order-2'>
+                              <div className='w-full lg:col-span-3 col-span-10 hidden lg:flex flex-col gap-y-6 order-1 lg:order-2'>
                                     <Services title='Light Sport Aircraft'>
-                                          <IconPlane className='lg:w-[74px] w-[48px] lg:h-[74px] h-[48px] text-[#334155]' />
+                                          <IconPlane className=' lg:min-w-[60px] min-w-[48px] lg:h-[60px] h-[48px] text-[#334155]' />
                                     </Services>
                                     <Services title='Certified Engine Maintenance'>
-                                          <IconVerified className='lg:w-[74px] w-[48px] lg:h-[74px] h-[48px] text-[#334155]' />
+                                          <IconVerified className='lg:min-w-[60px] min-w-[48px] lg:h-[60px] h-[48px] text-[#334155]' />
                                     </Services>
                                     <Services title='Engine Spare Parts'>
-                                          <IconSetting className='lg:w-[74px] w-[48px] lg:h-[74px] h-[48px] text-[#334155]' />
+                                          <IconSetting className='lg:min-w-[60px] min-w-[48px] lg:h-[60px] h-[48px] text-[#334155]' />
                                     </Services>
                                     <Services title='Develop Wiladatika Private Airport'>
-                                          <IconBuillding className='lg:w-[74px] w-[48px] lg:h-[74px] h-[48px] text-[#334155]' />
+                                          <IconBuillding className='lg:min-w-[60px] min-w-[48px] lg:h-[60px] h-[48px] text-[#334155]' />
                                     </Services>
                               </div>
                         </section>
@@ -95,12 +95,12 @@ export default function ShortStory() {
                               </div>
                         </section>
                         <section data-aos='slide-left' className='relative z-[2] w-full overflow-hidden lg:mt-[150px] mt-[50px] flex lg:justify-end justify-normal'>
-                              <div className='w-full max-w-[1440px] grid grid-cols-3 items-center relative lg:gap-[50px] gap-[24px]'>
-                                    <div className='w-full lg:max-w-none md:max-w-[696px] max-w-none lg:mx-0 mx-auto lg:col-span-1 col-span-3 lg:items-start lg:justify-start items-center justify-center flex flex-col p-5 lg:text-start text-center'>
+                              <div className='w-full container_section grid grid-cols-10 items-center relative lg:gap-[50px] gap-[24px]'>
+                                    <div className='w-full lg:max-w-none md:max-w-[696px] max-w-none lg:mx-0 mx-auto lg:col-span-4 col-span-10 lg:items-start lg:justify-start items-center justify-center flex flex-col p-5 lg:text-start text-center'>
                                           <BadgeCategory>
                                                 Our Facilities
                                           </BadgeCategory>
-                                          <h2 className='font-bold lg:text-[64px] text-[32px] text-theme-donker mt-[14px] mb-[50px]'>
+                                          <h2 className='font-bold lg:text-[64px] text-[32px] leading-normal text-theme-donker mt-[14px] mb-[50px]'>
                                                 Aviation Maintenance and Hangar Leasing
                                           </h2>
                                           <ButtonTextIcon link={'https://www.google.com/maps?ll=-6.356956,106.897524&z=16&t=h&hl=id&gl=ID&mapclient=embed&cid=852543758339294028'} className='w-max flex items-center gap-x-[14px]'>
@@ -110,7 +110,7 @@ export default function ShortStory() {
                                                 <IconRight className='w-6 h-6 text-white toRight' />
                                           </ButtonTextIcon>
                                     </div>
-                                    <div className='w-full lg:max-w-none md:max-w-[696px] max-w-[350px] lg:mx-0 md:mx-auto mx-auto lg:px-0 md:px-5 px-5 lg:h-[518px] md:h-[400px] h-[214px] lg:rounded-l-[16px] lg:rounded-r-none rounded-r-[16px] rounded-l-[16px] overflow-hidden lg:col-span-2 col-span-3 order-2 lg:order-1 relative'>
+                                    <div className='w-full lg:h-[518px] md:h-[400px] h-[214px] lg:rounded-[16px] rounded-[10px] overflow-hidden lg:col-span-6 col-span-10 order-2 lg:order-1 relative'>
                                           <iframe className='w-full h-full lg:rounded-none rounded-[16px]' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4791.387785363366!2d106.89494887577587!3d-6.356956493633012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ecc77559bab1%3A0xbd4d807ff4a434c!2sPT.%20Asia%20Aero%20Technology!5e1!3m2!1sid!2sid!4v1735223435493!5m2!1sid!2sid" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                               </div>

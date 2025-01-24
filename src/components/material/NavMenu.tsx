@@ -16,8 +16,8 @@ export default function NavMenu() {
                               About
                         </button>
                   </Link>
-                  <Link href='#'>
-                        <button className='block py-[5px] px-[10px] font-normal text-base text-theme-donker hover:font-semibold hover:text-theme-brand transition-all duration-300 ease-in-out'>
+                  <Link href='/services'>
+                        <button className={`block py-[5px] px-[10px] ${router.pathname === '/services' ? 'font-semibold' : 'font-normal'} text-base text-theme-brand hover:font-semibold hover:text-theme-brand transition-all duration-300 ease-in-out`}>
                               Services
                         </button>
                   </Link>

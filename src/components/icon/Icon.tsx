@@ -108,6 +108,12 @@ const icons = {
             </svg>
       ),
 
+      arrowRight: ({ className }: IconProps) => (
+            <svg className={className} viewBox="0 0 35 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 13H6.5M33.5 13L21.5 1M33.5 13L21.5 25M33.5 13H12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+      ),
+
 };
 
 // Komponen utama

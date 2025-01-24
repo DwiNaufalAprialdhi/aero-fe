@@ -28,7 +28,7 @@ export default function Wide(props: Props) {
                               )}
                               <span className="ml-1">{suffix}{props.wideLatest}</span>
                         </h2>
-                        <h2 className="font-normal lg:text-[24px] text-base">{props.title}</h2>
+                        <h2 className="font-normal lg:text-[24px] leading-normal text-base">{props.title}</h2>
                   </div>
                   <div className="lg:w-[268px] w-[150px] lg:h-[268px] h-[150px] overflow-hidden rounded-[16px]">
                         <Image
