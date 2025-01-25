@@ -17,7 +17,7 @@ export default function OurStrategic() {
                                     </h2>
                               </div>
                         </section>
-                        <section className='container_section grid grid-cols-2 lg:gap-6 gap-5'>
+                        <section className='container_section grid lg:grid-cols-2 grid-cols-1 lg:gap-6 gap-5'>
                               <div data-aos="fade-right" className='w-full h-auto col-span-1 bg-slate-100 p-5 lg:rounded-[16px] rounded-[8px] grid lg:grid-cols-1 grid-cols-1 items-center gap-5'>
                                     {/* Image */}
                                     <div className='w-full col-span-1 overflow-hidden'>
@@ -26,7 +26,7 @@ export default function OurStrategic() {
                                                 width={800}
                                                 height={500}
                                                 alt='Our Strategic Partners'
-                                                className='w-full h-auto object-cover'
+                                                className='w-[150px] lg:w-full h-auto mx-auto object-cover'
                                           />
                                     </div>
                                     {/* Text */}
@@ -73,7 +73,7 @@ export default function OurStrategic() {
                                                 width={800}
                                                 height={500}
                                                 alt='Our Strategic Partners'
-                                                className='w-full h-auto object-cover'
+                                                className='w-[150px] lg:w-full h-auto mx-auto object-cover'
                                           />
                                     </div>
                                     {/* Text */}
