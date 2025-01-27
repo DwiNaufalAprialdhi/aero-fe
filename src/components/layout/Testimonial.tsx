@@ -90,7 +90,7 @@ export default function Testimonial() {
                               <div data-aos='slide-right' className='w-full lg:col-span-1 col-span-3 flex flex-col'>
                                     <BadgeCategory>Testimonials</BadgeCategory>
                                     <h2 className='font-normal lg:text-[48px] text-[32px] my-[14px]'>
-                                          Hear From <span className='font-bold'>Our Clients</span>
+                                          Hear From <span className='font-bold'>Our </span><span className='text-theme-red font-bold'>Clients</span>
                                     </h2>
                                     <p className='font-normal lg:text-[24px] text-base lg:leading-[30px] leading-normal text-theme-secondary lg:mb-[50px] mb-[0px]'>
                                           &quot;We are committed to developing general aviation airport of Indonesia&quot;

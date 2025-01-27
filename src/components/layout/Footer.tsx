@@ -26,11 +26,11 @@ export default function Footer() {
                                     <div className='flex items-start gap-x-[100px] mt-[100px] lg:mt-0'>
                                           <div className='flex flex-col'>
                                                 <h2 className='font-medium text-base mb-6'>Pages</h2>
-                                                <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='#'>Home</Link>
-                                                <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='#'>About</Link>
-                                                <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='#'>Services</Link>
-                                                <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='#'>Product</Link>
-                                                <Link className='font-normal text-sm text-[#64748B]' href='#'>Contact</Link>
+                                                <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/'>Home</Link>
+                                                <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/about'>About</Link>
+                                                <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/services'>Services</Link>
+                                                <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/gallery'>Gallery</Link>
+                                                <Link className='font-normal text-sm text-[#64748B]' href='/contact'>Contact</Link>
                                           </div>
                                           <div className='flex flex-col'>
                                                 <h2 className='font-medium text-base mb-6'>Contact Us</h2>

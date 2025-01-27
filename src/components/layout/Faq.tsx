@@ -18,7 +18,7 @@ export default function Faq() {
                               <BadgeCategory>
                                     FAQ
                               </BadgeCategory>
-                              <h2 className='font-normal lg:text-[48px] text-[32px] text-center my-[14px]'>Frequently Asked <span className='font-bold'>Questions</span></h2>
+                              <h2 className='font-normal lg:text-[48px] text-[32px] text-center my-[14px]'>Frequently Asked <span className='font-bold text-theme-red'>Questions</span></h2>
                               <p className='font-normal lg:text-base text-sm text-theme-secondary text-center mb-[50px]'>Pertanyaan yang sering ditanyakan</p>
                               <div className='w-full flex flex-col gap-y-[14px]'>
                                     <ItemFaq

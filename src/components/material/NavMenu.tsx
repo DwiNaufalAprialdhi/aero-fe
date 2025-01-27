@@ -21,13 +21,13 @@ export default function NavMenu() {
                               Services
                         </button>
                   </Link>
-                  <Link href='#'>
-                        <button className='block py-[5px] px-[10px] font-normal text-base text-theme-donker hover:font-semibold hover:text-theme-brand transition-all duration-300 ease-in-out'>
+                  <Link href='/gallery'>
+                        <button className={`block py-[5px] px-[10px] ${router.pathname === '/gallery' ? 'font-semibold' : 'font-normal'} text-base text-theme-brand hover:font-semibold hover:text-theme-brand transition-all duration-300 ease-in-out`}>
                               Gallery
                         </button>
                   </Link>
-                  <Link href='#'>
-                        <button className='block py-[5px] px-[10px] font-normal text-base text-theme-donker hover:font-semibold hover:text-theme-brand transition-all duration-300 ease-in-out'>
+                  <Link href='/contact'>
+                        <button className={`block py-[5px] px-[10px] ${router.pathname === '/contact' ? 'font-semibold' : 'font-normal'} text-base text-theme-brand hover:font-semibold hover:text-theme-brand transition-all duration-300 ease-in-out`}>
                               Contact
                         </button>
                   </Link>

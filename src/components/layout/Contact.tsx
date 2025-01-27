@@ -19,7 +19,7 @@ export default function Contact() {
                                     Contact Us
                               </BadgeCategory>
 
-                              <h2 className='font-bold text-center lg:text-[48px] text-[32px] my-[14px]'>Contact Our Team</h2>
+                              <h2 className='font-bold text-center lg:text-[48px] text-[32px] my-[14px]'>Contact Our <span className='font-bold text-theme-red'>Team</span></h2>
 
                               <p className='font-normal lg:text-base text-sm text-center text-theme-secondary mb-[50px]'>&quot;We are commited to develop general aviation airport of Indonesia&quot;</p>
 
@@ -89,8 +89,8 @@ export default function Contact() {
                                           <h2 className='font-semibold text-base text-theme-brand underline'>+62 21 84596900</h2>
                                     </div>
                                     <div className='w-full flex flex-col mb-[24px]'>
-                                          <h2 className='font-semibold text-[24px] text-theme-brand'>Call us</h2>
-                                          <p className='font-normal text-base text-theme-secondary'>Call our team Mon-Fri 8am to 5pm.</p>
+                                          <h2 className='font-semibold text-[24px] text-theme-brand'>Visit us</h2>
+                                          <p className='font-normal text-base text-theme-secondary'>Chat to us in person at our office.</p>
                                     </div>
                                     <div className='w-full flex items-center gap-x-[8px]'>
                                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

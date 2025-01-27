@@ -39,7 +39,7 @@ export default function ShortStory() {
                                     <BadgeCategory>
                                           Short Story
                                     </BadgeCategory>
-                                    <h2 className='font-normal lg:font-bold lg:text-[48px] text-[30px] my-[14px]'>Established <span className='font-bold'>Since 2007</span></h2>
+                                    <h2 className='font-normal lg:font-bold lg:text-[48px] text-[30px] my-[14px]'>Established <span className='font-bold text-theme-red'>Since 2007</span></h2>
                                     <p className='font-normal text-base'>Since we were established, we always growing along with general aviation</p>
                               </div>
                               <div className='w-full flex lg:hidden flex-col gap-y-6 mb-[50px]'>
@@ -100,8 +100,8 @@ export default function ShortStory() {
                                           <BadgeCategory>
                                                 Our Facilities
                                           </BadgeCategory>
-                                          <h2 className='font-bold lg:text-[64px] text-[32px] leading-normal text-theme-donker mt-[14px] mb-[50px]'>
-                                                Aviation Maintenance and Hangar Leasing
+                                          <h2 className='font-bold lg:text-[64px] text-[30px] leading-normal text-theme-donker mt-[14px] mb-[50px]'>
+                                                <span className='text-theme-red'>Aviation Maintenance</span> and Hangar Leasing
                                           </h2>
                                           <ButtonTextIcon link={'https://www.google.com/maps?ll=-6.356956,106.897524&z=16&t=h&hl=id&gl=ID&mapclient=embed&cid=852543758339294028'} className='w-max flex items-center gap-x-[14px]'>
                                                 <h2 className='font-medium lg:text-sm text-xs'>
