@@ -154,7 +154,12 @@ const icons = {
             </svg>
       ),
 
-
+      mark: ({ className }: IconProps) => (
+            <svg className={className} viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 13.5C13.6569 13.5 15 12.1569 15 10.5C15 8.84315 13.6569 7.5 12 7.5C10.3431 7.5 9 8.84315 9 10.5C9 12.1569 10.3431 13.5 12 13.5Z" stroke="#1E293B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M19 10.25C19 15.875 12 21.5 12 21.5C12 21.5 5 15.875 5 10.25C5 6.52208 8.13401 3.5 12 3.5C15.866 3.5 19 6.52208 19 10.25Z" stroke="#1E293B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+      ),
 };
 
 // Komponen utama

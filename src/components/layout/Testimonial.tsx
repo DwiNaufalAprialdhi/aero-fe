@@ -76,20 +76,20 @@ export default function Testimonial() {
             <main className='w-full lg:mt-[100px] mt-[40px] lg:mb-[150px] mb-[100px] overflow-x-hidden'>
                   <section className='container_section'>
                         {/* Ornament Top Desktop & Tablet */}
-                        <div data-aos='slide-up' className='hidden md:block w-full lg:h-[581px] md:h-[300px] relative overflow-hidden'>
+                        <div data-aos='fade-up' className='hidden md:block w-full lg:h-[581px] md:h-[300px] relative overflow-hidden'>
                               <OrnamentTop />
                         </div>
-                        {/* Ornament Top Desktop & Tablet */}
-                        <div data-aos='slide-up' className='block md:hidden w-full h-[250px] relative overflow-hidden'>
+                        {/* Ornament Top Mobile */}
+                        <div data-aos='fade-up' className='block md:hidden w-full h-[250px] relative overflow-hidden'>
                               <OrnamentTopMobile />
                         </div>
 
                         {/* Content */}
                         <div className='w-full h-auto grid grid-cols-3 items-center gap-x-[100px] gap-y-[24px]'>
                               {/* Left Section */}
-                              <div data-aos='slide-right' className='w-full lg:col-span-1 col-span-3 flex flex-col'>
+                              <div data-aos='fade-right' className='w-full lg:col-span-1 col-span-3 flex flex-col'>
                                     <BadgeCategory>Testimonials</BadgeCategory>
-                                    <h2 className='font-normal lg:text-[48px] text-[32px] my-[14px]'>
+                                    <h2 className='font-normal lg:text-[48px] text-[32px] lg:leading-[60px] leading-[35px] my-[14px]'>
                                           Hear From <span className='font-bold'>Our </span><span className='text-theme-red font-bold'>Clients</span>
                                     </h2>
                                     <p className='font-normal lg:text-[24px] text-base lg:leading-[30px] leading-normal text-theme-secondary lg:mb-[50px] mb-[0px]'>
@@ -106,7 +106,7 @@ export default function Testimonial() {
                               </div>
 
                               {/* Slider Section */}
-                              <div data-aos='slide-left' className='w-full lg:col-span-2 col-span-3 overflow-hidden'>
+                              <div data-aos='fade-left' className='w-full lg:col-span-2 col-span-3 overflow-hidden'>
                                     <div className='flex transition-all duration-500 ease-in-out transform' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                                           {testimonials.map((testimoni, index) => (
                                                 <div key={index} className='min-w-full'>
@@ -119,12 +119,12 @@ export default function Testimonial() {
                                                 </div>
                                           ))}
                                     </div>
-                                    <div className='flex lg:hidden items-center gap-x-[14px] mt-[50px]'>
+                                    <div className='flex lg:hidden items-center lg:gap-x-[14px] gap-x-2 lg:mt-[50px] mt-6'>
                                           <div onClick={handlePrev} className='cursor-pointer hover:scale-105 duration-200'>
-                                                <IconLeftCircle className='w-[48px] h-[48px]' />
+                                                <IconLeftCircle className='lg:w-[48px] lg:h-[48px] w-[32px] h-[32px]' />
                                           </div>
                                           <div onClick={handleNext} className='cursor-pointer hover:scale-105 duration-200'>
-                                                <IconRightCircle className='w-[48px] h-[48px]' />
+                                                <IconRightCircle className='lg:w-[48px] lg:h-[48px] w-[32px] h-[32px]' />
                                           </div>
                                     </div>
                               </div>

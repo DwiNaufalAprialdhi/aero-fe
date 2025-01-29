@@ -34,7 +34,7 @@ export default function ShortStory() {
                         </div>
 
 
-                        <section data-aos='slide-right' className='relative z-[2] container_section'>
+                        <section data-aos='fade-right' className='relative z-[2] container_section'>
                               <div className='flex flex-col mb-6'>
                                     <BadgeCategory>
                                           Short Story
@@ -57,7 +57,7 @@ export default function ShortStory() {
                                     </Services>
                               </div>
                         </section>
-                        <section data-aos='slide-right' className='z-[2] container_section grid grid-cols-10 items-center relative lg:gap-[20px] overflow-hidden'>
+                        <section data-aos='fade-right' className='z-[2] container_section grid grid-cols-10 items-center relative lg:gap-[20px] overflow-hidden'>
                               <div className='w-full lg:h-[518px] md:h-[400px] h-[246px] lg:rounded-[16px] rounded-[10px] overflow-hidden lg:col-span-7 col-span-10 group order-2 lg:order-1'>
                                     <Image src='/assets/images/short-story.svg' alt='Short Story' width={949} height={518} className='w-full h-full object-cover group-hover:scale-105 duration-500' />
                               </div>
@@ -94,16 +94,16 @@ export default function ShortStory() {
                                     </div>
                               </div>
                         </section>
-                        <section data-aos='slide-left' className='relative z-[2] w-full overflow-hidden lg:mt-[150px] mt-[50px] flex lg:justify-end justify-normal'>
+                        <section data-aos='fade-left' className='relative z-[2] w-full overflow-hidden lg:mt-[150px] mt-[50px] flex lg:justify-end justify-normal'>
                               <div className='w-full container_section grid grid-cols-10 items-center relative lg:gap-[50px] gap-[24px]'>
                                     <div className='w-full lg:max-w-none md:max-w-[696px] max-w-none lg:mx-0 mx-auto lg:col-span-4 col-span-10 lg:items-start lg:justify-start items-center justify-center flex flex-col p-5 lg:text-start text-center'>
                                           <BadgeCategory>
                                                 Our Facilities
                                           </BadgeCategory>
-                                          <h2 className='font-bold lg:text-[64px] text-[30px] leading-normal text-theme-donker mt-[14px] mb-[50px]'>
+                                          <h2 className='font-bold lg:text-[64px] text-[30px] lg:leading-[80px] leading-[35px] text-theme-donker mt-[14px] lg:mb-[50px] mb-6'>
                                                 <span className='text-theme-red'>Aviation Maintenance</span> and Hangar Leasing
                                           </h2>
-                                          <ButtonTextIcon link={'https://www.google.com/maps?ll=-6.356956,106.897524&z=16&t=h&hl=id&gl=ID&mapclient=embed&cid=852543758339294028'} className='w-max flex items-center gap-x-[14px]'>
+                                          <ButtonTextIcon link={'https://maps.app.goo.gl/tcqNN8RMvFbPK8uB8'} className='w-max flex items-center gap-x-[14px]'>
                                                 <h2 className='font-medium lg:text-sm text-xs'>
                                                       See location on map
                                                 </h2>

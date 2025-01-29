@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Icon from '@/components/icon/Icon'
 import BadgeCategory from '@/components/ui/BadgeCategory'
 import Image from 'next/image'
@@ -47,12 +48,12 @@ export default function OurGalleries() {
                                           </div>
                                     ))}
                                     {/* Load More */}
-                                    <div className='cursor-pointer md:col-span-4 col-span-2 w-full h-max flex items-center justify-center mx-auto gap-x-2'>
+                                    {/* <div className='cursor-pointer md:col-span-4 col-span-2 w-full h-max flex items-center justify-center mx-auto gap-x-2'>
                                           <h2 className='font-normal lg:text-base text-sm text-slate-800'>
                                                 See More
                                           </h2>
                                           <Icon.arrowRight className="lg:w-4 w-3 h-auto text-slate-800 rotate-90" />
-                                    </div>
+                                    </div> */}
                               </div>
                         </section>
                   </main>

@@ -7,7 +7,7 @@ export default function Footer() {
             <>
                   <main className='w-full overflow-hidden relative'>
                         {/* Ornament */}
-                        <div className="w-full h-auto absolute -bottom-[650px] left-0">
+                        <div className="w-full h-auto absolute -bottom-[650px] opacity-50 left-0">
                               <Image
                                     src="/assets/ornaments/ornament-footer.svg"
                                     alt="Ornament"
