@@ -55,7 +55,7 @@
 }
 
 .toRight {
-  animation: toRight 1s ease-in-out infinite;
+  animation: toRight 2s ease-in-out infinite;
 }
 
 .scrolling-container {
