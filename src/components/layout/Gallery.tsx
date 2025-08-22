@@ -1,5 +1,4 @@
 import React from 'react';
-import BadgeCategory from '../ui/BadgeCategory';
 import Link from 'next/link';
 import IconRight from '../icon/IconRight';
 import Image from 'next/image';
@@ -7,16 +6,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import LabelSectionDark from '../material/LabelSectionDark';
 
 export default function Gallery() {
       return (
             <>
-                  <main className="w-full overflow-hidden lg:mb-[150px] mb-[100px]">
-                        <section data-aos='fade-right' className="container_section">
+                  <main className="w-full overflow-hidden lg:mb-[270px] mb-[200px]">
+                        <section className="container_section">
                               <div className="flex flex-col gap-y-[14px] mb-[24px]">
-                                    <BadgeCategory>Gallery</BadgeCategory>
+                                    <LabelSectionDark title='Gallery' />
                                     <div className="flex items-end justify-between">
-                                          <h2 className="w-full lg:max-w-[500px] font-normal lg:text-[48px] text-[32px] text-theme-brand">
+                                          <h2 className="w-full lg:max-w-[500px] font-normal lg:text-[48px] leading-tight text-[32px] text-theme-brand">
                                                 Visual Tour of Our <span className='font-bold text-theme-red'>Aviation Solutions</span>
                                           </h2>
                                           <Link href={'/gallery'} className="hidden lg:flex items-center gap-x-2">
@@ -26,15 +26,15 @@ export default function Gallery() {
                                     </div>
                               </div>
                         </section>
-                        <section data-aos="fade-left" className="">
-                              <div className='container_section_slider ourValuesSlider grid grid-cols-1'>
+                        <section>
+                              <div className='container_section grid grid-cols-1'>
                                     <Swiper
                                           slidesPerView={1.2}
                                           spaceBetween={10}
                                           pagination={{
                                                 clickable: true,
                                           }}
-                                          loop={true}
+                                          loop={false}
                                           breakpoints={{
                                                 320: {
                                                       slidesPerView: 1.1,

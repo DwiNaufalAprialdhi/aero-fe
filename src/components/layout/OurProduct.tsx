@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import BadgeCategory from '../ui/BadgeCategory';
 import ItemProduct from '../ui/ItemProduct';
 import AOS from "aos";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import LabelSectionLight from '../material/LabelSectionLight';
 
 
 
@@ -26,34 +26,34 @@ export default function OurProduct() {
 
       return (
             <>
-                  <main className="w-full lg:mb-[150px] mb-[100px] overflow-hidden">
-                        <section data-aos="fade-right" className="container_section flex flex-col mb-[50px]">
-                              <BadgeCategory>Our Product and Service</BadgeCategory>
-                              <h2 className="w-full max-w-[700px] font-bold lg:text-[48px] text-[32px] mt-[14px]">
+                  <main className="w-full overflow-hidden relative z-[3] text-slate-50">
+                        <section className="container_section flex flex-col mb-[50px]">
+                              <LabelSectionLight title='Our Product and Service' />
+                              <h2 className="w-full max-w-[700px] font-bold lg:text-[48px] leading-tight text-[32px] mt-[14px]">
                                     Advanced Aviation Services, Management, and <span className='font-bold text-theme-red'>Hangar Leasing</span>
                               </h2>
                         </section>
-                        <section data-aos="fade-left" className="mb-[50px]">
-                              <div className='container_section_slider ourValuesSlider grid grid-cols-1'>
+                        <section>
+                              <div className='container_section md:px-0 px-5 ourValuesSlider grid grid-cols-1'>
                                     <Swiper
                                           slidesPerView={1}
                                           spaceBetween={10}
                                           pagination={{
                                                 clickable: true,
                                           }}
-                                          loop={true}
+                                          loop={false}
                                           breakpoints={{
                                                 320: {
                                                       slidesPerView: 1.1,
-                                                      spaceBetween: 10,
+                                                      spaceBetween: 20,
                                                 },
                                                 640: {
                                                       slidesPerView: 2.1,
-                                                      spaceBetween: 10,
+                                                      spaceBetween: 20,
                                                 },
                                                 768: {
                                                       slidesPerView: 2.1,
-                                                      spaceBetween: 10,
+                                                      spaceBetween: 24,
                                                 },
                                                 1024: {
                                                       slidesPerView: 3.2,

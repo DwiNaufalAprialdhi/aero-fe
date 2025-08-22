@@ -54,7 +54,7 @@ export default function Hero() {
                               </div>
                         </div>
                         {/* LAYER HERO */}
-                        <div className='w-max h-max absolute bottom-0 right-0 bg-white py-4 pr-4 pl-20 flex items-center lg:gap-6 gap-3'
+                        <div className='w-max h-max absolute bottom-[-3px] z-10 right-0 bg-white py-4 pr-4 pl-20 flex items-center lg:gap-6 gap-3'
                               style={{ clipPath: "polygon(80px 0, 100% 0, 100% 100%, 0 100%)" }}
                         >
                               {/* CONTENT */}

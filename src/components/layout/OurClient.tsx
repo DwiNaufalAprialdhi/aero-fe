@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import BadgeCategory from '../ui/BadgeCategory';
 import Image from 'next/image';
 import AOS from "aos";
 import Link from 'next/link';
@@ -7,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay } from 'swiper/modules';
+import LabelSectionDark from '../material/LabelSectionDark';
 
 
 export default function OurClient() {
@@ -48,7 +48,7 @@ export default function OurClient() {
                   <main className='w-full mt-[100px] lg:mb-[150px] mb-[100px] overflow-hidden'>
                         <section className='container_section grid grid-cols-12 items-center lg:gap-[50px] gap-6'>
                               <div data-aos='fade-right' className='w-full lg:col-span-5 col-span-12 flex flex-col gap-y-[14px]'>
-                                    <BadgeCategory>Our Clients</BadgeCategory>
+                                    <LabelSectionDark title={'Our Clients'} />
                                     <h2 className='font-normal lg:text-[43px] text-[32px] text-theme-brand'>
                                           Trusted by <span className='font-bold'>Leading </span><span className='font-bold text-theme-red'>Aviation Companies</span>
                                     </h2>

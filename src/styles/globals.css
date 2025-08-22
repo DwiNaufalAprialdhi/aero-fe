@@ -35,10 +35,10 @@
 
 @layer utilities {
   .label {
-    @apply font-medium text-base text-input-label;
+    @apply font-medium text-base text-slate-50;
   }
   .form_input {
-    @apply w-full p-[10px] rounded-[8px] font-normal text-sm text-input-label placeholder:text-input-form border border-input-form outline-none;
+    @apply w-full p-[10px] font-normal text-sm text-input-label placeholder:text-input-form border border-input-form outline-none;
   }
 }
 
@@ -222,7 +222,7 @@
 .swiper-pagination-bullet-active {
   width: 30px !important;
   height: 6px !important;
-  background-color: #352b5a !important; /* Warna default */
+  background-color: #475569 !important; /* Warna default */
   border-radius: 20px !important; /* Membuat bullet berbentuk lingkaran */
   transition: all 0.3s ease !important; /* Animasi perubahan */
 }
@@ -345,4 +345,8 @@
     mask-image: none;
     -webkit-mask-image: none;
   }
+}
+
+.product-swiper {
+  overflow: visible !important;
 }
