@@ -81,8 +81,12 @@ export default function ShortStory() {
                                     </div>
                               </div>
                               {/* SPECK */}
-                              <div className='w-full h-max lg:px-0 px-5 lg:mb-[150px] mb-[100px]'>
-                                    <div className='w-full lg:max-w-[1200px] max-w-none mx-auto h-max lg:px-0 px-5 relative grid lg:grid-cols-4 grid-cols-2 gap-[50px]'>
+                              <div className='w-full h-max lg:px-0 px-5 py-[50px] lg:mb-[150px] mb-[100px] relative overflow-hidden'>
+                                    {/* BACKGROUND METTERS */}
+                                    <div className='w-full h-full absolute top-0 inset-x-0 pointer-events-none z-[-1]'>
+                                          <Image src='/assets/images/background-metters.png' alt='background' width={1500} height={500} className='w-full h-full object-cover' />
+                                    </div>
+                                    <div className='w-full lg:max-w-[1200px] max-w-none mx-auto h-max lg:px-0 px-5 relative z-[2] grid lg:grid-cols-4 grid-cols-2 gap-[50px]'>
                                           <div className='w-full col-span-1'>
                                                 <Wide wide='760 m' title='RUNAWAY LENGHT' images='/assets/images/speck-1.png' />
                                           </div>

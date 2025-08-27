@@ -57,23 +57,23 @@ export default function Gallery() {
                                           className="product-swiper w-full col-span-1 cursor-grab"
                                     >
                                           <SwiperSlide className='pb-10'>
-                                                <div className="item__gallery h-[450px] rounded-[16px] overflow-hidden group">
-                                                      <Image src="/assets/images/gallery-1.png" width={676} height={438} alt="Gallery" className='w-full h-full object-cover group-hover:scale-105 duration-500' />
+                                                <div className="item__gallery h-[450px] overflow-hidden group">
+                                                      <Image src="/assets/images/gallery-1.png" width={676} height={438} alt="Gallery" className='w-full h-full object-cover duration-500' />
                                                 </div>
                                           </SwiperSlide>
                                           <SwiperSlide className='pb-10'>
-                                                <div className="item__gallery h-[450px] rounded-[16px] overflow-hidden group">
-                                                      <Image src="/assets/images/gallery-2.png" width={356} height={438} alt="Gallery" className='w-full h-full object-cover group-hover:scale-105 duration-500' />
+                                                <div className="item__gallery h-[450px] overflow-hidden group">
+                                                      <Image src="/assets/images/gallery-2.png" width={356} height={438} alt="Gallery" className='w-full h-full object-cover duration-500' />
                                                 </div>
                                           </SwiperSlide>
                                           <SwiperSlide className='pb-10'>
-                                                <div className="item__gallery h-[450px] rounded-[16px] overflow-hidden group">
-                                                      <Image src="/assets/images/gallery-3.png" width={356} height={438} alt="Gallery" className='w-full h-full object-cover group-hover:scale-105 duration-500' />
+                                                <div className="item__gallery h-[450px] overflow-hidden group">
+                                                      <Image src="/assets/images/gallery-3.png" width={356} height={438} alt="Gallery" className='w-full h-full object-cover duration-500' />
                                                 </div>
                                           </SwiperSlide>
                                           <SwiperSlide className='pb-10'>
-                                                <div className="item__gallery h-[450px] rounded-[16px] overflow-hidden group">
-                                                      <Image src="/assets/images/gallery-4.png" width={356} height={438} alt="Gallery" className='w-full h-full object-cover group-hover:scale-105 duration-500' />
+                                                <div className="item__gallery h-[450px] overflow-hidden group">
+                                                      <Image src="/assets/images/gallery-4.png" width={356} height={438} alt="Gallery" className='w-full h-full object-cover duration-500' />
                                                 </div>
                                           </SwiperSlide>
                                     </Swiper>

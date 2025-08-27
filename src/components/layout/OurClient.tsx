@@ -47,13 +47,13 @@ export default function OurClient() {
             <>
                   <main className='w-full mt-[100px] lg:mb-[150px] mb-[100px] overflow-hidden'>
                         <section className='container_section grid grid-cols-12 items-center lg:gap-[50px] gap-6'>
-                              <div data-aos='fade-right' className='w-full lg:col-span-5 col-span-12 flex flex-col gap-y-[14px]'>
+                              <div className='w-full lg:col-span-5 col-span-12 flex flex-col gap-y-[14px]'>
                                     <LabelSectionDark title={'Our Clients'} />
                                     <h2 className='font-normal lg:text-[43px] text-[32px] text-theme-brand'>
                                           Trusted by <span className='font-bold'>Leading </span><span className='font-bold text-theme-red'>Aviation Companies</span>
                                     </h2>
                               </div>
-                              <div data-aos='fade-left' className='w-full lg:col-span-7 col-span-12 grid grid-cols-1 overflow-hidden'>
+                              <div className='w-full lg:col-span-7 col-span-12 grid grid-cols-1 overflow-hidden'>
                                     <Swiper
                                           loop={true}
                                           autoplay={{

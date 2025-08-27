@@ -8,20 +8,12 @@ export default function Subscribe() {
                   <section className='container_section absolute top-[-120px] inset-x-0 z-[5]'>
                         <div className='w-full bg-[#F8FAFC] p-[30px] flex flex-col relative'>
                               {/* Ornament */}
-                              <div className='hidden lg:block w-[300px] h-auto absolute bottom-0 right-20 z-[1]'>
+                              <div className='hidden lg:block w-[300px] h-auto absolute top-0 right-[50px] z-[1]'>
                                     <Image
-                                          src={'/assets/ornaments/ornament-banner-1.svg'}
+                                          src={'/assets/images/ornament-subscribe.svg'}
                                           alt='ornament'
                                           width={300} height={300}
-                                          className='w-full h-full object-cover'
-                                    />
-                              </div>
-                              <div className='hidden lg:block w-[300px] h-auto absolute top-0 right-10 z-[2]'>
-                                    <Image
-                                          src={'/assets/ornaments/ornament-banner-2.svg'}
-                                          alt='ornament'
-                                          width={300} height={300}
-                                          className='w-full h-full object-cover'
+                                          className='w-full h-max object-cover'
                                     />
                               </div>
                               <div className='py-[20px] flex flex-col gap-y-[14px] mb-[14px] relative z-[3]'>
