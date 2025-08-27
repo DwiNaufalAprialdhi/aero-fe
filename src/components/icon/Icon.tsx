@@ -160,6 +160,13 @@ const icons = {
                   <path d="M19 10.25C19 15.875 12 21.5 12 21.5C12 21.5 5 15.875 5 10.25C5 6.52208 8.13401 3.5 12 3.5C15.866 3.5 19 6.52208 19 10.25Z" stroke="#1E293B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
       ),
+
+      arrowSwiper: ({ className }: IconProps) => (
+            <svg className={className} viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.99914 2L2.52414 7.475C2.23414 7.765 2.23414 8.235 2.52414 8.525L7.99914 14" stroke="#F9F400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+      ),
 };
 
 // Komponen utama

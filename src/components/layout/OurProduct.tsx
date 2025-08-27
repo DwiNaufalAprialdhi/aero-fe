@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import React, { useRef, useState } from 'react';
 import ItemProduct from '../ui/ItemProduct';
-import AOS from "aos";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 import LabelSectionLight from '../material/LabelSectionLight';
+import Icon from '../icon/Icon';
 
 
 
@@ -17,12 +16,16 @@ const productItems = [
 ]
 
 export default function OurProduct() {
-      useEffect(() => {
-            AOS.init({
-                  duration: 800,
-                  once: true,
-            });
-      }, []);
+      const swiperRef = useRef<any>(null);
+      const [progress, setProgress] = useState(0);
+
+      const handlePrev = () => {
+            swiperRef.current?.slidePrev();
+      };
+
+      const handleNext = () => {
+            swiperRef.current?.slideNext();
+      };
 
       return (
             <>
@@ -33,15 +36,28 @@ export default function OurProduct() {
                                     Advanced Aviation Services, Management, and <span className='font-bold text-theme-red'>Hangar Leasing</span>
                               </h2>
                         </section>
-                        <section>
+                        <section className='flex flex-col'>
                               <div className='container_section md:px-0 px-5 ourValuesSlider grid grid-cols-1'>
                                     <Swiper
                                           slidesPerView={1}
                                           spaceBetween={10}
-                                          pagination={{
-                                                clickable: true,
-                                          }}
                                           loop={false}
+                                          onSwiper={(swiper) => (swiperRef.current = swiper)}
+                                          onSlideChange={(swiper) => {
+                                                // pastikan slidesPerView number
+                                                const slidesPerView =
+                                                      typeof swiper.params.slidesPerView === "number"
+                                                            ? swiper.params.slidesPerView
+                                                            : 1;
+
+                                                const total = swiper.slides.length - slidesPerView;
+                                                const current = swiper.activeIndex;
+
+                                                // cegah pembagian 0 kalau total <= 0
+                                                const percent = total > 0 ? (current / total) * 100 : 100;
+
+                                                setProgress(percent);
+                                          }}
                                           breakpoints={{
                                                 320: {
                                                       slidesPerView: 1.1,
@@ -60,7 +76,6 @@ export default function OurProduct() {
                                                       spaceBetween: 24,
                                                 },
                                           }}
-                                          modules={[Pagination]}
                                           className="product-swiper w-full col-span-1 cursor-grab"
                                     >
                                           {productItems.map((item) => (
@@ -69,6 +84,31 @@ export default function OurProduct() {
                                                 </SwiperSlide>
                                           ))}
                                     </Swiper>
+                              </div>
+                              {/* PROGRESSBAR & ARROW LEFT RIGHT */}
+                              <div className="w-full max-w-[1200px] mx-auto px-5 lg:px-0 flex items-center md:gap-[50px] gap-6">
+                                    {/* PROGRESSBAR */}
+                                    <div className="flex-grow w-full h-[6px] rounded-full bg-zinc-200 relative overflow-hidden">
+                                          <div
+                                                className="absolute left-0 top-0 h-full bg-[#F9F400] rounded-full transition-all duration-300"
+                                                style={{ width: `${progress}%` }}
+                                          ></div>
+                                    </div>
+                                    {/* BUTTONS */}
+                                    <div className="flex-shrink-0 flex items-center justify-center gap-[14px]">
+                                          <button
+                                                onClick={handlePrev}
+                                                className="md:w-[36px] md:h-[36px] w-7 h-7 hover:scale-105 duration-200 overflow-hidden rounded-full flex items-center justify-center bg-[#F9F400]/10"
+                                          >
+                                                <Icon.arrowSwiper className="w-[6px] h-max" />
+                                          </button>
+                                          <button
+                                                onClick={handleNext}
+                                                className="md:w-[36px] md:h-[36px] w-7 h-7 hover:scale-105 duration-200 overflow-hidden rounded-full flex items-center justify-center bg-[#F9F400]/10"
+                                          >
+                                                <Icon.arrowSwiper className="w-[6px] h-max rotate-180" />
+                                          </button>
+                                    </div>
                               </div>
                         </section>
                   </main>
