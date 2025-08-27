@@ -12,25 +12,29 @@ export default function Dedicated() {
       }, []);
       return (
             <>
-                  <main className="w-full h-auto overflow-hidden relative lg:pt-[200px] pt-[110px] lg:mb-[156px] mb-[50px]">
-                        {/* Ornament */}
-                        <div className="w-full h-auto absolute -top-[100px] left-0">
-                              <Image
-                                    src="/assets/ornaments/ornament-head.svg"
-                                    alt="Ornament"
-                                    width={1000}
-                                    height={1000}
-                                    className='w-full h-auto object-cover'
-                              />
+                  <main className="w-full md:h-[500px] h-[400px] overflow-hidden relative lg:pt-[200px] pt-[110px] lg:mb-[150px] mb-[50px]">
+                        {/* BACKGROUND */}
+                        <div className='w-full h-full absolute top-0 inset-x-0 z-[1]'>
+                              <Image src='/assets/images/background-metters.png' alt='background' width={1000} height={500} className='w-full h-full object-cover' />
                         </div>
-                        <section data-aos="fade-up" className='container_section flex flex-col items-center justify-center relative z-[2]'>
-                              <h2 className="w-full md:max-w-[1010px] max-w-none font-bold lg:text-[64px] text-[36px] lg:leading-[80px] leading-normal text-center text-theme-brand">
-                                    Dedicated to <span className='text-theme-red'>Aviation Maintenance</span> and Innovation
+                        {/* LAYER HERO */}
+                        <div className='w-max h-max absolute bottom-[-3px] z-10 right-0 bg-white md:pl-[90px] pl-[60px] md:py-[30px] py-[20px] md:pr-[230px] pr-[120px]'
+                              style={{ clipPath: "polygon(80px 0, 100% 0, 100% 100%, 0 100%)" }}
+                        >
+                              {/* ORNAMENT */}
+                              <div className='w-max h-max absolute z-[3] top-[-40px] md:right-[125px] right-[50px] flex items-start justify-start gap-4'>
+                                    <div className='md:w-[23px] md:h-[500px] w-[17px] h-[300px] rotate-[25deg] bg-[#BC1328]'>
+                                    </div>
+                                    <div className='md:w-[23px] md:h-[500px] w-[17px] h-[300px] rotate-[25deg] bg-[#F9F400]'>
+                                    </div>
+                                    <div className='md:w-[23px] md:h-[500px] w-[17px] h-[300px] rotate-[25deg] bg-[#352B5A]'>
+                                    </div>
+                              </div>
+                              {/* CONTENT */}
+                              <h2 className='font-bold md:text-[64px] text-[32px] text-slate-800 leading-tight'>
+                                    About Us
                               </h2>
-                              <p className='w-full md:max-w-[1010px] max-w-none font-normal lg:text-[24px] text-base leading-normal text-slate-400 text-center lg:mt-[14px] mt-[24px]'>
-                                    Committed to Delivering Excellence and Precision in Every Service, With a Focus on Safety, Reliability, and Innovation in Aviation
-                              </p>
-                        </section>
+                        </div>
                   </main>
             </>
       )

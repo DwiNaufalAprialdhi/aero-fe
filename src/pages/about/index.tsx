@@ -8,7 +8,6 @@ import OurVision from '@/components/layout/About/OurVision'
 import Contact from '@/components/layout/Contact'
 import Footer from '@/components/layout/Footer'
 import Navbar from '@/components/layout/Navbar'
-import Subscribe from '@/components/layout/Subscribe'
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
@@ -42,7 +41,6 @@ export default function index() {
                   </div>
                   <Certificate />
                   <Contact />
-                  <Subscribe />
                   <Footer />
             </>
       )
