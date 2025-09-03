@@ -1,5 +1,6 @@
 import AboutSection from '@/components/layout/About/AboutSection'
 import Certificate from '@/components/layout/About/Certificate'
+import CompanyInformation from '@/components/layout/About/CompanyInformation'
 import CompanyMilestones from '@/components/layout/About/CompanyMilestones'
 import Dedicated from '@/components/layout/About/Dedicated'
 import OurMission from '@/components/layout/About/OurMission'
@@ -42,6 +43,7 @@ export default function index() {
                         <OurMission />
                         <OurValues />
                         <CompanyMilestones />
+                        <CompanyInformation />
                         {/* LAYER BOTTOM */}
                         <div className='lg:w-[672px] w-[300px] h-[60px] lg:h-[100px] absolute bottom-[-5px] right-0 bg-white py-4 pr-4 pl-20 flex items-center lg:gap-6 gap-3 z-[2]'
                               style={{ clipPath: "polygon(80px 0, 100% 0, 100% 100%, 0 100%)" }}
