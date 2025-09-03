@@ -20,13 +20,13 @@ export default function OurStrategic() {
                               {/* Left */}
                               <div
                                     onClick={() => setIsLeftExpanded(true)}
-                                    className={`overflow-hidden transition-all relative duration-500 ease-in-out bg-slate-100 h-[422px] flex-shrink-0 cursor-pointer grid md:grid-cols-2 grid-cols-1 items-center gap-6 p-5 ${isLeftExpanded ? 'md:w-[90%] w-[85%]' : 'w-[10%]'
+                                    className={`overflow-hidden transition-all relative duration-500 ease-in-out h-[422px] flex-shrink-0 cursor-pointer grid md:grid-cols-2 grid-cols-1 items-center gap-6 p-5 ${isLeftExpanded ? 'md:w-[90%] w-[85%] bg-slate-100' : 'w-[10%] bg-slate-400'
                                           }`}
                               >
                                     {isLeftExpanded ?
                                           <>
                                                 {/* Image */}
-                                                <div className='w-full col-span-1 overflow-hidden flex items-center justify-center'>
+                                                <a href='https://dinamikaaviasi.com/' target='_blank' className='w-full col-span-1 overflow-hidden flex items-center justify-center'>
                                                       <Image
                                                             src='/assets/logo/dai.svg'
                                                             width={800}
@@ -34,7 +34,7 @@ export default function OurStrategic() {
                                                             alt='Our Strategic Partners'
                                                             className='w-full h-full object-contain'
                                                       />
-                                                </div>
+                                                </a>
                                                 {/* Text */}
                                                 <div className='w-full col-span-1 flex flex-col'>
                                                       <h2 className='font-semibold lg:text-[24px] text-sm leading-normal mb-2 text-slate-800'>
@@ -83,17 +83,17 @@ export default function OurStrategic() {
                               {/* Right */}
                               <div
                                     onClick={() => setIsLeftExpanded(false)}
-                                    className={`overflow-hidden transition-all relative duration-500 ease-in-out bg-slate-100 h-[422px] flex-shrink-0 cursor-pointer grid md:grid-cols-2 grid-cols-1 items-center gap-6 p-5 ${isLeftExpanded ? 'w-[10%]' : 'md:w-[90%] w-[85%]'
+                                    className={`overflow-hidden transition-all relative duration-500 ease-in-out h-[422px] flex-shrink-0 cursor-pointer grid md:grid-cols-2 grid-cols-1 items-center gap-6 p-5 ${isLeftExpanded ? 'w-[10%] bg-slate-400' : 'md:w-[90%] w-[85%] bg-slate-100'
                                           }`}
                               >
                                     {isLeftExpanded ?
                                           <>
                                                 <h2 className="md:text-[24px] text-base font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-slate-800 whitespace-nowrap transform -rotate-90">
-                                                      PRIMA AERO SENTOSA
+                                                      PRIZMA AERO SENTOSA
                                                 </h2>
                                           </> : <>
                                                 {/* Image */}
-                                                <div className='w-full col-span-1 overflow-hidden flex items-center justify-center'>
+                                                <a href='https://www.prizma-aero.com/' target='_blank' className='w-full col-span-1 overflow-hidden flex items-center justify-center'>
                                                       <Image
                                                             src='/assets/logo/prizma.svg'
                                                             width={800}
@@ -101,7 +101,7 @@ export default function OurStrategic() {
                                                             alt='Our Strategic Partners'
                                                             className='w-full h-full object-contain'
                                                       />
-                                                </div>
+                                                </a>
                                                 {/* Text */}
                                                 <div className='w-full col-span-1 flex flex-col'>
                                                       <h2 className='font-semibold lg:text-[24px] text-sm leading-normal mb-2 text-slate-800'>

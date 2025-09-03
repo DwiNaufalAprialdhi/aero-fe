@@ -6,7 +6,7 @@ export default function AboutSection() {
       return (
             <>
                   <main className='w-full h-auto overflow-hidden relative lg:mb-[150px] mb-[50px]'>
-                        <section className='container_section grid lg:grid-cols-2 grid-cols-1 lg:gap-[60px] gap-[50px]'>
+                        <section className='container_section grid md:items-center items-start lg:grid-cols-2 grid-cols-1 lg:gap-[60px] gap-[50px]'>
                               {/* LEFT */}
                               <div className='w-full col-span-1 md:h-[550px] h-[280px] relative overflow-hidden'>
                                     <Image
@@ -26,19 +26,15 @@ export default function AboutSection() {
                                     </h2>
                                     <div className='flex flex-col font-normal lg:text-base text-sm text-slate-800 lg:gap-y-[14px] gap-y-3'>
                                           <span>
-                                                PT. Asia Aero Technology (AAT) is a private company which is engaged in aviation sector founded in 2007 as Rotax  representative agent and service center for Indonesia. In 2010 to support our operation, we are acquire, built, and operate our own Airport,  Wiladatika Private Airport, Cibubur, Jakarta and succeed to developed MRO center for Helicopter and General Aviation in Indonesia.
+                                                PT. Asia Aero Technology (AAT) is a privately held company operating in the aviation sector, established in 2007 as the official representative for Rotax in Indonesia. In 2010, to support our growing operations, we acquired, built, and began operating Wiladatika Airport in Cibubur, Jakarta. This strategic move enabled us to successfully develop a Maintenance, Repair, and Overhaul (MRO) center specializing in helicopters and general aviation.
                                           </span>
 
                                           <span>
-                                                As We grow and develop, we are eager to become the best Aviation Supply Chain provider,  also we are still expanding our network and capability to able support Indonesian Military, aircraft operators, and MROs.
+                                                As we continue to grow, we are committed to becoming Indonesia’s leading aviation supply chain provider. Our expanding network and capabilities allow us to support the Indonesian military, aircraft operators, and MROs across the country. In 2022, we strengthened our position through mergers and acquisitions with several prominent Indonesian aviation companies. Today, our group’s capabilities include Design Organization Approval (DOA), Aircraft Maintenance Organization (AMO 145), Operator Certificate (OC91), and Flying Club operations.
                                           </span>
 
                                           <span>
-                                                In 2022, We expand our capabilty through merger and acquisition with several prominent Indonesian Aviation Company. Within our group capabilities including Design Organization Approval (DOA), Aircraft Maintenance Organization (AMO 145), Operator Certificate (OC91) and Flying Club.
-                                          </span>
-
-                                          <span>
-                                                In the future, We are aiming to create complete aviation industry ecosystem to support the growing Indonesian Aviation industry.
+                                                Looking ahead, our vision is to build a comprehensive aviation industry ecosystem that supports the dynamic growth of Indonesia’s aviation sector.
                                           </span>
 
                                     </div>

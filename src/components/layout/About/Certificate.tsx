@@ -22,7 +22,7 @@ export default function Certificate() {
             <>
                   <main className='w-full h-auto overflow-hidden relative lg:mb-[270px] mb-[200px]'>
                         <section className='container_section flex flex-col lg:mb-[50px] mb-6'>
-                              <LabelSectionDark title='Cartificates' />
+                              <LabelSectionDark title='Certification' />
                               <h2 className='w-full md:max-w-[750px] max-w-none font-normal lg:text-[48px] text-[24px] leading-tight lg:mt-[14px] mt-2'>
                                     Our Industry <span className='font-bold text-slate-800'>Certifications
                                           and </span> <span className='font-bold text-theme-red'>Achievements</span>

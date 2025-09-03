@@ -16,7 +16,7 @@ export default function OurVision() {
                                     <div className='w-full flex flex-col lg:mt-[50px] mt-6'>
                                           <h2 className='font-bold lg:text-[128px] text-[32px] leading-none'>“</h2>
                                           <p className=' font-normal lg:text-[32px] text-base leading-normal text-start lg:-translate-y-12'>
-                                                &quot;To become the number one Aviation Ecosystem Enabler in Indonesia by providing end to end services, within aviation infrastructure, aircraft operations, and aircraft maintenance in Military and Civil Markets.&quot;
+                                                &quot;to become the leading Aviation Ecosystem Enabler in Indonesia by delivering comprehensive, end-to-end services across aviation infrastructure, aircraft operations, and aircraft maintenance”&quot;
                                           </p>
                                           <h2 className='font-bold lg:text-[128px] text-[32px] leading-none text-end lg:-translate-y-12'>“</h2>
                                     </div>

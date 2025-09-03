@@ -8,7 +8,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import Icon from '@/components/icon/Icon';
 import LabelSectionLight from '@/components/material/LabelSectionLight';
 
-export default function OurMission() {
+export default function zOurMission() {
       return (
             <>
                   <main className='w-full h-auto overflow-hidden relative z-[2] text-slate-50'>
@@ -46,7 +46,7 @@ export default function OurMission() {
                                                       {/* Text */}
                                                       <div className='w-full h-auto lg:col-span-7 col-span-12'>
                                                             <p className='font-normal lg:text-[20px] leading-normal text-sm text-slate-100 lg:line-clamp-[7] line-clamp-none'>
-                                                                  Acted as an Aviation Industry growth catalysator by developing several Aviation infrastructures such as airport, aviation park, training facility, and other aviation related facility which is become the center of the aviation activities in the region.
+                                                                  Serve as an aviation-industry growth catalyst by developing and operating strategic infrastructure—airports, aviation parks, training centers, and related facilities—that become regional hubs for aviation activity.
                                                             </p>
                                                       </div>
                                                 </div>
@@ -66,7 +66,7 @@ export default function OurMission() {
                                                       {/* Text */}
                                                       <div className='w-full h-auto lg:col-span-7 col-span-12'>
                                                             <p className='font-normal lg:text-[20px] leading-normal text-sm text-slate-100 lg:line-clamp-[7] line-clamp-none'>
-                                                                  Providing aviation product, spare parts, and maintenance service for the Indonesia Aviation Industry.
+                                                                  Provide high-quality aviation products, spare parts, and maintenance services to support both Indonesia’s civil and military aviation sectors.
                                                             </p>
                                                       </div>
                                                 </div>
@@ -86,7 +86,7 @@ export default function OurMission() {
                                                       {/* Text */}
                                                       <div className='w-full h-auto lg:col-span-7 col-span-12'>
                                                             <p className='font-normal lg:text-[20px] leading-normal text-sm text-slate-100 lg:line-clamp-[7] line-clamp-none'>
-                                                                  Ensuring flight and aviation safety as a core concern in every aspect of our company operation
+                                                                  Uphold flight and aviation safety as our paramount priority in every aspect of our operations.
                                                             </p>
                                                       </div>
                                                 </div>
@@ -107,7 +107,7 @@ export default function OurMission() {
                                                       {/* Text */}
                                                       <div className='w-full h-auto lg:col-span-7 col-span-12'>
                                                             <p className='font-normal lg:text-[20px] leading-normal text-sm text-slate-100 lg:line-clamp-[7] line-clamp-none'>
-                                                                  Enhancing and maximizing Stakeholder Value by streamlining business process, mechanization and automation to achieve efficient operation, minimized cost, and deliver quality services and products above its customer expectation.
+                                                                  Enhance and maximize stakeholder value by streamlining business processes through mechanization and automation, optimizing efficiency, reducing costs, and delivering services and products that consistently exceed customer expectations.
                                                             </p>
                                                       </div>
                                                 </div>
@@ -128,7 +128,7 @@ export default function OurMission() {
                                                       {/* Text */}
                                                       <div className='w-full h-auto lg:col-span-7 col-span-12'>
                                                             <p className='font-normal lg:text-[20px] leading-normal text-sm text-slate-100 lg:line-clamp-[7] line-clamp-none'>
-                                                                  Continuous Improvement, innovation, and adaptation to the dynamic aviation industry market
+                                                                  Drive continuous improvement and innovation, adapting proactively to the evolving demands of the aviation market.
                                                             </p>
                                                       </div>
                                                 </div>

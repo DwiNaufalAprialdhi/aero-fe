@@ -106,7 +106,7 @@ export default function ShortStory() {
                                     {/* LEFT */}
                                     <div className='w-full lg:col-span-5 col-span-12 flex flex-col lg:gap-[50px] gap-5'>
                                           <div className='w-max h-max mb-[14px]'>
-                                                <LabelSectionLight title={'Our Facilities'} />
+                                                <LabelSectionLight title={'Wiladatika airport facilities '} />
                                           </div>
                                           <h2 className='font-bold lg:text-[64px] text-[40px] text-slate-50'>
                                                 <span className='text-[#BC1328]'>Aviation Maintenance</span> and Hangar Leasing

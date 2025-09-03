@@ -6,7 +6,7 @@ export default function Logistics() {
       return (
             <>
                   <main className="w-full overflow-hidden mb-[50px]">
-                        <section data-aos="fade-right" className='container_section grid grid-cols-10 items-center lg:gap-[50px] gap-[14px]'>
+                        <section className='container_section grid grid-cols-10 items-center lg:gap-[50px] gap-[14px]'>
                               {/* Text */}
                               <div className='w-full lg:col-span-6 col-span-10 flex flex-col items-start'>
                                     <LabelSectionDark title='Other Service' />
