@@ -167,6 +167,13 @@ const icons = {
             </svg>
 
       ),
+
+      arrowSwiper2: ({ className }: IconProps) => (
+            <svg className={className} viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.99914 2L2.52414 7.475C2.23414 7.765 2.23414 8.235 2.52414 8.525L7.99914 14" stroke="#352B5A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+      ),
 };
 
 // Komponen utama

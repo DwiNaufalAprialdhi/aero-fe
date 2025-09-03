@@ -10,7 +10,7 @@ export default function OurVision() {
                               {/* LEFT */}
                               <div className='w-full col-span-1 flex flex-col lg:order-1 order-2'>
                                     <LabelSectionLight title='Our Vision' />
-                                    <h2 className='w-full md:max-w-[469px] max-w-none mx-auto text-start font-normal lg:text-[48px] text-[24px] leading-tight lg:mt-[14px] mt-2'>
+                                    <h2 className='w-full md:max-w-[469px] max-w-none text-start font-normal lg:text-[48px] text-[24px] leading-tight lg:mt-[14px] mt-2'>
                                           Shaping the Future <span className='font-bold'>of</span> <span className='font-bold text-theme-red'>Aviation</span>
                                     </h2>
                                     <div className='w-full flex flex-col lg:mt-[50px] mt-6'>

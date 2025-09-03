@@ -1,31 +1,56 @@
-import BadgeCategory from '@/components/ui/BadgeCategory'
-import React from 'react'
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import React, { useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 import Image from 'next/image';
+import LabelSectionDark from '@/components/material/LabelSectionDark';
+import Icon from '@/components/icon/Icon';
 
 export default function Certificate() {
+      const swiperRef = useRef<any>(null);
+      const [progress, setProgress] = useState(0);
+
+      const handlePrev = () => {
+            swiperRef.current?.slidePrev();
+      };
+
+      const handleNext = () => {
+            swiperRef.current?.slideNext();
+      };
       return (
             <>
-                  <main className='w-full h-auto overflow-hidden relative lg:mb-[150px] mb-[50px]'>
-                        <section data-aos='fade-up' className='container_section flex flex-col items-center justify-center lg:mb-[50px] mb-6'>
-                              <BadgeCategory>
-                                    Certificates
-                              </BadgeCategory>
-                              <h2 className='w-full md:max-w-[750px] max-w-none mx-auto text-center font-normal lg:text-[48px] text-[24px] leading-normal lg:mt-[14px] mt-2'>
+                  <main className='w-full h-auto overflow-hidden relative lg:mb-[270px] mb-[200px]'>
+                        <section className='container_section flex flex-col lg:mb-[50px] mb-6'>
+                              <LabelSectionDark title='Cartificates' />
+                              <h2 className='w-full md:max-w-[750px] max-w-none font-normal lg:text-[48px] text-[24px] leading-tight lg:mt-[14px] mt-2'>
                                     Our Industry <span className='font-bold text-slate-800'>Certifications
                                           and </span> <span className='font-bold text-theme-red'>Achievements</span>
                               </h2>
                         </section>
-                        <section data-aos="fade-left" className='container_section_slider ourValuesSlider grid grid-cols-1'>
+                        <section className='container_section_slider grid grid-cols-1'>
                               <Swiper
                                     loop={false}
                                     slidesPerView={1}
                                     spaceBetween={10}
                                     pagination={{
                                           clickable: true,
+                                    }}
+                                    onSwiper={(swiper) => (swiperRef.current = swiper)}
+                                    onSlideChange={(swiper) => {
+                                          // pastikan slidesPerView number
+                                          const slidesPerView =
+                                                typeof swiper.params.slidesPerView === "number"
+                                                      ? swiper.params.slidesPerView
+                                                      : 1;
+
+                                          const total = swiper.slides.length - slidesPerView;
+                                          const current = swiper.activeIndex;
+
+                                          // cegah pembagian 0 kalau total <= 0
+                                          const percent = total > 0 ? (current / total) * 100 : 100;
+
+                                          setProgress(percent);
                                     }}
                                     breakpoints={{
                                           0: {
@@ -53,8 +78,7 @@ export default function Certificate() {
                                                 spaceBetween: 24,
                                           },
                                     }}
-                                    modules={[Pagination]}
-                                    className="our-values-swiper w-full col-span-1 cursor-grab"
+                                    className="product-swiper w-full col-span-1 cursor-grab"
                               >
                                     <SwiperSlide className="lg:pb-20 pb-10">
                                           <div className='w-full lg:h-[438px] h-[400px] overflow-hidden rounded-[16px] border border-slate-400'>
@@ -101,6 +125,31 @@ export default function Certificate() {
                                           </div>
                                     </SwiperSlide>
                               </Swiper>
+                        </section>
+                        {/* PROGRESSBAR & ARROW LEFT RIGHT */}
+                        <section className="container_section flex items-center md:gap-[50px] gap-6">
+                              {/* PROGRESSBAR */}
+                              <div className="flex-grow w-full h-[6px] rounded-full bg-zinc-200 relative overflow-hidden">
+                                    <div
+                                          className="absolute left-0 top-0 h-full bg-[#352B5A] rounded-full transition-all duration-300"
+                                          style={{ width: `${progress}%` }}
+                                    ></div>
+                              </div>
+                              {/* BUTTONS */}
+                              <div className="flex-shrink-0 flex items-center justify-center gap-[14px]">
+                                    <button
+                                          onClick={handlePrev}
+                                          className="md:w-[36px] md:h-[36px] w-7 h-7 hover:scale-105 duration-200 overflow-hidden rounded-full flex items-center justify-center bg-[#352B5A]/10"
+                                    >
+                                          <Icon.arrowSwiper2 className="w-[6px] h-max" />
+                                    </button>
+                                    <button
+                                          onClick={handleNext}
+                                          className="md:w-[36px] md:h-[36px] w-7 h-7 hover:scale-105 duration-200 overflow-hidden rounded-full flex items-center justify-center bg-[#352B5A]/10"
+                                    >
+                                          <Icon.arrowSwiper2 className="w-[6px] h-max rotate-180" />
+                                    </button>
+                              </div>
                         </section>
                   </main>
             </>
