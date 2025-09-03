@@ -1,4 +1,4 @@
-import BadgeCategory from '@/components/ui/BadgeCategory'
+import LabelSectionDark from '@/components/material/LabelSectionDark'
 import Image from 'next/image'
 import React from 'react'
 
@@ -9,9 +9,7 @@ export default function Supply() {
                         <section data-aos="fade-left" className='container_section grid grid-cols-10 items-center lg:gap-[50px] gap-[14px]'>
                               {/* Text */}
                               <div className='w-full lg:col-span-6 col-span-10 flex flex-col items-start'>
-                                    <BadgeCategory>
-                                          Other Service
-                                    </BadgeCategory>
+                                    <LabelSectionDark title='Other Service' />
                                     <h2 className='w-full text-start font-normal lg:text-[48px] text-[24px] leading-normal lg:my-[14px]'>
                                           <span className='font-bold text-slate-800'>Supply </span> <span className='font-bold text-theme-red'>Aircraft GSE
                                           </span>
@@ -22,12 +20,12 @@ export default function Supply() {
                                     </p>
                               </div>
                               {/* Image */}
-                              <div className='w-full h-auto col-span-4 lg:rounded-[16px] border border-slate-200 rounded-[8px] bg-transparent overflow-hidden'>
+                              <div className='w-full h-auto col-span-4 border border-slate-800/30 bg-transparent overflow-hidden'>
                                     <Image
                                           src='/assets/images/supply.svg'
                                           alt='Supply'
                                           width={449} height={291}
-                                          className='w-full h-auto object-cover'
+                                          className='w-full h-auto object-cover scale-110'
                                     />
                               </div>
                         </section>

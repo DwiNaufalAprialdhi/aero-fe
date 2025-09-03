@@ -9,14 +9,14 @@ export default function AccordionService() {
                   <main className="w-full overflow-hidden relative z-[2] text-slate-50">
                         <section className='container_section lg:mb-[0px] mb-6'>
                               {/* Text */}
-                              <div data-aos="fade-right" className='w-full flex flex-col'>
+                              <div className='w-full flex flex-col'>
                                     <LabelSectionLight title='Services' />
                                     <h2 className='w-full font-normal lg:text-[48px] text-[24px] leading-normal lg:mt-[14px] mt-2 lg:mb-[50px] mb-6'>
                                           <span className='font-bold'>Our Services and</span> <span className='font-bold text-theme-red'>Works</span>
                                     </h2>
                               </div>
                         </section>
-                        <section data-aos="fade-left" className='container_section flex flex-col'>
+                        <section className='container_section flex flex-col'>
                               <Accordion title="Services - Airframe">
                                     <div className="w-full flex flex-col lg:gap-y-[50px] gap-y-5 lg:mb-[50px] mb-5">
                                           <div className='w-full flex lg:flex-row flex-col items-center lg:gap-[80px] gap-5'>
