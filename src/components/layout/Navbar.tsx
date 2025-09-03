@@ -22,7 +22,7 @@ export default function Navbar() {
                                     <div onClick={toggleMenu} className="w-max h-max block lg:hidden">
                                           <IconHamburger className="w-6 h-6 text-white" />
                                     </div>
-                                    <Link href="#">
+                                    <Link href="/">
                                           <Image
                                                 src="/assets/logo/asia-aero.svg"
                                                 alt="Logo"

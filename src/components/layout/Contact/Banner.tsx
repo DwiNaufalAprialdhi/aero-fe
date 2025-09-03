@@ -8,7 +8,10 @@ export default function Banner() {
                   <section className="w-full md:h-[500px] h-[400px] overflow-hidden relative lg:pt-[200px] pt-[100px] lg:mb-[150px] mb-[50px]">
                         {/* BACKGROUND */}
                         <div className='w-full h-full absolute top-0 inset-x-0 z-[1]'>
-                              <Image src='/assets/images/background-metters.png' alt='background' width={1000} height={500} className='w-full h-full object-cover' />
+                              <Image src='/assets/images/contact.png' alt='background' width={1000} height={500} className='w-full h-full object-cover' />
+                        </div>
+                        {/* LAYER */}
+                        <div className='w-full h-full absolute top-0 inset-x-0 z-[2] bg-[#1E293B]/40'>
                         </div>
                         {/* LAYER HERO */}
                         <div className='w-max h-max absolute bottom-[-3px] z-10 right-0 bg-white md:pl-[90px] pl-[60px] md:py-[30px] py-[20px] md:pr-[230px] pr-[120px]'
