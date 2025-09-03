@@ -12,7 +12,7 @@ export default function Dedicated() {
       }, []);
       return (
             <>
-                  <main className="w-full md:h-[500px] h-[400px] overflow-hidden relative lg:pt-[200px] pt-[110px] lg:mb-[150px] mb-[50px]">
+                  <section className="w-full md:h-[500px] h-[400px] overflow-hidden relative lg:pt-[200px] pt-[110px] lg:mb-[150px] mb-[50px]">
                         {/* BACKGROUND */}
                         <div className='w-full h-full absolute top-0 inset-x-0 z-[1]'>
                               <Image src='/assets/images/background-metters.png' alt='background' width={1000} height={500} className='w-full h-full object-cover' />
@@ -35,7 +35,14 @@ export default function Dedicated() {
                                     About Us
                               </h2>
                         </div>
-                  </main>
+                  </section>
+                  <section className='w-full flex flex-col items-center justify-center gap-[14px] lg:mb-[100px] mb-[50px]'>
+                        <h2 className='font-bold md:text-[48px] text-[20px] text-slate-800 leading-tight text-center w-full md:max-w-[800px] max-w-none mx-auto'>
+                              Dedicated to <span className='text-[#BC1328]'>Aviation Maintenance</span> and Innovation
+                        </h2>
+                        <p className='font-normal lg:text-[24px] text-base block leading-normal text-center md:max-w-[800px] max-w-none mx-auto'>
+                              Committed to Delivering Excellence and Precision in Every Service, With a Focus on Safety, Reliability, and Innovation in Aviation                        </p>
+                  </section>
             </>
       )
 }

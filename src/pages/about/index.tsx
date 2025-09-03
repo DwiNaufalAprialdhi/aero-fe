@@ -21,24 +21,33 @@ export default function index() {
                   <Navbar />
                   <Dedicated />
                   <AboutSection />
-                  <OurVision />
-                  <OurMission />
-                  <div className='main_short w-full h-auto overflow-hidden relative'>
-                        {/* Ornament */}
-                        <div className="w-full h-auto absolute top-0 left-0">
+                  <main className='w-full h-max lg:pt-[262px] lg:pb-[262px] pt-[100px] pb-[100px] relative bg-[#1E293B] flex flex-col lg:gap-[150px] gap-[100px] lg:mb-[150px] mb-[100px]'>
+                        {/* LAYER TOP */}
+                        <div
+                              className='lg:w-[672px] w-[300px] h-[60px] lg:h-[100px] absolute top-[-5px] left-0 bg-white py-4 pr-4 pl-20 flex items-center lg:gap-6 gap-3 z-[2]'
+                              style={{ clipPath: "polygon(0 0, 100% 0, calc(100% - 80px) 100%, 0 100%)" }}
+                        >
+                        </div>
+                        {/* ORNAMENT */}
+                        <div className='w-full h-full absolute top-0 inset-x-0 pointer-events-none z-[1]'>
                               <Image
-                                    src="/assets/ornaments/ornament-short.svg"
+                                    src="/assets/images/ornament-background.svg"
                                     alt="Ornament"
                                     width={1000}
                                     height={1000}
-                                    className='w-full h-auto object-cover'
+                                    className='w-full h-full object-cover'
                               />
                         </div>
-                        <div className='w-full h-auto relative z-[2]'>
-                              <OurValues />
-                              <CompanyMilestones />
+                        <OurVision />
+                        <OurMission />
+                        <OurValues />
+                        <CompanyMilestones />
+                        {/* LAYER BOTTOM */}
+                        <div className='lg:w-[672px] w-[300px] h-[60px] lg:h-[100px] absolute bottom-[-5px] right-0 bg-white py-4 pr-4 pl-20 flex items-center lg:gap-6 gap-3 z-[2]'
+                              style={{ clipPath: "polygon(80px 0, 100% 0, 100% 100%, 0 100%)" }}
+                        >
                         </div>
-                  </div>
+                  </main>
                   <Certificate />
                   <Contact />
                   <Footer />

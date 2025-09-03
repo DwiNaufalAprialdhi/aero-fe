@@ -111,7 +111,7 @@ export default function ShortStory() {
                                           <h2 className='font-bold lg:text-[64px] text-[40px] text-slate-50'>
                                                 <span className='text-[#BC1328]'>Aviation Maintenance</span> and Hangar Leasing
                                           </h2>
-                                          <Button link={'#'} className='flex items-center justify-center gap-x-2 lg:w-max w-full h-max'
+                                          <Button link={'https://www.google.com/maps?ll=-6.356956,106.897524&z=16&t=h&hl=en&gl=US&mapclient=embed&cid=852543758339294028'} className='flex items-center justify-center gap-x-2 lg:w-max w-full h-max'
                                                 icon={
                                                       <><IconRight className='w-6 h-6 toRight' />
                                                       </>
@@ -121,7 +121,7 @@ export default function ShortStory() {
                                     </div>
                                     {/* RIGHT */}
                                     <div className='w-full lg:col-span-7 col-span-12 overflow-hidden lg:h-[518px] h-max'>
-                                          <Image src="/assets/images/hangar.svg" alt="hangar-locate" width={900} height={550} className='' />
+                                          <iframe className='w-full h-full' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4791.387789962295!2d106.897524!3d-6.356956!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ecc77559bab1%3A0xbd4d807ff4a434c!2sPT.%20Asia%20Aero%20Technology!5e1!3m2!1sen!2sus!4v1756540296774!5m2!1sen!2sus" loading="lazy"></iframe>
                                     </div>
                               </div>
                         </div>

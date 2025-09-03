@@ -1,4 +1,3 @@
-import BadgeCategory from '@/components/ui/BadgeCategory'
 import Image from 'next/image'
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,23 +6,22 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import CardOurValues from './CardOurValues';
 import Icon from '@/components/icon/Icon';
+import LabelSectionLight from '@/components/material/LabelSectionLight';
 
 export default function OurValues() {
       return (
             <>
-                  <main className='w-full overflow-hidden lg:pt-[100px] pt-[25px] lg:mb-[150px] mb-[50px]'>
+                  <main className='w-full overflow-hidden relative z-[2] text-slate-50'>
                         <section className='container_section grid grid-cols-10 lg:gap-[50px] gap-0 lg:mb-[0px] mb-6'>
                               {/* Text */}
-                              <div data-aos="fade-right" className='w-full lg:col-span-4 col-span-10 flex flex-col'>
-                                    <BadgeCategory>
-                                          Our Values
-                                    </BadgeCategory>
-                                    <h2 className='w-full md:max-w-[500px] max-w-none mx-auto font-normal lg:text-[48px] text-[24px] leading-normal lg:mt-[14px] mt-2 lg:mb-[50px] mb-6'>
-                                          <span className='font-bold text-slate-800'>Principles Behind Our</span> <span className='font-bold text-theme-red'>Success</span>
+                              <div className='w-full lg:col-span-4 col-span-10 flex flex-col'>
+                                    <LabelSectionLight title='Our Values' />
+                                    <h2 className='w-full md:max-w-[500px] max-w-none font-normal lg:text-[48px] text-[24px] leading-tight lg:mt-[14px] mt-2 lg:mb-[50px] mb-6'>
+                                          <span className='font-bold'>Principles Behind Our</span> <span className='font-bold text-theme-red'>Success</span>
                                     </h2>
                               </div>
                               {/* Image */}
-                              <div data-aos="fade-left" className='w-full lg:col-span-6 col-span-10'>
+                              <div className='w-full lg:col-span-6 col-span-10'>
                                     <Image
                                           src="/assets/images/our-values.svg"
                                           alt="ourvalues"
@@ -34,7 +32,7 @@ export default function OurValues() {
                               </div>
                         </section>
                         {/* Desktop */}
-                        <section data-aos="fade-left" className="container_section hidden md:grid lg:grid-cols-3 grid-cols-2 gap-6">
+                        <section className="container_section hidden md:grid lg:grid-cols-3 grid-cols-2 gap-6">
                               <CardOurValues title={'Solutions Provider'} className="col-span-1">
                                     <Icon.lamp className="lg:w-[32px] w-5 h-auto text-slate-50" />
                               </CardOurValues>
@@ -89,7 +87,7 @@ export default function OurValues() {
                                           },
                                     }}
                                     modules={[Pagination]}
-                                    className="our-values-swiper w-full col-span-1 cursor-grab"
+                                    className="product-swiper w-full col-span-1 cursor-grab"
                               >
                                     <SwiperSlide className="pb-10">
                                           <CardOurValues title={'Solutions Provider'}>

@@ -1,32 +1,26 @@
-import BadgeCategory from '@/components/ui/BadgeCategory'
+import LabelSectionDark from '@/components/material/LabelSectionDark'
 import Image from 'next/image'
 import React from 'react'
 
 export default function AboutSection() {
       return (
             <>
-                  <main className='w-full h-auto overflow-hidden relative lg:mb-[130px] mb-[50px]'>
+                  <main className='w-full h-auto overflow-hidden relative lg:mb-[150px] mb-[50px]'>
                         <section className='container_section grid lg:grid-cols-2 grid-cols-1 lg:gap-[60px] gap-[50px]'>
-                              {/* Left */}
-                              <Image
-                                    data-aos='fade-right'
-                                    src='/assets/images/about.svg'
-                                    alt='about'
-                                    width={500} height={500}
-                                    className='hidden lg:block w-full col-span-1 h-full object-cover rounded-[16px]'
-                              />
-                              <Image
-                                    data-aos='fade-right'
-                                    src='/assets/images/about.svg'
-                                    alt='about'
-                                    width={361} height={300}
-                                    className='lg:hidden w-full col-span-1 h-full object-cover rounded-[16px]'
-                              />
+                              {/* LEFT */}
+                              <div className='w-full col-span-1 md:h-[550px] h-[280px] relative overflow-hidden'>
+                                    <Image
+                                          src='/assets/images/about.svg'
+                                          alt='about'
+                                          width={500} height={500}
+                                          className='w-full absolute h-full object-cover z-[2] top-[-20px] right-[-20px]'
+                                    />
+                                    <div className='w-full h-full absolute bottom-[-20px] left-[-20px] z-[1] bg-[#F9F400]'>
+                                    </div>
+                              </div>
                               {/* Right */}
-                              <div data-aos='fade-left' className="w-full col-span-1 flex flex-col">
-                                    <BadgeCategory>
-                                          About Us
-                                    </BadgeCategory>
+                              <div className="w-full col-span-1 flex flex-col">
+                                    <LabelSectionDark title={'About Us'} />
                                     <h2 className="font-normal lg:text-[48px] text-[24px] text-slate-800 block lg:my-[14px] my-3">
                                           About <span className='font-bold'>Asia Aero</span>
                                     </h2>

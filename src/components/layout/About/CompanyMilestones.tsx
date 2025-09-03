@@ -9,19 +9,19 @@ import CardMilestones from './CardMilestones';
 export default function CompanyMilestones() {
       return (
             <>
-                  <main className="w-full overflow-hidden lg:mb-[150px] mb-[50px]">
-                        <section className='container_section lg:mb-[0px] mb-6'>
+                  <main className="w-full overflow-hidden relative z-[2] text-slate-50">
+                        <section className='container_section'>
                               {/* Text */}
                               <div data-aos="fade-right" className='w-full flex flex-col'>
                                     <BadgeCategory>
                                           Company Milestones
                                     </BadgeCategory>
-                                    <h2 className='w-full font-normal lg:text-[48px] text-[24px] leading-normal lg:mt-[14px] mt-2 lg:mb-[50px] mb-6'>
-                                          <span className='font-bold text-slate-800'>History and</span> <span className='font-bold text-theme-red'>Achivment</span>
+                                    <h2 className='w-full font-normal lg:text-[48px] text-[24px] leading-tight lg:mt-[14px] mt-2 lg:mb-[50px] mb-6'>
+                                          <span className='font-bold'>History and</span> <span className='font-bold text-theme-red'>Achivment</span>
                                     </h2>
                               </div>
                         </section>
-                        <section data-aos="fade-left" className='container_section_slider ourValuesSlider grid grid-cols-1'>
+                        <section data-aos="fade-left" className='container_section_slider grid grid-cols-1'>
                               <Swiper
                                     loop={false}
                                     slidesPerView={1}
@@ -56,7 +56,7 @@ export default function CompanyMilestones() {
                                           },
                                     }}
                                     modules={[Pagination]}
-                                    className="our-values-swiper w-full col-span-1 cursor-grab"
+                                    className="product-swiper w-full col-span-1 cursor-grab"
                               >
                                     <SwiperSlide className="lg:pb-20 pb-10">
                                           <CardMilestones

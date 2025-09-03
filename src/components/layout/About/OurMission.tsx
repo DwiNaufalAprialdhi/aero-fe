@@ -1,4 +1,3 @@
-import BadgeCategory from '@/components/ui/BadgeCategory'
 import Image from 'next/image'
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,20 +6,19 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Navigation, Pagination } from "swiper/modules";
 import Icon from '@/components/icon/Icon';
+import LabelSectionLight from '@/components/material/LabelSectionLight';
 
 export default function OurMission() {
       return (
             <>
-                  <main className='w-full h-auto overflow-hidden lg:mb-[50px] mb-[25px]'>
-                        <section data-aos='fade-up' className='container_section flex flex-col items-center justify-center'>
-                              <BadgeCategory>
-                                    Our Mission
-                              </BadgeCategory>
-                              <h2 className='w-full md:max-w-[500px] max-w-none mx-auto text-center font-normal lg:text-[48px] text-[24px] leading-normal lg:mt-[14px] mt-2 lg:mb-[50px] mb-6'>
-                                    Commitment to <span className='font-bold text-slate-800'>Aviation</span> <span className='font-bold text-theme-red'>Excellence</span>
+                  <main className='w-full h-auto overflow-hidden relative z-[2] text-slate-50'>
+                        <section className='container_section flex flex-col items-center justify-center'>
+                              <LabelSectionLight title='Our Mission' />
+                              <h2 className='w-full md:max-w-[500px] max-w-none mx-auto text-center font-normal lg:text-[48px] text-[24px] leading-tight lg:mt-[14px] mt-2 lg:mb-[50px] mb-6'>
+                                    Commitment to <span className='font-bold'>Aviation</span> <span className='font-bold text-theme-red'>Excellence</span>
                               </h2>
                               {/* Card Slide */}
-                              <div className='w-full h-auto md:max-w-[750px] max-w-none mx-auto bg-slate-800 p-5 lg:rounded-[16px] rounded-[10px] grid grid-cols-1 relative'>
+                              <div className='w-full h-auto md:max-w-[750px] max-w-none mx-auto bg-[#BC1328] p-5 grid grid-cols-1 relative'>
                                     <Swiper
                                           pagination={{
                                                 type: 'fraction',
@@ -33,7 +31,7 @@ export default function OurMission() {
                                           modules={[Navigation, Pagination]}
                                           className="excellence-swiper w-full h-auto col-span-1 cursor-grab"
                                     >
-                                          <SwiperSlide className='pb-10 md:pb-11 lg:pb-0'>
+                                          <SwiperSlide>
                                                 <div className="w-full h-auto grid grid-cols-12 lg:gap-x-[25px] gap-3">
                                                       {/* Image */}
                                                       <div className='w-full lg:h-[268px] h-[250px] lg:col-span-5 col-span-12 lg:rounded-[16px] rounded-[8px] overflow-hidden'>
@@ -137,11 +135,11 @@ export default function OurMission() {
                                           </SwiperSlide>
                                     </Swiper>
                                     <div className='w-auto h-auto absolute bottom-5 right-5 flex items-center gap-x-5 z-[1]'>
-                                          <button className='excellence-swiper-button-prev lg:w-[36px] w-5 h-5 lg:h-[36px] rounded-full bg-slate-50/10 flex items-center justify-center'>
-                                                <Icon.chevronLeft className='lg:w-2 w-1 h-auto text-slate-50' />
+                                          <button className='excellence-swiper-button-prev lg:w-[36px] w-5 h-5 lg:h-[36px] rounded-full bg-[#F9F400]/10 flex items-center justify-center'>
+                                                <Icon.chevronLeft className='lg:w-2 w-1 h-auto text-[#F9F400]' />
                                           </button>
-                                          <button className='excellence-swiper-button-next lg:w-[36px] w-5 h-5 lg:h-[36px] rounded-full bg-slate-50/10 flex items-center justify-center'>
-                                                <Icon.chevronRight className='lg:w-2 w-1 h-auto text-slate-50' />
+                                          <button className='excellence-swiper-button-next lg:w-[36px] w-5 h-5 lg:h-[36px] rounded-full bg-[#F9F400]/10 flex items-center justify-center'>
+                                                <Icon.chevronRight className='lg:w-2 w-1 h-auto text-[#F9F400]' />
                                           </button>
                                     </div>
                               </div>
