@@ -27,7 +27,7 @@ export default function VendorService() {
       return (
             <>
                   <main className="w-full py-5 lg:mb-[150px] mb-[50px]">
-                        <section data-aos="fade-up" className="container_section">
+                        <section className="container_section">
                               <h2 className="font-bold md:text-[24px] text-base text-center mb-[24px]">
                                     Our Vendors and Suppliers
                               </h2>

@@ -7,7 +7,7 @@ import Icon from '@/components/icon/Icon'
 export default function Rotax() {
       return (
             <>
-                  <main className="w-full overflow-hidden lg:mb-[150px] mb-[50px]">
+                  <main className="w-full overflow-hidden relative z-[2] text-slate-50">
                         <section className='container_section grid lg:grid-cols-2 grid-cols-1 lg:gap-6 gap-5'>
                               <div data-aos="fade-up" className='w-full col-span-1 flex flex-col'>
                                     {/* Text */}
@@ -16,7 +16,7 @@ export default function Rotax() {
                                                 Our Strategic Partners
                                           </BadgeCategory>
                                           <h2 className='w-full text-start font-normal lg:text-[48px] text-[24px] leading-normal lg:my-[14px]'>
-                                                <span className='font-bold text-slate-800'>Approved Maintenance
+                                                <span className='font-bold'>Approved Maintenance
                                                       Service Centre </span> <span className='font-bold text-theme-red'>Rotax of Indonesia
                                                 </span>
                                           </h2>
@@ -31,7 +31,7 @@ export default function Rotax() {
                                           />
                                     </div>
                                     {/* Desc */}
-                                    <p className='w-full font-normal lg:text-base text-sm text-slate-600'>
+                                    <p className='w-full font-normal lg:text-base text-sm'>
                                           Rotax Service Center is an authorized service facility that provides maintenance, repairs, and technical support for Rotax engines. Rotax engines are widely used in various applications, including recreational vehicles like go-karts, light aircraft (microlight), ATVs (All-Terrain Vehicles), and two-wheel vehicles such as scooters or sport motorcycles.
                                     </p>
                               </div>

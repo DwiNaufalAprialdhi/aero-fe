@@ -5,7 +5,7 @@ import React from 'react'
 export default function OurStrategic() {
       return (
             <>
-                  <main className="w-full overflow-hidden lg:mb-[150px] mb-[50px]">
+                  <main className="w-full overflow-hidden relative z-[2] text-slate-50">
                         <section className='container_section lg:mb-[0px] mb-6'>
                               {/* Text */}
                               <div data-aos="fade-right" className='w-full flex flex-col items-center justify-center'>
@@ -13,7 +13,7 @@ export default function OurStrategic() {
                                           Our Strategic Partners
                                     </BadgeCategory>
                                     <h2 className='w-full text-center font-normal lg:text-[48px] text-[24px] leading-normal lg:mt-[14px] mt-2 lg:mb-[50px] mb-6'>
-                                          <span className='font-bold text-slate-800'>Our Trusted</span> <span className='font-bold text-theme-red'>Partners</span>
+                                          <span className='font-bold'>Our Trusted</span> <span className='font-bold text-theme-red'>Partners</span>
                                     </h2>
                               </div>
                         </section>
@@ -31,7 +31,7 @@ export default function OurStrategic() {
                                     </div>
                                     {/* Text */}
                                     <div className='w-full col-span-1 flex flex-col'>
-                                          <h2 className='font-semibold lg:text-[24px] text-sm leading-normal mb-2'>
+                                          <h2 className='font-semibold lg:text-[24px] text-sm leading-normal mb-2 text-slate-800'>
                                                 Approved by DGCA DOA Certf No : DOA.21J.009
                                           </h2>
                                           <ul className='lg:pl-5 pl-3 w-full h-max lg:max-w-[500px] max-w-none list-disc'>

@@ -5,7 +5,7 @@ import React from 'react'
 export default function Supply() {
       return (
             <>
-                  <main className="w-full overflow-hidden lg:mb-[150px] mb-[50px]">
+                  <main className="w-full overflow-hidden lg:mb-[250px] mb-[200px]">
                         <section data-aos="fade-left" className='container_section grid grid-cols-10 items-center lg:gap-[50px] gap-[14px]'>
                               {/* Text */}
                               <div className='w-full lg:col-span-6 col-span-10 flex flex-col items-start'>

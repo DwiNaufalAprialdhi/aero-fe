@@ -1,20 +1,18 @@
-import BadgeCategory from '@/components/ui/BadgeCategory'
 import React from 'react'
 import Accordion from './Elements/Accordion'
 import Image from 'next/image'
+import LabelSectionLight from '@/components/material/LabelSectionLight'
 
 export default function AccordionService() {
       return (
             <>
-                  <main className="w-full overflow-hidden lg:mb-[150px] mb-[50px]">
+                  <main className="w-full overflow-hidden relative z-[2] text-slate-50">
                         <section className='container_section lg:mb-[0px] mb-6'>
                               {/* Text */}
                               <div data-aos="fade-right" className='w-full flex flex-col'>
-                                    <BadgeCategory>
-                                          Services
-                                    </BadgeCategory>
+                                    <LabelSectionLight title='Services' />
                                     <h2 className='w-full font-normal lg:text-[48px] text-[24px] leading-normal lg:mt-[14px] mt-2 lg:mb-[50px] mb-6'>
-                                          <span className='font-bold text-slate-800'>Our Services and</span> <span className='font-bold text-theme-red'>Works</span>
+                                          <span className='font-bold'>Our Services and</span> <span className='font-bold text-theme-red'>Works</span>
                                     </h2>
                               </div>
                         </section>
@@ -26,10 +24,10 @@ export default function AccordionService() {
                                                       Capability Cessna 172 Series
                                                 </h2>
                                                 <ul className='lg:pl-0 pl-3 w-full h-max lg:max-w-[500px] max-w-none list-disc'>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
+                                                      <li className='font-normal lg:text-base text-xs'>
                                                             Inspection, repair, alteration, and re-assembly in accordance with current manufacture annual or technical data as amended
                                                       </li>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
+                                                      <li className='font-normal lg:text-base text-xs'>
                                                             Maintenance on wing of Engine Lycoming O/IO 320/360 Series
                                                       </li>
                                                 </ul>
@@ -72,7 +70,7 @@ export default function AccordionService() {
                                                       Rotax Aircraft Engine (582/912/914 Series)
                                                 </h2>
                                                 <ul className='lg:pl-0 pl-3 w-full h-max lg:max-w-[500px] max-w-none list-disc'>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
+                                                      <li className='font-normal lg:text-base text-xs'>
                                                             Maintenance on wing of aircraft and off wing for heavy maintenance in accordance with current manufacturer manual or technical data as amended
                                                       </li>
                                                 </ul>
@@ -124,30 +122,30 @@ export default function AccordionService() {
                                                       Interior and Exterior Maintenance
                                                 </h2>
                                                 <ul className='lg:pl-0 pl-3 w-full h-max lg:max-w-[500px] max-w-none list-disc'>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
+                                                      <li className='font-normal lg:text-base text-xs'>
                                                             Aircraft Maintenance Organizatin\on
                                                       </li>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
+                                                      <li className='font-normal lg:text-base text-xs'>
                                                             Cabin Design
                                                       </li>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
+                                                      <li className='font-normal lg:text-base text-xs'>
                                                             Carpet Replacement
                                                       </li>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
+                                                      <li className='font-normal lg:text-base text-xs'>
                                                             Interior for Cabin refurbishment
                                                       </li>
                                                 </ul>
                                                 <ul className='lg:pl-0 pl-3 w-full h-max lg:max-w-[500px] max-w-none list-disc'>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
+                                                      <li className='font-normal lg:text-base text-xs'>
                                                             Sidewall installation
                                                       </li>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
+                                                      <li className='font-normal lg:text-base text-xs'>
                                                             Interior Painting
                                                       </li>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
+                                                      <li className='font-normal lg:text-base text-xs'>
                                                             Lavatory cleaning
                                                       </li>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
+                                                      <li className='font-normal lg:text-base text-xs'>
                                                             Seat installation
                                                       </li>
                                                 </ul>
@@ -187,7 +185,7 @@ export default function AccordionService() {
                                     <div className="w-full flex flex-col lg:gap-y-[50px] gap-y-5 lg:mb-[50px] mb-5">
                                           <div className='w-full flex lg:flex-row flex-col items-center lg:gap-[80px] gap-5'>
                                                 <ul className='pl-5 w-full h-max lg:max-w-[500px] max-w-none list-disc'>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
+                                                      <li className='font-normal lg:text-base text-xs'>
                                                             Sewing Shop has been equipped with standard tools and equipment and operated by professional, well trained, and experienced personnel
                                                       </li>
                                                 </ul>
@@ -218,7 +216,7 @@ export default function AccordionService() {
                                     <div className="w-full flex flex-col lg:gap-y-[50px] gap-y-5 lg:mb-[50px] mb-5">
                                           <div className='w-full flex lg:flex-row flex-col items-center lg:gap-[80px] gap-5'>
                                                 <ul className='pl-5 w-full h-max lg:max-w-[500px] max-w-none list-disc'>
-                                                      <li className='font-normal lg:text-base text-xs text-slate-600'>
+                                                      <li className='font-normal lg:text-base text-xs'>
                                                             Oven/Heater Equipment designed to operate with max. temperature of 400 C
                                                       </li>
                                                 </ul>
