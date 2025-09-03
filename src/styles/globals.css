@@ -37,6 +37,9 @@
   .label {
     @apply font-medium text-base text-slate-50;
   }
+  .label_light {
+    @apply font-medium text-base text-slate-800;
+  }
   .form_input {
     @apply w-full p-[10px] font-normal text-sm text-input-label placeholder:text-input-form border border-input-form outline-none;
   }

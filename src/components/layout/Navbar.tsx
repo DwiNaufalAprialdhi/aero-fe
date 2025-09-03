@@ -37,7 +37,7 @@ export default function Navbar() {
                                     <div className="flex items-center justify-between space-x-6">
                                           <NavMenu />
                                     </div>
-                                    <Button link={'#'} className={''}>
+                                    <Button link={'/contact'}>
                                           Contact Us
                                     </Button>
                               </div>

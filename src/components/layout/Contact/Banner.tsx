@@ -25,7 +25,7 @@ export default function Banner() {
                               </div>
                               {/* CONTENT */}
                               <h2 className='font-bold md:text-[64px] text-[32px] text-slate-800 leading-tight'>
-                                    Services
+                                    Contact
                               </h2>
                         </div>
                   </section>
