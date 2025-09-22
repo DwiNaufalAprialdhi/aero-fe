@@ -20,9 +20,9 @@ export default function AboutSection() {
                               </div>
                               {/* Right */}
                               <div className="w-full col-span-1 flex flex-col">
-                                    <LabelSectionDark title={'About Us'} />
+                                    <LabelSectionDark title={'Overview'} />
                                     <h2 className="font-normal lg:text-[48px] text-[24px] text-slate-800 block lg:my-[14px] my-3">
-                                          About <span className='font-bold'>Asia Aero</span>
+                                          Overview <span className='font-bold'>Asia Aero</span>
                                     </h2>
                                     <div className='flex flex-col font-normal lg:text-base text-sm text-slate-800 lg:gap-y-[14px] gap-y-3'>
                                           <span>

@@ -39,11 +39,11 @@ export default function Dedicated() {
                               </h2>
                         </div>
                   </section>
-                  <section className='w-full flex flex-col items-center justify-center gap-[14px] lg:mb-[100px] mb-[50px]'>
-                        <h2 className='font-bold md:text-[48px] text-[20px] text-slate-800 leading-tight text-center w-full md:max-w-[800px] max-w-none mx-auto'>
+                  <section className='w-full flex flex-col items-center justify-center gap-[14px] lg:mb-[150px] mb-[50px] md:px-0 px-5'>
+                        <h2 className='font-bold md:text-[48px] text-[24px] text-slate-800 leading-tight text-center w-full md:max-w-[800px] max-w-none mx-auto'>
                               Dedicated to <span className='text-[#BC1328]'>Aviation Maintenance</span> and Innovation
                         </h2>
-                        <p className='font-normal lg:text-[24px] text-base block leading-normal text-center md:max-w-[800px] max-w-none mx-auto'>
+                        <p className='font-normal lg:text-[24px] text-sm block leading-normal text-center md:max-w-[800px] max-w-none mx-auto'>
                               Committed to Delivering Excellence and Precision in Every Service, With a Focus on Safety, Reliability, and Innovation in Aviation                        </p>
                   </section>
             </>

@@ -1,10 +1,9 @@
-import AboutSection from '@/components/layout/About/AboutSection'
-import Certificate from '@/components/layout/About/Certificate'
 import CompanyInformation from '@/components/layout/About/CompanyInformation'
 import CompanyMilestones from '@/components/layout/About/CompanyMilestones'
 import CompanyStructure from '@/components/layout/About/CompanyStructure'
 import Dedicated from '@/components/layout/About/Dedicated'
 import OurMission from '@/components/layout/About/OurMission'
+import OurTeams from '@/components/layout/About/OurTeams'
 import OurValues from '@/components/layout/About/OurValues'
 import OurVision from '@/components/layout/About/OurVision'
 import Contact from '@/components/layout/Contact'
@@ -22,7 +21,7 @@ export default function index() {
                   </Head>
                   <Navbar />
                   <Dedicated />
-                  <AboutSection />
+                  {/* <AboutSection /> */}
                   <main className='w-full h-max lg:pt-[262px] lg:pb-[262px] pt-[100px] pb-[100px] relative bg-[#1E293B] flex flex-col lg:gap-[150px] gap-[100px] lg:mb-[150px] mb-[100px]'>
                         {/* LAYER TOP */}
                         <div
@@ -53,7 +52,7 @@ export default function index() {
                         >
                         </div>
                   </main>
-                  <Certificate />
+                  <OurTeams />
                   <Footer />
             </>
       )

@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useEffect } from 'react'
-import BadgeCategory from '../ui/BadgeCategory'
 import Image from 'next/image'
 import Services from '../ui/Services'
 import IconPlane from '../icon/IconPlane'
@@ -9,10 +8,10 @@ import IconSetting from '../icon/IconSetting'
 import IconBuillding from '../icon/IconBuillding'
 import Wide from '../ui/Wide'
 import AOS from "aos";
-import ButtonTextIcon from '../material/ButtonTextIcon'
 import IconRight from '../icon/IconRight'
 import Button from '../material/Button'
 import LabelSectionLight from '../material/LabelSectionLight'
+import Certificate from './About/Certificate'
 
 export default function ShortStory() {
 
@@ -24,19 +23,18 @@ export default function ShortStory() {
       }, []);
       return (
             <>
-                  <main className='w-full h-max py-[150px] relative bg-[#1E293B] mt-[136px]'>
+                  <main className='w-full h-max py-[150px] relative bg-[#151126] mt-[136px]'>
                         {/* LAYER SINCE */}
                         <div className='w-max h-max absolute top-[-80px] left-0 py-5 pl-5 lg:pr-[230px] pr-20 bg-slate-50 z-[2] flex flex-col gap-2 text-slate-800 overflow-hidden' style={{ clipPath: "polygon(0 0, 100% 0, calc(100% - 80px) 100%, 0 100%)" }}>
                               <p className='font-normal lg:text-base text-xs'>
                                     Short Story
                               </p>
-                              <h2 className='font-bold md:text-[48px] text-[20px] text-slate-800 leading-tight'>
+                              <h2 className='font-bold md:text-[48px] text-[24px] text-slate-800 leading-tight'>
                                     Established <span className='text-[#BC1328]'>Since 2007</span>
                               </h2>
                               <p className='font-normal lg:text-base text-xs block lg:max-w-none max-w-[200px]'>
                                     Since we were established, we always growing along with general aviation
                               </p>
-
                               <div className='w-max h-max absolute z-[3] top-[-40px] right-[125px] lg:flex hidden items-start justify-start gap-4 '>
                                     <div className='w-[23px] h-[500px] rotate-[25deg] bg-[#BC1328]'>
                                     </div>
@@ -102,13 +100,13 @@ export default function ShortStory() {
                                     </div>
                               </div>
                               {/* LOCATION */}
-                              <div className='w-full grid grid-cols-12 lg:max-w-[1200px] max-w-none mx-auto h-max lg:px-0 px-5 lg:gap-[40px] gap-5 leading-tight'>
+                              <div className='w-full grid grid-cols-12 lg:max-w-[1200px] max-w-none mx-auto h-max lg:mb-[150px] mb-[100px] lg:px-0 px-5 lg:gap-[40px] gap-5 leading-tight'>
                                     {/* LEFT */}
                                     <div className='w-full lg:col-span-5 col-span-12 flex flex-col lg:gap-[50px] gap-5'>
                                           <div className='w-max h-max mb-[14px]'>
                                                 <LabelSectionLight title={'Wiladatika airport facilities '} />
                                           </div>
-                                          <h2 className='font-bold lg:text-[64px] text-[40px] text-slate-50'>
+                                          <h2 className='font-bold lg:text-[64px] text-[24px] text-slate-50'>
                                                 <span className='text-[#BC1328]'>Aviation Maintenance</span> and Hangar Leasing
                                           </h2>
                                           <Button link={'https://www.google.com/maps?ll=-6.356956,106.897524&z=16&t=h&hl=en&gl=US&mapclient=embed&cid=852543758339294028'} className='flex items-center justify-center gap-x-2 lg:w-max w-full h-max'
@@ -124,6 +122,7 @@ export default function ShortStory() {
                                           <iframe className='w-full h-full' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4791.387789962295!2d106.897524!3d-6.356956!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ecc77559bab1%3A0xbd4d807ff4a434c!2sPT.%20Asia%20Aero%20Technology!5e1!3m2!1sen!2sus!4v1756540296774!5m2!1sen!2sus" loading="lazy"></iframe>
                                     </div>
                               </div>
+                              <Certificate />
                         </div>
                         {/* LAYER BOTTOM */}
                         <div className='lg:w-[672px] w-[300px] h-[60px] lg:h-[100px] absolute bottom-0 right-0 bg-white py-4 pr-4 pl-20 flex items-center lg:gap-6 gap-3 z-[2]'

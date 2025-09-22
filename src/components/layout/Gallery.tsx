@@ -16,7 +16,7 @@ export default function Gallery() {
                               <div className="flex flex-col gap-y-[14px] mb-[24px]">
                                     <LabelSectionDark title='Gallery' />
                                     <div className="flex items-end justify-between">
-                                          <h2 className="w-full lg:max-w-[500px] font-normal lg:text-[48px] leading-tight text-[32px] text-theme-brand">
+                                          <h2 className="w-full lg:max-w-[500px] font-normal lg:text-[48px] leading-tight text-[24px] text-theme-brand">
                                                 Visual Tour of Our <span className='font-bold text-theme-red'>Aviation Solutions</span>
                                           </h2>
                                           <Link href={'/gallery'} className="hidden lg:flex items-center gap-x-2">

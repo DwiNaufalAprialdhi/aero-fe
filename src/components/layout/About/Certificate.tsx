@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Image from 'next/image';
-import LabelSectionDark from '@/components/material/LabelSectionDark';
 import Icon from '@/components/icon/Icon';
+import LabelSectionLight from '@/components/material/LabelSectionLight';
 
 export default function Certificate() {
       const swiperRef = useRef<any>(null);
@@ -20,11 +20,11 @@ export default function Certificate() {
       };
       return (
             <>
-                  <main className='w-full h-auto overflow-hidden relative lg:mb-[270px] mb-[200px]'>
+                  <main className='w-full h-auto overflow-hidden relative text-white'>
                         <section className='container_section flex flex-col lg:mb-[50px] mb-6'>
-                              <LabelSectionDark title='Certification' />
+                              <LabelSectionLight title='Certification' />
                               <h2 className='w-full md:max-w-[750px] max-w-none font-normal lg:text-[48px] text-[24px] leading-tight lg:mt-[14px] mt-2'>
-                                    Our Industry <span className='font-bold text-slate-800'>Certifications
+                                    Our Industry <span className='font-bold'>Certifications
                                           and </span> <span className='font-bold text-theme-red'>Achievements</span>
                               </h2>
                         </section>
@@ -131,7 +131,7 @@ export default function Certificate() {
                               {/* PROGRESSBAR */}
                               <div className="flex-grow w-full h-[6px] rounded-full bg-zinc-200 relative overflow-hidden">
                                     <div
-                                          className="absolute left-0 top-0 h-full bg-[#352B5A] rounded-full transition-all duration-300"
+                                          className="absolute left-0 top-0 h-full bg-[#F9F400] rounded-full transition-all duration-300"
                                           style={{ width: `${progress}%` }}
                                     ></div>
                               </div>
@@ -139,15 +139,15 @@ export default function Certificate() {
                               <div className="flex-shrink-0 flex items-center justify-center gap-[14px]">
                                     <button
                                           onClick={handlePrev}
-                                          className="md:w-[36px] md:h-[36px] w-7 h-7 hover:scale-105 duration-200 overflow-hidden rounded-full flex items-center justify-center bg-[#352B5A]/10"
+                                          className="md:w-[36px] md:h-[36px] w-7 h-7 hover:scale-105 duration-200 overflow-hidden rounded-full flex items-center justify-center bg-[#F9F400]/10"
                                     >
-                                          <Icon.arrowSwiper2 className="w-[6px] h-max" />
+                                          <Icon.arrowSwiper className="w-[6px] h-max" />
                                     </button>
                                     <button
                                           onClick={handleNext}
-                                          className="md:w-[36px] md:h-[36px] w-7 h-7 hover:scale-105 duration-200 overflow-hidden rounded-full flex items-center justify-center bg-[#352B5A]/10"
+                                          className="md:w-[36px] md:h-[36px] w-7 h-7 hover:scale-105 duration-200 overflow-hidden rounded-full flex items-center justify-center bg-[#F9F400]/10"
                                     >
-                                          <Icon.arrowSwiper2 className="w-[6px] h-max rotate-180" />
+                                          <Icon.arrowSwiper className="w-[6px] h-max rotate-180" />
                                     </button>
                               </div>
                         </section>

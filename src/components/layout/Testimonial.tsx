@@ -78,7 +78,7 @@ export default function Testimonial() {
                               {/* Left Section */}
                               <div className='w-full lg:col-span-1 col-span-3 flex flex-col'>
                                     <LabelSectionLight title='Testimonials' />
-                                    <h2 className='font-normal text-slate-50 lg:text-[48px] text-[32px] lg:leading-[60px] leading-[35px] my-[14px]'>
+                                    <h2 className='font-normal text-slate-50 lg:text-[48px] text-[24px] lg:leading-[60px] leading-[35px] my-[14px]'>
                                           Hear From <span className='font-bold'>Our </span><span className='text-theme-red font-bold'>Clients</span>
                                     </h2>
                                     <p className='font-normal lg:text-[24px] text-base lg:leading-[30px] leading-normal text-slate-200 lg:mb-[50px] mb-[0px]'>

@@ -1,3 +1,4 @@
+import AboutSection from '@/components/layout/About/AboutSection'
 import Banner from '@/components/layout/Banner'
 import Contact from '@/components/layout/Contact'
 import Faq from '@/components/layout/Faq'
@@ -7,6 +8,7 @@ import Hero from '@/components/layout/Hero'
 import Navbar from '@/components/layout/Navbar'
 import OurClient from '@/components/layout/OurClient'
 import OurProduct from '@/components/layout/OurProduct'
+import OurStrategic from '@/components/layout/Services/OurStrategic'
 import ShortStory from '@/components/layout/ShortStory'
 import Testimonial from '@/components/layout/Testimonial'
 import Vendor from '@/components/layout/Vendor'
@@ -18,9 +20,11 @@ export default function index() {
     <>
       <Navbar />
       <Hero />
-      <Vendor />
+      <AboutSection />
       <ShortStory />
       <OurClient />
+      <Vendor />
+      <OurStrategic />
       <div className='w-full overflow-hidden relative'>
         <Banner />
         {/* ORNAMENT */}

@@ -7,7 +7,6 @@ import Banner from '@/components/layout/Services/Banner'
 import BannerService from '@/components/layout/Services/BannerService'
 import FullService from '@/components/layout/Services/FullService'
 import Logistics from '@/components/layout/Services/Logistics'
-import OurStrategic from '@/components/layout/Services/OurStrategic'
 import Rotax from '@/components/layout/Services/Rotax'
 import Supply from '@/components/layout/Services/Supply'
 import VendorService from '@/components/layout/Services/VendorService'
@@ -51,7 +50,7 @@ export default function index() {
                         </div>
                         <AccordionService />
                         <AccordionDesign />
-                        <OurStrategic />
+                        {/* <OurStrategic /> */}
                         <Rotax />
                         <Contact />
                         {/* LAYER BOTTOM */}

@@ -17,7 +17,7 @@ export default function Faq() {
                         <section className='container_section grid grid-cols-12 text-slate-50'>
                               <div className='w-full lg:col-span-5 col-span-12 flex flex-col'>
                                     <LabelSectionLight title='FAQ' />
-                                    <h2 className='font-normal lg:text-[48px] text-[32px] my-[14px] leading-tight'>Frequently Asked <span className='font-bold text-theme-red'>Questions</span></h2>
+                                    <h2 className='font-normal lg:text-[48px] text-[24px] my-[14px] leading-tight'>Frequently Asked <span className='font-bold text-theme-red'>Questions</span></h2>
                                     <p className='font-normal lg:text-base text-sm text-theme-secondary mb-[50px]'>Pertanyaan yang sering ditanyakan</p>
                               </div>
                               <div className='w-full lg:col-span-7 col-span-12 flex flex-col gap-y-[14px]'>

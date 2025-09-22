@@ -16,7 +16,7 @@ export default function Contact() {
                   <main className='container_section  w-full overflow-hidden relative z-[2] grid grid-cols-12 lg:gap-[50px] gap-6'>
                         <section className='lg:col-span-6 col-span-12 flex flex-col text-slate-50'>
                               <LabelSectionLight title='Contact Us' />
-                              <h2 className='font-bold lg:text-[48px] text-[32px] leading-tight my-[14px]'>Contact Our <span className='font-bold text-theme-red'>Team</span></h2>
+                              <h2 className='font-bold lg:text-[48px] text-[24px] leading-tight my-[14px]'>Contact Our <span className='font-bold text-theme-red'>Team</span></h2>
                               <p className='font-normal lg:text-base text-sm text-theme-secondary mb-[50px]'>&quot;We are commited to develop general aviation airport of Indonesia&quot;</p>
                               <div className='w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-[50px] gap-6'>
                                     <div className='w-full h-max flex flex-col gap-6'>

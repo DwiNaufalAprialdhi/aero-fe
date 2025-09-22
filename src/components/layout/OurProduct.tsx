@@ -32,7 +32,7 @@ export default function OurProduct() {
                   <main className="w-full overflow-hidden relative z-[3] text-slate-50">
                         <section className="container_section flex flex-col mb-[50px]">
                               <LabelSectionLight title='Our Product and Service' />
-                              <h2 className="w-full max-w-[700px] font-bold lg:text-[48px] leading-tight text-[32px] mt-[14px]">
+                              <h2 className="w-full max-w-[700px] font-bold lg:text-[48px] leading-tight text-[24px] mt-[14px]">
                                     Advanced Aviation Services, Management, and <span className='font-bold text-theme-red'>Hangar Leasing</span>
                               </h2>
                         </section>

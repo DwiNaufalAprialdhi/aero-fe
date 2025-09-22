@@ -25,9 +25,9 @@ export default function Vendor() {
       }, []);
       return (
             <>
-                  <main className="w-full py-5">
+                  <main className="w-full pt-5 pb-[100px]">
                         <section className="container_section">
-                              <h2 className="font-bold md:text-[24px] text-base text-center mb-[24px]">
+                              <h2 className="font-bold text-[24px] text-center mb-[24px]">
                                     Our Vendors and Suppliers
                               </h2>
                               <div
