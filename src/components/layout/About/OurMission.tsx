@@ -21,9 +21,6 @@ export default function OurMission() {
                               {/* RIGHT */}
                               <div className='w-full flex-grow flex flex-col lg:order-2 order-2'>
                                     <LabelSectionLight title='Our Mission' />
-                                    <h2 className='w-full md:max-w-[500px] max-w-none text-start font-normal lg:text-[48px] text-[24px] leading-tight lg:mt-[14px] mt-2'>
-                                          Commitment to <span className='font-bold'>Aviation</span> <span className='font-bold text-theme-red'>Excellence</span>
-                                    </h2>
                                     <div className='w-full flex flex-col lg:gap-6 gap-5 lg:mt-[50px] mt-6'>
                                           {/* LIST 1 */}
                                           <div className='w-full flex items-start justify-start gap-[14px]'>

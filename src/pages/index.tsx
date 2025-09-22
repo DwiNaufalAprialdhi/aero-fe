@@ -1,7 +1,7 @@
 import AboutSection from '@/components/layout/About/AboutSection'
 import Banner from '@/components/layout/Banner'
 import Contact from '@/components/layout/Contact'
-import Faq from '@/components/layout/Faq'
+// import Faq from '@/components/layout/Faq'
 import Footer from '@/components/layout/Footer'
 import Gallery from '@/components/layout/Gallery'
 import Hero from '@/components/layout/Hero'
@@ -51,7 +51,7 @@ export default function index() {
         </div>
         <Testimonial />
         <OurProduct />
-        <Faq />
+        {/* <Faq /> */}
         <Contact />
         {/* LAYER BOTTOM */}
         <div className='lg:w-[672px] w-[300px] h-[60px] lg:h-[100px] absolute bottom-[-5px] right-0 bg-white py-4 pr-4 pl-20 flex items-center lg:gap-6 gap-3 z-[2]'
