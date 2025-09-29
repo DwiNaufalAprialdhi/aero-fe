@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import AOS from "aos";
 import Link from 'next/link';
+import { useLangContext } from '../hooks/LangContext';
 
 
 
@@ -17,6 +18,7 @@ const dataVendor = [
 ]
 
 export default function Vendor() {
+      const { lang } = useLangContext()
       useEffect(() => {
             AOS.init({
                   duration: 800,
@@ -28,7 +30,7 @@ export default function Vendor() {
                   <main className="w-full pt-5 pb-[100px]">
                         <section className="container_section">
                               <h2 className="font-bold text-[24px] text-center mb-[24px]">
-                                    Our Vendors and Suppliers
+                                    {lang === 'ID' ? 'Vendor dan Pemasok ' : 'Our Vendors and Suppliers'}
                               </h2>
                               <div
                                     className="box_vendor w-full overflow-hidden transition-all duration-300 ease-in-out">

@@ -5,9 +5,11 @@ import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import LabelSectionDark from '../material/LabelSectionDark';
+import { useLangContext } from '../hooks/LangContext';
 
 
 export default function OurClient() {
+      const { lang } = useLangContext()
 
       useEffect(() => {
             AOS.init({
@@ -46,10 +48,16 @@ export default function OurClient() {
                   <main className='w-full mt-[100px] lg:mb-[150px] mb-[100px] overflow-hidden'>
                         <section className='container_section grid grid-cols-12 items-center lg:gap-[50px] gap-6'>
                               <div className='w-full lg:col-span-5 col-span-12 flex flex-col gap-y-[14px]'>
-                                    <LabelSectionDark title={'Our Clients'} />
-                                    <h2 className='font-normal lg:text-[43px] text-[24px] text-theme-brand'>
-                                          Trusted by <span className='font-bold'>Leading </span><span className='font-bold text-theme-red'>Aviation Companies</span>
-                                    </h2>
+                                    <LabelSectionDark title={`${lang === 'ID' ? 'Pelanggan Kami' : 'Our Clients'}`} />
+                                    {lang === 'ID' ? <>
+                                          <h2 className='font-normal lg:text-[43px] text-[24px] text-theme-brand'>
+                                                Dipercaya oleh <span className='font-bold'>Perusahaan </span><span className='font-bold text-theme-red'>Penerbangan Terkemuka</span>
+                                          </h2>
+                                    </> : <>
+                                          <h2 className='font-normal lg:text-[43px] text-[24px] text-theme-brand'>
+                                                Trusted by <span className='font-bold'>Leading </span><span className='font-bold text-theme-red'>Aviation Companies</span>
+                                          </h2>
+                                    </>}
                               </div>
                               <div className='w-full lg:col-span-7 col-span-12 grid grid-cols-1 overflow-hidden'>
                                     <Swiper
