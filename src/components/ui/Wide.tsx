@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import { useLangContext } from "../hooks/LangContext";
 
 type Props = {
       wide: string;
@@ -12,6 +13,7 @@ type Props = {
 
 export default function Wide(props: Props) {
       const { ref, inView } = useInView({ triggerOnce: true });
+      const { lang } = useLangContext()
 
       // Konversi `wide` menjadi angka dan satuan
       const number = parseFloat(props.wide.replace(/[^0-9.]/g, "")); // Ambil angka
@@ -28,7 +30,7 @@ export default function Wide(props: Props) {
                               )}
                               <span className="ml-1">{suffix}{props.wideLatest}</span>
                         </h2>
-                        <h2 className="font-normal lg:text-[20px] leading-normal text-sm text-slate-50">{props.title}</h2>
+                        <h2 className={`font-normal leading-normal ${lang === 'ID' ? 'lg:text-[17px] text-sm' : 'lg:text-[20px] text-sm'} text-slate-50`}>{props.title}</h2>
                   </div>
                   <div className="lg:w-[268px] w-[150px] lg:h-[268px] h-[150px] overflow-hidden">
                         <Image

@@ -8,10 +8,12 @@ import ButtonTextIcon from '../material/ButtonTextIcon'
 import IconStarsCircle from '../icon/IconStarsCircle'
 import { motion, animate } from 'framer-motion';
 import Button from '../material/Button'
+import { useLangContext } from '../hooks/LangContext'
 
 
 export default function Hero() {
       const [count, setCount] = useState(0);
+      const { lang } = useLangContext()
 
       useEffect(() => {
             // Animasi angka dari 0 hingga 18
@@ -34,10 +36,14 @@ export default function Hero() {
                         <div className='w-full h-max lg:max-w-[1200px] mx-auto relative z-[2] lg:py-0 py-[170px] lg:px-0 px-5'>
                               <div className='w-full lg:max-w-[660px] max-w-none flex flex-col justify-start '>
                                     <h2 className='font-bold md:text-[64px] text-[40px] text-slate-50 leading-tight lg:mb-6 mb-5'>
-                                          General <span className='text-[#BC1328]'>Aviation</span> <span className='text-[#F9F400]'>Solution</span> and Airport Services
+                                          {lang === 'ID' ? 'Solusi' : 'General'} <span className='text-[#BC1328]'>{lang === 'ID' ? 'Penerbangan' : 'Aviation'}</span> <span className='text-[#F9F400]'>{lang === 'ID' ? 'Umum' : 'Solution'}</span> {lang === 'ID' ? 'dan Layanan Bandara' : 'and Airport Services'}
                                     </h2>
                                     <p className='block w-full lg:max-w-[397px] text-[24px] max-w-none font-normal text-slate-100 lg:mb-[50px] mb-[25px]'>
-                                          &quot;We are commited to develop general aviation airport of Indonesia&quot;
+                                          {lang === 'ID' ? <>
+                                                &quot;Kami berkomitmen untuk mengembangkan bandara penerbangan umum Indonesia&quot;
+                                          </> : <>
+                                                &quot;We are commited to develop general aviation airport of Indonesia&quot;
+                                          </>}
                                     </p>
                                     <div className='lg:w-max w-full h-max flex flex-row gap-6'>
                                           <Button link={'#'} className='flex items-center justify-center gap-x-2'
@@ -45,10 +51,10 @@ export default function Hero() {
                                                       <><IconRight className='w-6 h-6 toRight' />
                                                       </>
                                                 } >
-                                                Get Started Now
+                                                {lang === 'ID' ? 'Mulailah Sekarang' : 'Get Started Now'}
                                           </Button>
-                                          <ButtonOutline link={'#'} >
-                                                View Services
+                                          <ButtonOutline link={'/services'} >
+                                                {lang === 'ID' ? 'Lihat Layanan' : 'View Services'}
                                           </ButtonOutline>
                                     </div>
                               </div>
@@ -65,11 +71,15 @@ export default function Hero() {
                                                 {count}+
                                           </h2>
                                     </div>
-                                    <h2 className='font-normal lg:text-base text-xs'>Years of Experience</h2>
+                                    <h2 className='font-normal lg:text-base text-xs'>
+                                          {lang === 'ID' ? 'Pengalaman Bertahun-tahun' : 'Years of Experience'}
+                                    </h2>
                               </div>
                               <div className='w-[1px] h-[50px] border border-slate-400 relative z-[2]'></div>
                               <div className='flex flex-col items-start relative z-[2]'>
-                                    <h2 className='font-normal lg:text-base text-xs lg:mb-4 mb-2'>Years of Experience</h2>
+                                    <h2 className='font-normal lg:text-base text-xs lg:mb-4 mb-2'>
+                                          {lang === 'ID' ? 'Stategic bermitra dengan:' : 'Stategic Partners with:'}
+                                    </h2>
                                     <div className='flex items-center gap-x-4'>
                                           <Image src='/assets/logo/dai.svg' alt='Logo' width={106} height={60} className='lg:w-[106px] w-[50px] h-auto object-cover' />
                                           <Image src='/assets/logo/pes.svg' alt='Logo' width={106} height={60} className='lg:w-[106px] w-[50px] h-auto object-cover' />

@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
 import Image from 'next/image';
 import Icon from '@/components/icon/Icon';
 import LabelSectionLight from '@/components/material/LabelSectionLight';
+import { useLangContext } from '@/components/hooks/LangContext';
 
 export default function Certificate() {
       const swiperRef = useRef<any>(null);
       const [progress, setProgress] = useState(0);
+      const { lang } = useLangContext()
 
       const handlePrev = () => {
             swiperRef.current?.slidePrev();
@@ -22,11 +22,20 @@ export default function Certificate() {
             <>
                   <main className='w-full h-auto overflow-hidden relative text-white'>
                         <section className='container_section flex flex-col lg:mb-[50px] mb-6'>
-                              <LabelSectionLight title='Certification' />
-                              <h2 className='w-full md:max-w-[750px] max-w-none font-normal lg:text-[48px] text-[24px] leading-tight lg:mt-[14px] mt-2'>
-                                    Our Industry <span className='font-bold'>Certifications
-                                          and </span> <span className='font-bold text-theme-red'>Achievements</span>
-                              </h2>
+                              <LabelSectionLight title={`${lang === 'ID' ? 'Sertifikasi' : 'Certification'}`} />
+                              {lang === 'ID' ? <>
+
+                                    <h2 className='w-full md:max-w-[750px] max-w-none font-normal lg:text-[48px] text-[24px] leading-tight lg:mt-[14px] mt-2'>
+                                          <span className='font-bold'>Sertifikasi dan </span> <span className='font-bold text-theme-red'>Prestasi Industri Kami</span>
+                                    </h2>
+
+                              </> : <>
+
+                                    <h2 className='w-full md:max-w-[750px] max-w-none font-normal lg:text-[48px] text-[24px] leading-tight lg:mt-[14px] mt-2'>
+                                          Our Industry <span className='font-bold'>Certifications
+                                                and </span> <span className='font-bold text-theme-red'>Achievements</span>
+                                    </h2>
+                              </>}
                         </section>
                         <section className='container_section_slider grid grid-cols-1'>
                               <Swiper

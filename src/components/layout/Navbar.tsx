@@ -5,9 +5,12 @@ import Button from '../material/Button';
 import NavMenu from '../material/NavMenu';
 import IconHamburger from '../icon/IconHamburger';
 import NavMenuMobile from '../material/NavMenuMobile';
+import LangSwitcher from '../material/LangSwitcher';
+import { useLangContext } from '../hooks/LangContext';
 
 export default function Navbar() {
       const [isMenuOpen, setIsMenuOpen] = useState(false);
+      const { lang } = useLangContext()
 
       const toggleMenu = () => {
             setIsMenuOpen(!isMenuOpen);
@@ -33,13 +36,21 @@ export default function Navbar() {
                                     </Link>
                               </div>
 
+                              {/* Kondisi Desktop */}
                               <div className="hidden lg:flex items-center space-x-[50px]">
                                     <div className="flex items-center justify-between space-x-6">
                                           <NavMenu />
                                     </div>
-                                    <Button link={'/contact'}>
-                                          Contact Us
-                                    </Button>
+                                    <div className='flex items-center gap-5'>
+                                          <Button link={'/contact'}>
+                                                {lang === 'ID' ? 'Kontak Kami' : 'Contact Us'}
+                                          </Button>
+                                          <LangSwitcher />
+                                    </div>
+                              </div>
+                              {/* Kondisi Mobile */}
+                              <div className='md:hidden block'>
+                                    <LangSwitcher />
                               </div>
                         </div>
                   </nav>

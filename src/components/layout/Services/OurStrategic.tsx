@@ -27,7 +27,7 @@ export default function OurStrategic() {
                                                 width={800}
                                                 height={500}
                                                 alt='Our Strategic Partners'
-                                                className='w-[153px] h-max object-contain'
+                                                className='md:w-[250px] w-[200px] h-max object-contain mx-auto'
                                           />
                                     </a>
                                     {/* Text */}
@@ -77,7 +77,7 @@ export default function OurStrategic() {
                                                 width={800}
                                                 height={500}
                                                 alt='Our Strategic Partners'
-                                                className='w-[153px] h-max object-contain'
+                                                className='md:w-[250px] w-[200px] h-max object-contain mx-auto'
                                           />
                                     </a>
                                     {/* Text */}

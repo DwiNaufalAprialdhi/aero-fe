@@ -1,6 +1,5 @@
 import CompanyInformation from '@/components/layout/About/CompanyInformation'
 import CompanyMilestones from '@/components/layout/About/CompanyMilestones'
-import CompanyStructure from '@/components/layout/About/CompanyStructure'
 import Dedicated from '@/components/layout/About/Dedicated'
 import OurMission from '@/components/layout/About/OurMission'
 import OurTeams from '@/components/layout/About/OurTeams'
@@ -44,7 +43,7 @@ export default function index() {
                         <OurValues />
                         <CompanyMilestones />
                         <CompanyInformation />
-                        <CompanyStructure />
+                        {/* <CompanyStructure /> */}
                         <Contact />
                         {/* LAYER BOTTOM */}
                         <div className='lg:w-[672px] w-[300px] h-[60px] lg:h-[100px] absolute bottom-[-5px] right-0 bg-white py-4 pr-4 pl-20 flex items-center lg:gap-6 gap-3 z-[2]'
