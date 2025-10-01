@@ -2,8 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Subscribe from './Subscribe'
+import { useLangContext } from '../hooks/LangContext'
 
 export default function Footer() {
+      const { lang } = useLangContext();
       return (
             <>
                   <main className='w-full relative bg-slate-800 pt-[195px]'>
@@ -13,16 +15,28 @@ export default function Footer() {
                               <div className='flex lg:flex-row flex-col items-start lg:justify-between justify-start mb-[50px]'>
                                     <div className='flex flex-col gap-y-[14px]'>
                                           <Image src='/assets/logo/asia-aero.svg' width={151} height={69} alt='logo' className='w-[151px] h-auto' />
-                                          <p className='w-full max-w-[517px] font-normal text-base text-theme-secondary'>The importance of general aviation to Indonesia&apos;s progress is urgently to develop. We are committed to always growing allong with General Aviation.</p>
+                                          {lang === 'ID' ? <>
+                                                <p className='w-full max-w-[517px] font-normal text-base text-theme-secondary'>Pentingnya peran penerbangan umum bagi kemajuan Indonesia perlu segera dikembangkan. Kami berkomitmen untuk terus berkembang bersama Penerbangan Umum.</p>
+                                          </> : <>
+                                                <p className='w-full max-w-[517px] font-normal text-base text-theme-secondary'>The importance of general aviation to Indonesia&apos;s progress is urgently to develop. We are committed to always growing allong with General Aviation.</p>
+                                          </>}
                                     </div>
                                     <div className='flex items-start gap-x-[100px] mt-[100px] lg:mt-0'>
                                           <div className='flex flex-col'>
                                                 <h2 className='font-medium text-base mb-6'>Pages</h2>
-                                                <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/'>Home</Link>
-                                                <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/about'>About</Link>
-                                                <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/services'>Services</Link>
-                                                <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/gallery'>Gallery</Link>
-                                                <Link className='font-normal text-sm text-[#64748B]' href='/contact'>Contact</Link>
+                                                {lang === 'ID' ? <>
+                                                      <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/'>Beranda</Link>
+                                                      <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/about'>Tentang</Link>
+                                                      <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/services'>Layanan</Link>
+                                                      <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/gallery'>Galeri</Link>
+                                                      <Link className='font-normal text-sm text-[#64748B]' href='/contact'>Kontak</Link>
+                                                </> : <>
+                                                      <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/'>Home</Link>
+                                                      <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/about'>About</Link>
+                                                      <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/services'>Services</Link>
+                                                      <Link className='font-normal text-sm text-[#64748B] mb-[14px]' href='/gallery'>Gallery</Link>
+                                                      <Link className='font-normal text-sm text-[#64748B]' href='/contact'>Contact</Link>
+                                                </>}
                                           </div>
                                           <div className='flex flex-col'>
                                                 <h2 className='font-medium text-base mb-6'>Contact Us</h2>

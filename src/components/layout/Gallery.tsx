@@ -1,29 +1,46 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React from 'react';
 import Link from 'next/link';
 import IconRight from '../icon/IconRight';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
+// @ts-ignore
 import 'swiper/css';
+// @ts-ignore
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import LabelSectionDark from '../material/LabelSectionDark';
+import { useLangContext } from '../hooks/LangContext';
 
 export default function Gallery() {
+      const { lang } = useLangContext();
       return (
             <>
                   <main className="w-full overflow-hidden lg:mb-[270px] mb-[200px]">
                         <section className="container_section">
                               <div className="flex flex-col gap-y-[14px] mb-[24px]">
-                                    <LabelSectionDark title='Gallery' />
-                                    <div className="flex items-end justify-between">
-                                          <h2 className="w-full lg:max-w-[500px] font-normal lg:text-[48px] leading-tight text-[24px] text-theme-brand">
-                                                Visual Tour of Our <span className='font-bold text-theme-red'>Aviation Solutions</span>
-                                          </h2>
-                                          <Link href={'/gallery'} className="hidden lg:flex items-center gap-x-2">
-                                                <h2 className="font-normal text-base">See More</h2>
-                                                <IconRight className="w-6 h-6 text-theme-donker toRight" />
-                                          </Link>
-                                    </div>
+                                    <LabelSectionDark title={`${lang === 'ID' ? 'Galeri' : 'Gallery'}`} />
+                                    {lang === 'ID' ? <>
+                                          <div className="flex items-end justify-between">
+                                                <h2 className="w-full lg:max-w-[500px] font-normal lg:text-[48px] leading-tight text-[24px] text-theme-brand">
+                                                      Tur Visual Solusi <span className='font-bold text-theme-red'>Penerbangan Kami</span>
+                                                </h2>
+                                                <Link href={'/gallery'} className="hidden lg:flex items-center gap-x-2">
+                                                      <h2 className="font-normal text-base">Lihat Lebih Banyak</h2>
+                                                      <IconRight className="w-6 h-6 text-theme-donker toRight" />
+                                                </Link>
+                                          </div>
+                                    </> : <>
+                                          <div className="flex items-end justify-between">
+                                                <h2 className="w-full lg:max-w-[500px] font-normal lg:text-[48px] leading-tight text-[24px] text-theme-brand">
+                                                      Visual Tour of Our <span className='font-bold text-theme-red'>Aviation Solutions</span>
+                                                </h2>
+                                                <Link href={'/gallery'} className="hidden lg:flex items-center gap-x-2">
+                                                      <h2 className="font-normal text-base">See More</h2>
+                                                      <IconRight className="w-6 h-6 text-theme-donker toRight" />
+                                                </Link>
+                                          </div>
+                                    </>}
                               </div>
                         </section>
                         <section>

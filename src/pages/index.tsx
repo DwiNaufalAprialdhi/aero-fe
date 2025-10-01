@@ -1,6 +1,6 @@
 import AboutSection from '@/components/layout/About/AboutSection'
 import Banner from '@/components/layout/Banner'
-import Contact from '@/components/layout/Contact'
+// import Contact from '@/components/layout/Contact'
 // import Faq from '@/components/layout/Faq'
 import Footer from '@/components/layout/Footer'
 import Gallery from '@/components/layout/Gallery'
@@ -52,7 +52,7 @@ export default function index() {
         <Testimonial />
         <OurProduct />
         {/* <Faq /> */}
-        <Contact />
+        {/* <Contact /> */}
         {/* LAYER BOTTOM */}
         <div className='lg:w-[672px] w-[300px] h-[60px] lg:h-[100px] absolute bottom-[-5px] right-0 bg-white py-4 pr-4 pl-20 flex items-center lg:gap-6 gap-3 z-[2]'
           style={{ clipPath: "polygon(80px 0, 100% 0, 100% 100%, 0 100%)" }}

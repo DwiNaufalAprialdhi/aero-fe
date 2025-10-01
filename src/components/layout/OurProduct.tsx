@@ -1,10 +1,13 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useRef, useState } from 'react';
 import ItemProduct from '../ui/ItemProduct';
 import { Swiper, SwiperSlide } from 'swiper/react';
+// @ts-ignore
 import 'swiper/css';
 import LabelSectionLight from '../material/LabelSectionLight';
 import Icon from '../icon/Icon';
+import { useLangContext } from '../hooks/LangContext';
 
 
 
@@ -15,9 +18,17 @@ const productItems = [
       { id: 4, title: 'Aviation  Consultant', image: '/assets/images/product-4.png' },
 ]
 
+const productItem = [
+      { id: 1, title: 'Manajemen Aset Penerbangan', image: '/assets/images/product-1.png' },
+      { id: 2, title: 'Perawatan Pesawat', image: '/assets/images/product-2.png' },
+      { id: 3, title: 'Rantai Pasokan Penerbangan', image: '/assets/images/product-3.png' },
+      { id: 4, title: 'Konsultan Penerbangan', image: '/assets/images/product-4.png' },
+]
+
 export default function OurProduct() {
       const swiperRef = useRef<any>(null);
       const [progress, setProgress] = useState(0);
+      const { lang } = useLangContext();
 
       const handlePrev = () => {
             swiperRef.current?.slidePrev();
@@ -31,10 +42,16 @@ export default function OurProduct() {
             <>
                   <main className="w-full overflow-hidden relative z-[3] text-slate-50">
                         <section className="container_section flex flex-col mb-[50px]">
-                              <LabelSectionLight title='Our Product and Service' />
-                              <h2 className="w-full max-w-[700px] font-bold lg:text-[48px] leading-tight text-[24px] mt-[14px]">
-                                    Advanced Aviation Services, Management, and <span className='font-bold text-theme-red'>Hangar Leasing</span>
-                              </h2>
+                              <LabelSectionLight title={`${lang === 'ID' ? 'Produk dan Layanan Kami' : 'Our Product and Service'}`} />
+                              {lang === 'ID' ? <>
+                                    <h2 className="w-full max-w-[700px] font-bold lg:text-[48px] leading-tight text-[24px] mt-[14px]">
+                                          Layanan Penerbangan Lanjutan, Manajemen, dan <span className='font-bold text-theme-red'>Penyewaan Hanggar</span>
+                                    </h2>
+                              </> : <>
+                                    <h2 className="w-full max-w-[700px] font-bold lg:text-[48px] leading-tight text-[24px] mt-[14px]">
+                                          Advanced Aviation Services, Management, and <span className='font-bold text-theme-red'>Hangar Leasing</span>
+                                    </h2>
+                              </>}
                         </section>
                         <section className='flex flex-col'>
                               <div className='container_section md:px-0 px-5 ourValuesSlider grid grid-cols-1'>
@@ -78,11 +95,19 @@ export default function OurProduct() {
                                           }}
                                           className="product-swiper w-full col-span-1 cursor-grab"
                                     >
-                                          {productItems.map((item) => (
-                                                <SwiperSlide className='pb-10' key={item.id}>
-                                                      <ItemProduct title={item.title} image={item.image} />
-                                                </SwiperSlide>
-                                          ))}
+                                          {lang === 'ID' ? <>
+                                                {productItem.map((item) => (
+                                                      <SwiperSlide className='pb-10' key={item.id}>
+                                                            <ItemProduct title={item.title} image={item.image} />
+                                                      </SwiperSlide>
+                                                ))}
+                                          </> : <>
+                                                {productItems.map((item) => (
+                                                      <SwiperSlide className='pb-10' key={item.id}>
+                                                            <ItemProduct title={item.title} image={item.image} />
+                                                      </SwiperSlide>
+                                                ))}
+                                          </>}
                                     </Swiper>
                               </div>
                               {/* PROGRESSBAR & ARROW LEFT RIGHT */}

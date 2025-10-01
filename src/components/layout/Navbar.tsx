@@ -49,7 +49,7 @@ export default function Navbar() {
                                     </div>
                               </div>
                               {/* Kondisi Mobile */}
-                              <div className='md:hidden block'>
+                              <div className='lg:hidden block'>
                                     <LangSwitcher />
                               </div>
                         </div>
