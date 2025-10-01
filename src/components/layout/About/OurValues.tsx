@@ -45,32 +45,44 @@ export default function OurValues() {
                         const label = w?.globals?.labels?.[seriesIndex];
                         const desc = descriptions[label as keyof typeof descriptions] || "";
                         return `
-      <div style="
-        padding:8px;
-        max-width:250px;
-        font-size:13px;
-        color:#fff;
-        white-space: normal;
-        word-wrap: break-word;
-        line-height:1.4;
-      ">
-        <strong>${label}</strong><br/>
-        <span>${desc}</span>
-      </div>
-    `;
+        <div style="
+          padding:8px;
+          max-width:250px;
+          font-size:13px;
+          color:#fff;
+          white-space: normal;
+          word-wrap: break-word;
+          line-height:1.4;
+        ">
+          <strong>${label}</strong><br/>
+          <span>${desc}</span>
+        </div>
+      `;
                   },
             },
             dataLabels: {
-                  enabled: false,
+                  enabled: true,
+                  style: {
+                        colors: ["#fff"], // warna teks label di dalam chart
+                        fontSize: "12px",
+                        fontWeight: "bold",
+                  },
+                  formatter: function (_val, opts) {
+                        return opts.w.globals.labels[opts.seriesIndex]; // tampilkan label, bukan value %
+                  },
+                  dropShadow: {
+                        enabled: false,
+                  },
             },
             colors: [
-                  "#F9F400", // Solution Provider
-                  "#BC1328", // Teamwork
-                  "#151126", // Trustworthy
-                  "#1E293B", // Reliable
-                  "#475569", // Social Responsibility
+                  "#111827", // abu tua banget
+                  "#1F2937", // abu tua
+                  "#374151", // abu sedang
+                  "#4B5563", // abu medium
+                  "#6B7280", // abu terang
             ],
       };
+
 
 
       const chartSeries = [20, 20, 20, 20, 20];
@@ -95,7 +107,7 @@ export default function OurValues() {
                                                       options={chartOptions}
                                                       series={chartSeries}
                                                       type="donut"
-                                                      width="200%"
+                                                      width="260%"
                                                 />
                                           </div>
                                           <div className="col-span-2 lg:col-span-3 md:hidden flex items-center justify-center">
@@ -103,7 +115,7 @@ export default function OurValues() {
                                                       options={chartOptions}
                                                       series={chartSeries}
                                                       type="donut"
-                                                      width="100%"
+                                                      width="150%"
                                                 />
                                           </div>
                                     </section>
