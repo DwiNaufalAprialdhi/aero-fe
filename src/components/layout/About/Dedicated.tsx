@@ -1,15 +1,12 @@
-import React, { useEffect } from 'react'
-import AOS from "aos";
+import React from 'react'
 import Image from 'next/image';
+import { useLangContext } from '@/components/hooks/LangContext';
 
 
 export default function Dedicated() {
-      useEffect(() => {
-            AOS.init({
-                  duration: 800,
-                  once: true,
-            });
-      }, []);
+
+      const { lang } = useLangContext();
+
       return (
             <>
                   <section className="w-full md:h-[500px] h-[400px] overflow-hidden relative lg:pt-[200px] pt-[110px] lg:mb-[150px] mb-[50px]">
@@ -35,16 +32,21 @@ export default function Dedicated() {
                               </div>
                               {/* CONTENT */}
                               <h2 className='font-bold md:text-[64px] text-[32px] text-slate-800 leading-tight'>
-                                    About Us
+                                    {lang === 'ID' ? 'Tentang Kami' : 'About Us'}
                               </h2>
                         </div>
                   </section>
                   <section className='w-full flex flex-col items-center justify-center gap-[14px] lg:mb-[150px] mb-[50px] md:px-0 px-5'>
                         <h2 className='font-bold md:text-[48px] text-[24px] text-slate-800 leading-tight text-center w-full md:max-w-[800px] max-w-none mx-auto'>
-                              Dedicated to <span className='text-[#BC1328]'>Aviation Maintenance</span> and Innovation
+                              {lang === 'ID' ? <>
+                                    Didedikasikan untuk <span className='text-[#BC1328]'>Perawatan dan Inovasi</span>  Penerbangan
+                              </> : <>
+                                    Dedicated to <span className='text-[#BC1328]'>Aviation Maintenance</span> and Innovation
+                              </>}
                         </h2>
                         <p className='font-normal lg:text-[24px] text-sm block leading-normal text-center md:max-w-[800px] max-w-none mx-auto'>
-                              Committed to Delivering Excellence and Precision in Every Service, With a Focus on Safety, Reliability, and Innovation in Aviation                        </p>
+                              {lang === 'ID' ? ' Berkomitmen untuk Memberikan Keunggulan dan Ketepatan dalam Setiap Layanan, Dengan Fokus pada Keselamatan, Keandalan, dan Inovasi dalam Penerbangan' : '  Committed to Delivering Excellence and Precision in Every Service, With a Focus on Safety, Reliability, and Innovation in Aviation'}
+                        </p>
                   </section>
             </>
       )

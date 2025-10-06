@@ -2,10 +2,9 @@ import CompanyInformation from '@/components/layout/About/CompanyInformation'
 import CompanyMilestones from '@/components/layout/About/CompanyMilestones'
 import Dedicated from '@/components/layout/About/Dedicated'
 import OurMission from '@/components/layout/About/OurMission'
-import OurTeams from '@/components/layout/About/OurTeams'
 import OurValues from '@/components/layout/About/OurValues'
 import OurVision from '@/components/layout/About/OurVision'
-import Contact from '@/components/layout/Contact'
+import ContactLight from '@/components/layout/ContactLight'
 import Footer from '@/components/layout/Footer'
 import Navbar from '@/components/layout/Navbar'
 import Head from 'next/head'
@@ -43,15 +42,13 @@ export default function index() {
                         <OurValues />
                         <CompanyMilestones />
                         <CompanyInformation />
-                        {/* <CompanyStructure /> */}
-                        <Contact />
                         {/* LAYER BOTTOM */}
                         <div className='lg:w-[672px] w-[300px] h-[60px] lg:h-[100px] absolute bottom-[-5px] right-0 bg-white py-4 pr-4 pl-20 flex items-center lg:gap-6 gap-3 z-[2]'
                               style={{ clipPath: "polygon(80px 0, 100% 0, 100% 100%, 0 100%)" }}
                         >
                         </div>
                   </main>
-                  <OurTeams />
+                  <ContactLight className={'pb-[200px]'} />
                   <Footer />
             </>
       )

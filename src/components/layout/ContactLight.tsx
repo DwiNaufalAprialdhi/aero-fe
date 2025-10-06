@@ -1,32 +1,43 @@
 import React from 'react'
 import LabelSectionDark from '../material/LabelSectionDark';
 import ButtonPrimary from '../material/ButtonPrimary';
+import { useLangContext } from '../hooks/LangContext';
 
 type Props = {
       className: string
 }
 
 export default function ContactLight(props: Props) {
+      const { lang } = useLangContext();
 
       return (
             <>
                   <main className={`container_section  w-full overflow-hidden relative z-[2] grid grid-cols-12 lg:gap-[50px] gap-6 ${props.className}`}>
                         <section className='lg:col-span-6 col-span-12 flex flex-col'>
-                              <LabelSectionDark title='Contact Us' />
-                              <h2 className='font-bold lg:text-[48px] text-[32px] leading-tight my-[14px] text-slate-800'>Contact Our <span className='font-bold text-theme-red'>Team</span></h2>
-                              <p className='font-normal lg:text-base text-sm text-theme-secondary mb-[50px]'>&quot;We are commited to develop general aviation airport of Indonesia&quot;</p>
+                              <LabelSectionDark title={`${lang === 'ID' ? 'Kontak Kami' : 'Contact Us'}`} />
+                              {lang === 'ID' ? <>
+                                    <h2 className='font-bold lg:text-[48px] text-[32px] leading-tight my-[14px] text-slate-800'>Hubungi Tim <span className='font-bold text-theme-red'>Kami</span></h2>
+                                    <p className='font-normal lg:text-base text-sm text-theme-secondary mb-[50px]'>&quot;Kami berkomitmen untuk mengembangkan bandara penerbangan umum di Indonesia&quot;</p>
+                              </> : <>
+                                    <h2 className='font-bold lg:text-[48px] text-[32px] leading-tight my-[14px] text-slate-800'>Contact Our <span className='font-bold text-theme-red'>Team</span></h2>
+                                    <p className='font-normal lg:text-base text-sm text-theme-secondary mb-[50px]'>&quot;We are commited to develop general aviation airport of Indonesia&quot;</p>
+                              </>}
                               <div className='w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-[50px] gap-6'>
                                     <div className='w-full h-max flex flex-col gap-6'>
                                           <div className='w-full flex flex-col'>
-                                                <h2 className='font-semibold lg:text-[24px] text-base text-slate-800'>Chat with us</h2>
-                                                <p className='font-normal lg:text-base text-sm text-theme-secondary'>Speak to our friendly team.</p>
+                                                <h2 className='font-semibold lg:text-[24px] text-base text-slate-800'>{lang === 'ID' ? 'Ngobrol dengan kami' : 'Chat with us'}</h2>
+                                                <p className='font-normal lg:text-base text-sm text-theme-secondary'>
+                                                      {lang === 'ID' ? 'Bicaralah dengan tim kami yang ramah.' : 'Speak to our friendly team.'}
+                                                </p>
                                           </div>
                                           <div className='flex flex-col gap-y-[14px'>
                                                 <div className='w-full flex items-center gap-x-[8px]'>
                                                       <svg className='lg:w-6 w-4 lg:h-6 h-4' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M10.3009 13.695L20.102 3.89754M10.5795 14.1356L12.8019 18.5805C13.339 19.6546 13.6075 20.1917 13.9458 20.3357C14.2394 20.4607 14.575 20.438 14.8492 20.2748C15.1651 20.0867 15.3591 19.5184 15.7472 18.3819L19.9463 6.08446C20.2845 5.09421 20.4535 4.59908 20.3378 4.27154C20.2371 3.9866 20.013 3.76246 19.7281 3.66179C19.4005 3.54607 18.9054 3.71514 17.9151 4.05327L5.61763 8.25242C4.48114 8.64049 3.91289 8.83453 3.72478 9.15044C3.56153 9.42459 3.53891 9.76019 3.66389 10.0537C3.80791 10.392 4.34498 10.6606 5.41912 11.1976L9.86397 13.4201C10.041 13.5086 10.1295 13.5528 10.2061 13.6119C10.2742 13.6644 10.3352 13.7254 10.3876 13.7934C10.4468 13.8701 10.491 13.9586 10.5795 14.1356Z" stroke="#352B5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                       </svg>
-                                                      <h2 className='font-semibold lg:text-base text-sm text-slate-800 underline'>Shoot us an email</h2>
+                                                      <h2 className='font-semibold lg:text-base text-sm text-slate-800 underline'>
+                                                            {lang === 'ID' ? 'Kirimi kami email' : 'Shoot us an email'}
+                                                      </h2>
                                                 </div>
                                                 <div className='w-full flex items-center gap-x-[8px]'>
                                                       <svg className='lg:w-5 w-4 lg:h-5 h-4' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,14 +50,20 @@ export default function ContactLight(props: Props) {
                                                                   </clipPath>
                                                             </defs>
                                                       </svg>
-                                                      <h2 className='font-semibold lg:text-base text-sm text-slate-800 underline'>Message us on Instagram</h2>
+                                                      <h2 className='font-semibold lg:text-base text-sm text-slate-800 underline'>
+                                                            {lang === 'ID' ? 'Kirim pesan kepada kami di Instagram' : 'Message us on Instagram'}
+                                                      </h2>
                                                 </div>
                                           </div>
                                     </div>
                                     <div className='w-full h-max flex flex-col gap-6'>
                                           <div className='w-full flex flex-col'>
-                                                <h2 className='font-semibold lg:text-[24px] text-base text-slate-800'>Call us</h2>
-                                                <p className='font-normal lg:text-base text-sm text-theme-secondary'>Call our team Mon-Fri 8am to 5pm.</p>
+                                                <h2 className='font-semibold lg:text-[24px] text-base text-slate-800'>
+                                                      {lang === 'ID' ? 'Hubungi Kami' : 'Call Us'}
+                                                </h2>
+                                                <p className='font-normal lg:text-base text-sm text-theme-secondary'>
+                                                      {lang === 'ID' ? 'Hubungi tim kami Senin-Jumat pukul 8 pagi hingga 5 sore.' : 'Call our team Mon-Fri 8am to 5pm.'}
+                                                </p>
                                           </div>
                                           <div className='w-full flex items-center gap-x-[8px'>
                                                 <svg className='lg:w-6 w-4 lg:h-6 h-4' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,8 +74,12 @@ export default function ContactLight(props: Props) {
                                     </div>
                                     <div className='w-full h-max flex flex-col gap-6'>
                                           <div className='w-full flex flex-col'>
-                                                <h2 className='font-semibold lg:text-[24px] text-base text-slate-800'>Visit us</h2>
-                                                <p className='font-normal lg:text-base text-sm text-theme-secondary'>Chat to us in person at our office.</p>
+                                                <h2 className='font-semibold lg:text-[24px] text-base text-slate-800'>
+                                                      {lang === 'ID' ? 'Kunjungi kami' : 'Visit us'}
+                                                </h2>
+                                                <p className='font-normal lg:text-base text-sm text-theme-secondary'>
+                                                      {lang === 'ID' ? 'Ngobrol dengan kami secara langsung di kantor kami.' : 'Chat to us in person at our office.'}
+                                                </p>
                                           </div>
                                           <div className='w-full flex items-center gap-x-[8px]'>
                                                 <svg className='lg:w-6 w-4 lg:h-6 h-4' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +87,9 @@ export default function ContactLight(props: Props) {
                                                       <path d="M19 9.75C19 15.375 12 21 12 21C12 21 5 15.375 5 9.75C5 6.02208 8.13401 3 12 3C15.866 3 19 6.02208 19 9.75Z" stroke="#352B5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
 
-                                                <h2 className='font-semibold lg:text-base text-sm text-slate-800 underline'>Wiladatika Private Airport</h2>
+                                                <h2 className='font-semibold lg:text-base text-sm text-slate-800 underline'>
+                                                      {lang === 'ID' ? 'Bandara Pribadi Wiladatika' : 'Wiladatika Private Airport'}
+                                                </h2>
                                           </div>
                                     </div>
                               </div>
