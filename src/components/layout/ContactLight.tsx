@@ -98,12 +98,12 @@ export default function ContactLight(props: Props) {
                               <form action={'#'} className='w-full flex flex-col'>
                                     <div className='w-full grid grid-cols-2 gap-6 items-center mb-6'>
                                           <div className='w-full col-span-1 flex flex-col gap-y-[8px]'>
-                                                <label htmlFor="fn" className='label_light'>First Name</label>
-                                                <input type="text" name='fn' id='fn' className='form_input' placeholder='First Name' />
+                                                <label htmlFor="fn" className='label_light'>{lang === 'ID' ? 'Nama Depan' : 'First Name'}</label>
+                                                <input type="text" name='fn' id='fn' className='form_input' placeholder={`${lang === 'ID' ? 'Nama Depan' : 'First Name'}`} />
                                           </div>
                                           <div className='w-full col-span-1 flex flex-col gap-y-[8px]'>
-                                                <label htmlFor="ln" className='label_light'>Last Name</label>
-                                                <input type="text" name='ln' id='ln' className='form_input' placeholder='Last Name' />
+                                                <label htmlFor="fn" className='label_light'>{lang === 'ID' ? 'Nama Belakang' : 'Last Name'}</label>
+                                                <input type="text" name='ln' id='ln' className='form_input' placeholder={`${lang === 'ID' ? 'Nama Belakang' : 'Last Name'}`} />
                                           </div>
                                     </div>
                                     <div className='w-full flex flex-col gap-y-[8px] mb-6'>
@@ -111,15 +111,19 @@ export default function ContactLight(props: Props) {
                                           <input type="text" name='email' id='email' className='form_input' placeholder='you@company.com' />
                                     </div>
                                     <div className='w-full flex flex-col gap-y-[8px] mb-6'>
-                                          <label htmlFor="subject" className='label_light'>Subject</label>
-                                          <input type="text" name='subject' id='subject' className='form_input' placeholder='Subject' />
+                                          <label htmlFor="subject" className='label_light'>
+                                                {lang === 'ID' ? 'Judul' : 'Subject'}
+                                          </label>
+                                          <input type="text" name='subject' id='subject' className='form_input' placeholder={`${lang === 'ID' ? 'Judul' : 'Subject'}`} />
                                     </div>
                                     <div className='w-full flex flex-col gap-y-[8px] mb-[50px]'>
-                                          <label htmlFor="message" className='label_light'>Message</label>
-                                          <textarea rows={7} name="message" id="message" className='form_input' placeholder='Leave us a message...'></textarea>
+                                          <label htmlFor="message" className='label_light'>
+                                                {lang === 'ID' ? 'Pesan' : 'Message'}
+                                          </label>
+                                          <textarea rows={7} name="message" id="message" className='form_input' placeholder={`${lang === 'ID' ? 'Tinggalkan pesan untuk kami...' : 'Leave us a message...'}`}></textarea>
                                     </div>
                                     <ButtonPrimary link={'#'} className='flex items-center justify-center w-full'>
-                                          Send message
+                                          {lang === 'ID' ? 'Kirim Pesan' : 'Send message'}
                                     </ButtonPrimary>
                               </form>
                         </section>
