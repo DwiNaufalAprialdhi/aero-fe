@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect } from 'react'
-import AOS from "aos";
+import React from 'react'
 import Link from 'next/link';
+import { useLangContext } from '@/components/hooks/LangContext';
 
 
 
@@ -18,18 +18,13 @@ const dataVendor = [
 ]
 
 export default function VendorService() {
-      useEffect(() => {
-            AOS.init({
-                  duration: 800,
-                  once: true,
-            });
-      }, []);
+      const { lang } = useLangContext()
       return (
             <>
                   <main className="w-full py-5 lg:mb-[150px] mb-[50px]">
                         <section className="container_section">
                               <h2 className="font-bold md:text-[24px] text-base text-center mb-[24px]">
-                                    Our Vendors and Suppliers
+                                    {lang === 'ID' ? 'Vendor dan Pemasok Kami' : 'Our Vendors and Suppliers'}
                               </h2>
                               <div
                                     className="box_vendor w-full overflow-hidden transition-all duration-300 ease-in-out">

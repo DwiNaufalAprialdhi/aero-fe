@@ -1,8 +1,10 @@
 import React from 'react'
 import Image from 'next/image';
+import { useLangContext } from '@/components/hooks/LangContext';
 
 
 export default function Banner() {
+      const { lang } = useLangContext()
       return (
             <>
                   <section className="w-full md:h-[500px] h-[400px] overflow-hidden relative lg:pt-[200px] pt-[100px] lg:mb-[150px] mb-[50px]">
@@ -28,7 +30,7 @@ export default function Banner() {
                               </div>
                               {/* CONTENT */}
                               <h2 className='font-bold md:text-[64px] text-[32px] text-slate-800 leading-tight'>
-                                    Gallery
+                                    {lang === 'ID' ? 'Galeri' : 'Gallery'}
                               </h2>
                         </div>
                   </section>

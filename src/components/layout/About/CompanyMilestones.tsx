@@ -36,13 +36,23 @@ export default function CompanyMilestones() {
                               </>}
                         </section>
                         <section className='container_section overflow-hidden'>
-                              <Image
-                                    src="/assets/images/struktur.svg"
-                                    alt="Ornament"
-                                    width={1000}
-                                    height={1000}
-                                    className='w-full h-full object-contain'
-                              />
+                              {lang === 'ID' ? <>
+                                    <Image
+                                          src="/assets/images/struktur-id.svg"
+                                          alt="Ornament"
+                                          width={1000}
+                                          height={1000}
+                                          className='w-full h-full object-contain'
+                                    />
+                              </> : <>
+                                    <Image
+                                          src="/assets/images/struktur.svg"
+                                          alt="Ornament"
+                                          width={1000}
+                                          height={1000}
+                                          className='w-full h-full object-contain'
+                                    />
+                              </>}
                         </section>
                   </main>
             </>

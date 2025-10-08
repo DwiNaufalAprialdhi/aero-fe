@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import { useLangContext } from '@/components/hooks/LangContext'
 import Icon from '@/components/icon/Icon'
 import LabelSectionDark from '@/components/material/LabelSectionDark'
 import BadgeCategory from '@/components/ui/BadgeCategory'
@@ -21,15 +22,21 @@ const galleries = [
 ]
 
 export default function OurGalleries() {
+      const { lang } = useLangContext()
       return (
             <>
                   <main className='w-full h-auto lg:mb-[150px] mb-[100px]'>
                         <section className='container_section flex flex-col lg:gap-y-[0px] gap-y-6'>
                               {/* Text */}
                               <div className='w-full flex flex-col mx-auto'>
-                                    <LabelSectionDark title='Our Gallery' />
+                                    <LabelSectionDark title={lang === 'ID' ? 'Galeri Kami' : 'Our Gallery'} />
                                     <h2 className='w-full md:max-w-[500px] max-w-none font-normal lg:text-[48px] text-[24px] leading-tight lg:mt-[14px] mt-2 lg:mb-[50px] mb-6'>
-                                          <span className='font-bold text-slate-800'>More</span> <span className='font-bold text-theme-red'>Photos</span>
+                                          <span className='font-bold text-slate-800'>
+                                                {lang === 'ID' ? 'Lebih Banyak' : 'More'}
+                                          </span>{' '}
+                                          <span className='font-bold text-theme-red'>
+                                                {lang === 'ID' ? 'Foto' : 'Photos'}
+                                          </span>
                                     </h2>
                               </div>
                               {/* Column Image */}

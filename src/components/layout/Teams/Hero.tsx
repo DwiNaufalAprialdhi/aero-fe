@@ -1,15 +1,10 @@
-import React, { useEffect } from 'react'
-import AOS from "aos";
+import React from 'react'
 import Image from 'next/image';
+import { useLangContext } from '@/components/hooks/LangContext';
 
 
 export default function HeroTeams() {
-      useEffect(() => {
-            AOS.init({
-                  duration: 800,
-                  once: true,
-            });
-      }, []);
+      const { lang } = useLangContext()
       return (
             <>
                   <section className="w-full md:h-[500px] h-[400px] overflow-hidden relative lg:pt-[200px] pt-[110px] lg:mb-[150px] mb-[50px]">
@@ -35,7 +30,7 @@ export default function HeroTeams() {
                               </div>
                               {/* CONTENT */}
                               <h2 className='font-bold md:text-[64px] text-[32px] text-slate-800 leading-tight'>
-                                    Our Teams
+                                    {lang === 'ID' ? 'Tim Kami' : 'Our Teams'}
                               </h2>
                         </div>
                   </section>

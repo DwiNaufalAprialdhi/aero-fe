@@ -24,22 +24,22 @@ export default function ContactLight(props: Props) {
                               </>}
                               <div className='w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-[50px] gap-6'>
                                     <div className='w-full h-max flex flex-col gap-6'>
-                                          <div className='w-full flex flex-col'>
+                                          <div className='w-full flex flex-col gap-1'>
                                                 <h2 className='font-semibold lg:text-[24px] text-base text-slate-800'>{lang === 'ID' ? 'Ngobrol dengan kami' : 'Chat with us'}</h2>
                                                 <p className='font-normal lg:text-base text-sm text-theme-secondary'>
                                                       {lang === 'ID' ? 'Bicaralah dengan tim kami yang ramah.' : 'Speak to our friendly team.'}
                                                 </p>
                                           </div>
-                                          <div className='flex flex-col gap-y-[14px'>
-                                                <div className='w-full flex items-center gap-x-[8px]'>
-                                                      <svg className='lg:w-6 w-4 lg:h-6 h-4' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <div className='flex flex-col gap-y-[10px]'>
+                                                <div className='w-full flex items-start gap-x-[10px]'>
+                                                      <svg className='lg:w-5 w-4 lg:h-6 h-4' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M10.3009 13.695L20.102 3.89754M10.5795 14.1356L12.8019 18.5805C13.339 19.6546 13.6075 20.1917 13.9458 20.3357C14.2394 20.4607 14.575 20.438 14.8492 20.2748C15.1651 20.0867 15.3591 19.5184 15.7472 18.3819L19.9463 6.08446C20.2845 5.09421 20.4535 4.59908 20.3378 4.27154C20.2371 3.9866 20.013 3.76246 19.7281 3.66179C19.4005 3.54607 18.9054 3.71514 17.9151 4.05327L5.61763 8.25242C4.48114 8.64049 3.91289 8.83453 3.72478 9.15044C3.56153 9.42459 3.53891 9.76019 3.66389 10.0537C3.80791 10.392 4.34498 10.6606 5.41912 11.1976L9.86397 13.4201C10.041 13.5086 10.1295 13.5528 10.2061 13.6119C10.2742 13.6644 10.3352 13.7254 10.3876 13.7934C10.4468 13.8701 10.491 13.9586 10.5795 14.1356Z" stroke="#352B5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                                       </svg>
                                                       <h2 className='font-semibold lg:text-base text-sm text-slate-800 underline'>
                                                             {lang === 'ID' ? 'Kirimi kami email' : 'Shoot us an email'}
                                                       </h2>
                                                 </div>
-                                                <div className='w-full flex items-center gap-x-[8px]'>
+                                                <div className='w-full flex items-start gap-x-[8px]'>
                                                       <svg className='lg:w-5 w-4 lg:h-5 h-4' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <g clip-path="url(#clip0_78_83)">
                                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M7.04359 0.147275C5.09013 0.235415 3.39698 0.713011 2.02979 2.07442C0.657834 3.44299 0.18617 5.14285 0.0978101 7.07599C0.0428837 8.28256 -0.278297 17.398 0.653059 19.7885C1.28113 21.4012 2.51813 22.6412 4.14561 23.2713C4.90503 23.5667 5.77193 23.7666 7.04359 23.825C17.6766 24.3062 21.6181 24.0442 23.2802 19.7885C23.5751 19.031 23.7781 18.1648 23.8342 16.8963C24.3202 6.23605 23.7555 3.92538 21.9023 2.07442C20.4324 0.608191 18.7034 -0.389905 7.04359 0.147275ZM7.14147 21.6811C5.97728 21.6286 5.34564 21.4347 4.92414 21.2715C3.86383 20.8594 3.0674 20.0662 2.65784 19.0121C1.94858 17.1957 2.18382 8.56863 2.2471 7.17267C2.30919 5.80529 2.58621 4.55561 3.551 3.59083C4.74504 2.39973 6.28773 1.81599 16.7918 2.29005C18.1625 2.35198 19.4151 2.62843 20.3823 3.59083C21.5763 4.78191 22.1686 6.33648 21.6862 16.8002C21.6336 17.9615 21.439 18.5917 21.2754 19.0121C20.1948 21.7814 17.7088 22.1658 7.14147 21.6811ZM16.9076 5.62755C16.9076 6.41606 17.5488 7.05724 18.3405 7.05724C19.1321 7.05724 19.7745 6.41606 19.7745 5.62755C19.7745 4.83905 19.1321 4.19845 18.3405 4.19845C17.5488 4.19845 16.9076 4.83905 16.9076 5.62755ZM5.8352 11.9856C5.8352 15.3635 8.58032 18.1022 11.9666 18.1022C15.3529 18.1022 18.0981 15.3635 18.0981 11.9856C18.0981 8.60763 15.3529 5.87071 11.9666 5.87071C8.58032 5.87071 5.8352 8.60763 5.8352 11.9856ZM7.98687 11.9856C7.98687 9.79396 9.7684 8.01583 11.9666 8.01583C14.1649 8.01583 15.9464 9.79396 15.9464 11.9856C15.9464 14.1784 14.1649 15.957 11.9666 15.957C9.7684 15.957 7.98687 14.1784 7.98687 11.9856Z" fill="#352B5A" />
@@ -57,7 +57,7 @@ export default function ContactLight(props: Props) {
                                           </div>
                                     </div>
                                     <div className='w-full h-max flex flex-col gap-6'>
-                                          <div className='w-full flex flex-col'>
+                                          <div className='w-full flex flex-col gap-1'>
                                                 <h2 className='font-semibold lg:text-[24px] text-base text-slate-800'>
                                                       {lang === 'ID' ? 'Hubungi Kami' : 'Call Us'}
                                                 </h2>
@@ -73,7 +73,7 @@ export default function ContactLight(props: Props) {
                                           </div>
                                     </div>
                                     <div className='w-full h-max flex flex-col gap-6'>
-                                          <div className='w-full flex flex-col'>
+                                          <div className='w-full flex flex-col gap-1'>
                                                 <h2 className='font-semibold lg:text-[24px] text-base text-slate-800'>
                                                       {lang === 'ID' ? 'Kunjungi kami' : 'Visit us'}
                                                 </h2>

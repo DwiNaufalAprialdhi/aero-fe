@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 type ButtonProps = {
@@ -10,10 +11,10 @@ type ButtonProps = {
 export default function Button(props: ButtonProps) {
       return (
             <>
-                  <a target='_blank' href={props.link} className={`lg:py-[15px] py-3 lg:px-[30px] px-[15px] bg-[#F9F400] text-slate-800 hover:bg-opacity-80 duration-300 ${props.className}`}>
+                  <Link href={props.link} className={`lg:py-[15px] py-3 lg:px-[30px] px-[15px] bg-[#F9F400] text-slate-800 hover:bg-opacity-80 duration-300 ${props.className}`}>
                         <h2 className='font-medium lg:text-sm text-xs'>{props.children}</h2>
                         {props.icon}
-                  </a>
+                  </Link>
             </>
       )
 }
